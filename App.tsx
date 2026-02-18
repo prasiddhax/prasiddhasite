@@ -267,11 +267,21 @@ const Header: React.FC<HeaderProps> = ({ activeSection, activeCategory, onCatego
 const Footer = () => {
   return (
     <footer className="w-full p-12 md:p-24 flex justify-center items-center z-30 text-[10px] font-bold tracking-widest opacity-60 mt-20 border-t border-white/5">
-      <div className="flex flex-col items-center gap-2 text-center">
-        <span className="uppercase">prasiddha Studio — 2026</span>
-        <span className="text-[8px] uppercase">All rights reserved • Crafted with passion</span>
-      </div>
-    </footer>
+  <div className="flex flex-col items-center gap-2 text-center">
+    <span className="uppercase">prasiddha SHARMA — 2026</span>
+    <span className="text-[8px] uppercase">
+      <a 
+        href="https://prasiddha.design/privacypolicy" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        className="hover:opacity-100 transition-opacity"
+      >
+        Privacy Policy
+      </a> 
+      {" • "}All rights reserved{" • "}Crafted with passion
+    </span>
+  </div>
+</footer>
   );
 };
 
