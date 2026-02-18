@@ -291,7 +291,7 @@ const PersistentFooterText = () => {
     
     const updateTime = () => {
       const now = new Date();
-      const options: Intl.DateTimeFormatOptions = { hour: '2-digit', minute: '2-digit', hour12: true, timeZone: 'Europe/Paris' };
+      const options: Intl.DateTimeFormatOptions = { hour: '2-digit', minute: '2-digit', hour12: true, timeZone: 'Asia/Kathmandu' };
       setCurrentTime(new Intl.DateTimeFormat('en-US', options).format(now).toUpperCase());
     };
     updateTime();
@@ -312,7 +312,7 @@ const PersistentFooterText = () => {
           <span>Available for freelance</span>
         </div>
         <div className="pl-5 text-[8px] opacity-70">
-          PARIS FR — {currentTime}
+          KATHMANDU NP — {currentTime}
         </div>
       </div>
 
@@ -625,7 +625,7 @@ const HomeView = ({ activeCategory, onCategoryReset }: { activeCategory: WorkCat
   useEffect(() => {
     const updateTime = () => {
       const now = new Date();
-      const options: Intl.DateTimeFormatOptions = { hour: '2-digit', minute: '2-digit', hour12: true, timeZone: 'Europe/Paris' };
+      const options: Intl.DateTimeFormatOptions = { hour: '2-digit', minute: '2-digit', hour12: true, timeZone: 'Asia/Kathmandu' };
       setCurrentTime(new Intl.DateTimeFormat('en-US', options).format(now).toUpperCase());
     };
     updateTime();
@@ -649,7 +649,7 @@ const HomeView = ({ activeCategory, onCategoryReset }: { activeCategory: WorkCat
             CREATIVE DEVELOPER
           </div>
           <div className="absolute -bottom-6 right-4 md:right-12 text-[10px] md:text-xs font-bold tracking-[0.3em] opacity-0 animate-fade-in [animation-delay:1.2s]">
-            BASED IN PARIS
+            BASED IN KATHMANDU
           </div>
         </div>
         <div className="absolute bottom-12 animate-bounce opacity-50 text-[10px] tracking-widest flex flex-col items-center gap-2">
@@ -674,8 +674,8 @@ const HomeView = ({ activeCategory, onCategoryReset }: { activeCategory: WorkCat
               </div>
             </div>
             <div className="mt-6 flex gap-4 text-[8px] tracking-[0.2em] font-bold opacity-50 uppercase">
-              <span>48.8566° N, 2.3522° E</span>
-              <span>— PARIS FR</span>
+              <span>27.7172° N, 85.3240° E</span>
+              <span>— KATHMANDU NP</span>
             </div>
           </div>
           <div className="lg:col-span-7 flex flex-col gap-8">
