@@ -14,7 +14,7 @@ const WORKS_DATA = [
     id: "neon-meadows",
     title: "Neon Meadows",
     category: WorkCategory.DIGITAL,
-    year: "2024",
+    year: "2026",
     flowerType: "red",
     offsetTop: false,
     description: "A pixel-based exploration of biological growth patterns within a rigid digital grid. This project examines the tension between organic forms and low-fidelity constraints.",
@@ -159,7 +159,7 @@ const Header: React.FC<HeaderProps> = ({ activeSection, activeCategory, onCatego
           onClick={() => scrollToSection('home')}
           className="text-[10px] uppercase tracking-[0.2em] opacity-60 hover:opacity-100 transition-opacity"
         >
-          Portfolio 2024
+          PRASIDDHA SHARMA
         </button>
       </div>
 
@@ -236,7 +236,7 @@ const Footer = () => {
   return (
     <footer className="w-full p-12 md:p-24 flex justify-center items-center z-30 text-[10px] font-bold tracking-widest opacity-60 mt-20 border-t border-white/5">
       <div className="flex flex-col items-center gap-2 text-center">
-        <span className="uppercase">prasiddha Studio — 2024</span>
+        <span className="uppercase">prasiddha Studio — 2026</span>
         <span className="text-[8px] uppercase">All rights reserved • Crafted with passion</span>
       </div>
     </footer>
@@ -696,7 +696,7 @@ const HomeView = ({ activeCategory, onCategoryReset }: { activeCategory: WorkCat
             <div className="flex items-center gap-4 text-[10px] font-bold tracking-[0.3em] opacity-50 uppercase">
               <span>01</span>
               <div className="h-[1px] w-20 bg-white"></div>
-              <span>2021—2024 SELECTION</span>
+              <span>2021—2026 SELECTION</span>
             </div>
           </div>
           {activeCategory !== WorkCategory.ALL && (
