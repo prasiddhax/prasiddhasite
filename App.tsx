@@ -778,16 +778,43 @@ const HomeView = ({ activeCategory, onCategoryReset }: { activeCategory: WorkCat
             </div>
 
             <div className="flex gap-8 pt-4">
-              <a href="#" className="text-xs font-bold border-b border-white/20 hover:border-yellow-300 hover:text-yellow-300 transition-all pb-1 uppercase tracking-widest">
-                Instagram
-              </a>
-              <a href="#" className="text-xs font-bold border-b border-white/20 hover:border-yellow-300 hover:text-yellow-300 transition-all pb-1 uppercase tracking-widest">
-                LinkedIn
-              </a>
-              <a href="#" className="text-xs font-bold border-b border-white/20 hover:border-yellow-300 hover:text-yellow-300 transition-all pb-1 uppercase tracking-widest">
-                Twitter
-              </a>
-            </div>
+  <a
+    href="https://www.instagram.com/prasiddha.__/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-xs font-bold border-b border-white/20 hover:border-yellow-300 hover:text-yellow-300 transition-all pb-1 uppercase tracking-widest"
+  >
+    Instagram
+  </a>
+
+  <a
+    href="https://www.linkedin.com/in/prasiddhasharma/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-xs font-bold border-b border-white/20 hover:border-yellow-300 hover:text-yellow-300 transition-all pb-1 uppercase tracking-widest"
+  >
+    LinkedIn
+  </a>
+
+  <a
+    href="mailto:prasiddha.business@gmail.com"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-xs font-bold border-b border-white/20 hover:border-yellow-300 hover:text-yellow-300 transition-all pb-1 uppercase tracking-widest"
+  >
+    Email
+  </a>
+
+  <a
+    href="https://wa.me/9779861292675"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-xs font-bold border-b border-white/20 hover:border-yellow-300 hover:text-yellow-300 transition-all pb-1 uppercase tracking-widest"
+  >
+    WhatsApp
+  </a>
+</div>
+
           </div>
         </div>
 
