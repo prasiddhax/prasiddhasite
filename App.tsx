@@ -270,8 +270,13 @@ const Footer = () => {
   <div className="flex flex-col items-center gap-2 text-center">
     
     {/* Top Row */}
-    <div className="flex items-center gap-4 uppercase">
-      <span>PRASIDDHA SHARMA — 2026</span>
+    <span className="uppercase">
+      PRASIDDHA SHARMA — 2026
+    </span>
+
+    {/* Bottom Row */}
+    <span className="text-[8px] uppercase flex items-center gap-3">
+      All rights reserved •
       <a 
         href="https://prasiddha.design/privacypolicy" 
         target="_blank" 
@@ -280,11 +285,6 @@ const Footer = () => {
       >
         PRIVACY POLICY
       </a>
-    </div>
-
-    {/* Bottom Row */}
-    <span className="text-[8px] uppercase">
-      All rights reserved • Crafted with passion
     </span>
 
   </div>
