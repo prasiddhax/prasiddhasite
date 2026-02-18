@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect, useCallback, useMemo } from 'react';
 import { HashRouter as Router, Routes, Route, Link, useNavigate, useParams, useLocation } from 'react-router-dom';
 import PixelFlower from './components/PixelFlower';
@@ -269,8 +268,8 @@ const Footer = () => {
   return (
     <footer className="w-full p-12 md:p-24 flex justify-center items-center z-30 text-[10px] font-bold tracking-widest opacity-60 mt-20 border-t border-white/5">
       <div className="flex flex-col items-center gap-2 text-center">
-        <span className="uppercase">PRASIDDHA SHARMA — 2026</span>
-        <span className="text-[8px] uppercase">Privacy Policy • All rights reserved • Crafted with passion</span>
+        <span className="uppercase">prasiddha Studio — 2026</span>
+        <span className="text-[8px] uppercase">All rights reserved • Crafted with passion</span>
       </div>
     </footer>
   );
@@ -622,12 +621,9 @@ const HomeView = ({ activeCategory, onCategoryReset }: { activeCategory: WorkCat
 
   const [currentTime, setCurrentTime] = useState('00:00 AM');
 
-  const [currentTime, setCurrentTime] = useState("");
-
-   useEffect(() => {
+  useEffect(() => {
     const updateTime = () => {
       const now = new Date();
-      const options: Intl.DateTimeFormatOptions = { hour: '2-digit', minute: '2-digit', hour12: true, timeZone: 'Asia/Kathmandu' };
       const options: Intl.DateTimeFormatOptions = { hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: true, timeZone: 'Asia/Kathmandu' };
       setCurrentTime(new Intl.DateTimeFormat('en-US', options).format(now).toUpperCase());
     };
