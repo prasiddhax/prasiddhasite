@@ -224,9 +224,42 @@ const Header: React.FC<HeaderProps> = ({ activeSection, activeCategory, onCatego
       </div>
 
       <div className="hidden md:flex gap-4 opacity-70 text-[10px] font-bold">
-        <a href="#" className="hover:text-yellow-300 transition-colors">IG</a>
-        <a href="#" className="hover:text-yellow-300 transition-colors">LI</a>
-        <a href="#" className="hover:text-yellow-300 transition-colors">TW</a>
+<a 
+  href="https://www.instagram.com/prasiddha.__/" 
+  target="_blank" 
+  rel="noopener noreferrer"
+  className="hover:text-yellow-300 transition-colors"
+>
+  IG
+</a>
+
+<a 
+  href="https://www.linkedin.com/in/prasiddhasharma/" 
+  target="_blank" 
+  rel="noopener noreferrer"
+  className="hover:text-yellow-300 transition-colors"
+>
+  LI
+</a>
+
+<a 
+  href="mailto:prasiddha.business@gmail.com" 
+  target="_blank" 
+  rel="noopener noreferrer"
+  className="hover:text-yellow-300 transition-colors"
+>
+  EM
+</a>
+
+<a 
+  href="https://wa.me/9779861292675" 
+  target="_blank" 
+  rel="noopener noreferrer"
+  className="hover:text-yellow-300 transition-colors"
+>
+  WA
+</a>
+
       </div>
     </nav>
   );
