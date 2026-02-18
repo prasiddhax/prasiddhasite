@@ -624,25 +624,16 @@ const HomeView = ({ activeCategory, onCategoryReset }: { activeCategory: WorkCat
 
   const [currentTime, setCurrentTime] = useState("");
 
-useEffect(() => {
-  const updateTime = () => {
-    const now = new Date();
-    const formatted = new Intl.DateTimeFormat("en-US", {
-      hour: "2-digit",
-      minute: "2-digit",
-      second: "2-digit",
-      hour12: true,
-      timeZone: "Asia/Kathmandu",
-    }).format(now);
-
-    setCurrentTime(formatted);
-  };
-
-  updateTime(); // run immediately
-  const interval = setInterval(updateTime, 1000);
-
-  return () => clearInterval(interval);
-}, []);
+  useEffect(() => {
+    const updateTime = () => {
+      const now = new Date();
+      const options: Intl.DateTimeFormatOptions = { hour: '2-digit', minute: '2-digit', hour12: true, timeZone: 'Asia/Kathmandu' };
+      setCurrentTime(new Intl.DateTimeFormat('en-US', options).format(now).toUpperCase());
+    };
+    updateTime();
+    const interval = setInterval(updateTime, 60000);
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <div className="relative z-10">
