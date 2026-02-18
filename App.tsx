@@ -773,7 +773,7 @@ const HomeView = ({ activeCategory, onCategoryReset }: { activeCategory: WorkCat
               </div>
               <div className="flex flex-col gap-1">
                 <span className="text-[10px] uppercase tracking-widest opacity-50 font-bold">Local Time</span>
-                <span className="text-xl font-bold font-mono">PARIS {currentTime}</span>
+                <span className="text-xl font-bold font-mono">KATHMANDU {currentTime}</span>
               </div>
             </div>
 
