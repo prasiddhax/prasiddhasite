@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prasiddha - Creative Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-blue: #0044CC;
+            --grid-color: rgba(255, 255, 255, 0.08);
+        }
+        body {
+            background-color: var(--bg-blue);
+            color: #ffffff;
+            font-family: 'Space Mono', monospace;
+            overflow-x: hidden;
+        }
+        .font-serif-italic {
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            font-weight: 400;
+        }
+        .bg-grid {
+            background-size: 60px 60px;
+            background-image: 
+                linear-gradient(to right, var(--grid-color) 1px, transparent 1px),
+                linear-gradient(to bottom, var(--grid-color) 1px, transparent 1px);
+            mask-image: radial-gradient(circle at center, black 60%, transparent 100%);
+            -webkit-mask-image: radial-gradient(circle at center, black 60%, transparent 100%);
+        }
+        .pixel-art {
+            image-rendering: pixelated;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 0.8; transform: translateY(0); }
+        }
+        .animate-fade-in {
+            animation: fadeIn 1s ease-out forwards;
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-15px); }
+        }
+        .animate-float {
+            animation: float 5s ease-in-out infinite;
+        }
+        @keyframes marquee {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+        .animate-marquee {
+            animation: marquee 20s linear infinite;
+        }
+        .timeline-line {
+            width: 2px;
+            background: repeating-linear-gradient(
+                to bottom,
+                #ffffff,
+                #ffffff 4px,
+                transparent 4px,
+                transparent 8px
+            );
+        }
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 4px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: rgba(255, 255, 255, 0.05);
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #FFD700;
+        }
+    </style>
+    <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@19.0.0",
+    "react-dom": "https://esm.sh/react-dom@19.0.0",
+    "react-dom/client": "https://esm.sh/react-dom@19.0.0/client",
+    "react-router-dom": "https://esm.sh/react-router-dom@6.22.3?deps=react@19.0.0,react-dom@19.0.0",
+    "@google/genai": "https://esm.sh/@google/genai@1.41.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="selection:bg-yellow-400 selection:text-blue-900 custom-scrollbar">
+    <div id="root"></div>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
