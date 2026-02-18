@@ -266,10 +266,12 @@ const Header: React.FC<HeaderProps> = ({ activeSection, activeCategory, onCatego
 
 const Footer = () => {
   return (
-   <footer className="w-full p-12 md:p-24 flex justify-center items-center z-30 text-[10px] font-bold tracking-widest opacity-60 mt-20 border-t border-white/5">
+  <footer className="w-full p-12 md:p-24 flex justify-center items-center z-30 text-[10px] font-bold tracking-widest opacity-60 mt-20 border-t border-white/5">
   <div className="flex flex-col items-center gap-2 text-center">
-    <span className="uppercase">prasiddha SHARMA — 2026</span>
-    <span className="text-[8px] uppercase">
+    
+    {/* Top Row */}
+    <div className="flex items-center gap-4 uppercase">
+      <span>PRASIDDHA SHARMA — 2026</span>
       <a 
         href="https://prasiddha.design/privacypolicy" 
         target="_blank" 
@@ -278,8 +280,13 @@ const Footer = () => {
       >
         PRIVACY POLICY
       </a>
-      {" • All rights reserved • Crafted with passion"}
+    </div>
+
+    {/* Bottom Row */}
+    <span className="text-[8px] uppercase">
+      All rights reserved • Crafted with passion
     </span>
+
   </div>
 </footer>
   );
