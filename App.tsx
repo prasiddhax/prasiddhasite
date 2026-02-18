@@ -625,7 +625,7 @@ const HomeView = ({ activeCategory, onCategoryReset }: { activeCategory: WorkCat
   useEffect(() => {
     const updateTime = () => {
       const now = new Date();
-      const options: Intl.DateTimeFormatOptions = { hour: '2-digit', minute: '2-digit', hour12: true, timeZone: 'Asia/Kathmandu' };
+      const options: Intl.DateTimeFormatOptions = { hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: true, timeZone: 'Asia/Kathmandu' };
       setCurrentTime(new Intl.DateTimeFormat('en-US', options).format(now).toUpperCase());
     };
     updateTime();
