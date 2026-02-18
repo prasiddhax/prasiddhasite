@@ -269,8 +269,8 @@ const Footer = () => {
   return (
     <footer className="w-full p-12 md:p-24 flex justify-center items-center z-30 text-[10px] font-bold tracking-widest opacity-60 mt-20 border-t border-white/5">
       <div className="flex flex-col items-center gap-2 text-center">
-        <span className="uppercase">prasiddha Studio — 2026</span>
-        <span className="text-[8px] uppercase">All rights reserved • Crafted with passion</span>
+        <span className="uppercase">PRASIDDHA SHARMA — 2026</span>
+        <span className="text-[8px] uppercase">Privacy Policy • All rights reserved • Crafted with passion</span>
       </div>
     </footer>
   );
