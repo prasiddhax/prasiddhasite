@@ -686,7 +686,7 @@ const HomeView = ({ activeCategory, onCategoryReset }: { activeCategory: WorkCat
                 alt="Prasiddha Profile" 
                 className="w-full h-full object-cover grayscale brightness-110 contrast-125 transition-all duration-700 group-hover:scale-105"
               />
-              <div className="absolute inset-0 bg-blue-600/20 mix-blend-overlay"></div>
+              <div className="absolute inset-0 bg-blue-100/20 mix-blend-overlay"></div>
               <div className="absolute -bottom-4 -right-4 w-20 h-20 animate-float opacity-80">
                  <PixelFlower colorPrimary="#FFD700" colorSecondary="#8B4513" stemHeight={12} />
               </div>
