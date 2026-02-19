@@ -85,22 +85,22 @@ const WORKS_DATA = [
 
 const TIMELINE_DATA = [
   {
-    year: '2022 — PRESENT',
+    year: '2023 — PRESENT',
     side: 'left' as const,
-    title: 'FREELANCE CREATIVE DEV',
-    description: 'Collaborating with global brands to build high-end interactive landing pages and digital experiences.'
+    title: 'GRIFFITY STUDIOS',
+    description: 'Executive Director. Leading overall strategy, client relationships, and creative direction for high-impact branding.'
   },
   {
-    year: '2020 — 2022',
+    year: '2021 — 2023',
     side: 'right' as const,
-    title: 'STUDIO LUMIÈRE',
-    description: 'Lead Frontend Developer. Specialized in motion design integration and WebGL experiments for luxury boutiques.'
+    title: 'AITC INTERNATIONAL',
+    description: 'Business Executive. Focused on brand development, sales partnerships, and scaling operational growth.'
   },
   {
-    year: '2018 — 2020',
+    year: '2024 — 2025',
     side: 'left' as const,
-    title: 'ECHO DESIGN AGENCY',
-    description: 'Junior UI Designer & Dev. Focused on interaction design and scalable responsive architectures.'
+    title: 'HULT PRIZE @ ACEM',
+    description: 'Head of Operations. Secured 100% of event sponsorships and managed end-to-end operations for the entrepreneurship program, ensuring seamless execution and partner ROI.'
   }
 ];
 
@@ -695,7 +695,7 @@ const HomeView = ({ activeCategory, onCategoryReset }: { activeCategory: WorkCat
             </div>
           </div>
           <div className="lg:col-span-7 flex flex-col gap-8">
-            <h2 className="font-serif-italic text-6xl md:text-9xl leading-none">About.</h2>
+            <h2 className="font-serif-italic text-6xl md:text-9xl leading-none">About me.</h2>
             <div className="space-y-6 text-sm md:text-lg leading-relaxed opacity-90 max-w-2xl font-mono">
               <p>I'm <span className="text-yellow-300 font-bold underline underline-offset-4 decoration-1">prasiddha</span>, a creative developer blending digital craftsmanship with playful interactions.</p>
               <p>Currently focused on building immersive web experiences that feel alive, I believe technology should have a soul—and perhaps a few pixelated flowers.</p>
@@ -779,7 +779,7 @@ const HomeView = ({ activeCategory, onCategoryReset }: { activeCategory: WorkCat
           
           <div className="space-y-8 max-w-md">
             <p className="text-sm md:text-lg opacity-80 leading-relaxed font-mono">
-              I'm currently looking for new opportunities and collaborations. Whether you have a question or just want to chat about creative code, my inbox is always open.
+              I’m currently looking for new opportunities and fresh collaborations. If you have a project in mind or just want to grab a coffee and chat, my inbox is always open. Looking forward to meeting some new faces!
             </p>
 
             <div className="flex flex-col gap-4 border-t border-white/10 pt-8">
