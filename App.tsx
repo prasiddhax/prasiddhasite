@@ -701,7 +701,7 @@ const HomeView = ({ activeCategory, onCategoryReset }: { activeCategory: WorkCat
     href="https://prasiddha.design/prasiddha-sharma-cv.pdf" 
     target="_blank" 
     rel="noopener noreferrer"
-    className="underline hover:opacity-100 transition-opacity"
+    className="text-[10px] font-bold tracking-[0.3em] text-yellow-300 underline hover:text-white transition-colors"
   >
     Download
   </a>
