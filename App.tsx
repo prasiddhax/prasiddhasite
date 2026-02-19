@@ -686,7 +686,7 @@ const HomeView = ({ activeCategory, onCategoryReset }: { activeCategory: WorkCat
                 alt="Prasiddha Profile" 
                 className="w-full h-full object-cover grayscale brightness-110 contrast-125 transition-all duration-700 group-hover:scale-105"
               />
-              <div className="absolute inset-0 bg-blue-100/20 mix-blend-overlay"></div>
+              <div className="absolute inset-0 bg-blue-200/20 mix-blend-overlay"></div>
               <div className="absolute -bottom-4 -right-4 w-20 h-20 animate-float opacity-80">
                  <PixelFlower colorPrimary="#FFD700" colorSecondary="#8B4513" stemHeight={12} />
               </div>
@@ -699,7 +699,7 @@ const HomeView = ({ activeCategory, onCategoryReset }: { activeCategory: WorkCat
           <div className="lg:col-span-7 flex flex-col gap-8">
             <h2 className="font-serif-italic text-6xl md:text-9xl leading-none">About me.</h2>
             <div className="space-y-6 text-sm md:text-lg leading-relaxed opacity-90 max-w-2xl font-mono">
-              <p>I'm <span className="text-yellow-300 font-bold underline underline-offset-4 decoration-1">prasiddha</span>, a creative developer and Adobe&reg; Certified Professional blending digital craftsmanship with playful interactions.</p>
+              <p>I'm <span className="text-yellow-300 font-bold underline underline-offset-4 decoration-1">prasiddha</span>, a creative designer and Adobe&reg; Certified Professional blending digital craftsmanship with playful interactions.</p>
               <p>Currently focused on building immersive experiences that feel alive, I believe technology should have a soul and the courage to be imperfect..</p>
             </div>
             <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-8 border-t border-white/10 pt-12">
