@@ -691,10 +691,21 @@ const HomeView = ({ activeCategory, onCategoryReset }: { activeCategory: WorkCat
                  <PixelFlower colorPrimary="#FFD700" colorSecondary="#8B4513" stemHeight={12} />
               </div>
             </div>
-            <div className="mt-6 flex gap-4 text-[8px] tracking-[0.2em] font-bold opacity-50 uppercase">
-              <span>27.7172° N, 85.3240° E</span>
-              <span>— KATHMANDU NP</span>
-            </div>
+           <div className="mt-6 flex justify-between items-center gap-4 text-[8px] tracking-[0.2em] font-bold opacity-50 uppercase">
+  <div className="flex gap-4">
+    <span>27.7172° N, 85.3240° E</span>
+    <span>— KATHMANDU NP</span>
+  </div>
+  
+  <a 
+    href="https://prasiddha.design/prasiddha-sharma-cv.pdf" 
+    target="_blank" 
+    rel="noopener noreferrer"
+    className="underline hover:opacity-100 transition-opacity"
+  >
+    Download
+  </a>
+</div>
           </div>
           <div className="lg:col-span-7 flex flex-col gap-8">
             <h2 className="font-serif-italic text-6xl md:text-9xl leading-none">About me.</h2>
