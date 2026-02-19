@@ -87,14 +87,16 @@ const TIMELINE_DATA = [
   {
   year: '2023 — PRESENT',
   side: 'left' as const,
-  title: '<a href="https://griffitystudios.com" target="_blank" rel="noopener noreferrer">GRIFFITY STUDIOS</a>',
+  title: 'GRIFFITY STUDIOS',
+  link: 'https://griffitystudios.com',
   description: 'Executive Director. Leading overall strategy, client relationships, and creative direction for high-impact branding.'
 },
 {
-    year: '2021 — 2023',
-    side: 'right' as const,
-    title: '<a href="https://aitc.ai/" target="_blank">AITC INTERNATIONAL</a>',
-    description: 'Business Executive. Focused on brand development, sales partnerships, and scaling operational growth.'
+  year: '2021 — 2023',
+  side: 'right' as const,
+  title: 'AITC INTERNATIONAL',
+  link: 'https://aitc.ai/',
+  description: 'Business Executive. Focused on brand development, sales partnerships, and scaling operational growth.'
 },
   {
     year: '2024 — 2025',
@@ -743,7 +745,7 @@ const HomeView = ({ activeCategory, onCategoryReset }: { activeCategory: WorkCat
           <div>
             <h2 className="text-[10vw] md:text-[8vw] leading-none mb-4 font-serif-italic">Selected works</h2>
             <div className="flex items-center gap-4 text-[10px] font-bold tracking-[0.3em] opacity-50 uppercase">
-              <span>01</span>
+              <span>WORKS</span>
               <div className="h-[1px] w-20 bg-white"></div>
               <span>2021—2026 SELECTION</span>
             </div>
