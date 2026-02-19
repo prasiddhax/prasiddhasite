@@ -705,15 +705,15 @@ const HomeView = ({ activeCategory, onCategoryReset }: { activeCategory: WorkCat
             <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-8 border-t border-white/10 pt-12">
               <div>
                 <h3 className="text-[10px] font-bold tracking-[0.3em] text-yellow-300 mb-4 uppercase">Core Tech</h3>
-                <ul className="space-y-2 text-[10px] opacity-70"><li>REACT / NEXT.JS</li><li>THREE.JS / WEBGL</li><li>GSAP MOTION</li></ul>
+                <ul className="space-y-2 text-[10px] opacity-70"><li>ILLUSTRATOR</li><li>FIGMA</li><li>PHOTOSHOP</li></ul>
               </div>
               <div>
                 <h3 className="text-[10px] font-bold tracking-[0.3em] text-yellow-300 mb-4 uppercase">Design</h3>
-                <ul className="space-y-2 text-[10px] opacity-70"><li>UI / UX DESIGN</li><li>3D MODELING</li><li>PIXEL ART</li></ul>
+                <ul className="space-y-2 text-[10px] opacity-70"><li>BRAND IDENTITY DESIGN</li><li>UI / UX DESIGN</li><li>PRODUCT DESIGN</li></ul>
               </div>
               <div>
                 <h3 className="text-[10px] font-bold tracking-[0.3em] text-yellow-300 mb-4 uppercase">Tools</h3>
-                <ul className="space-y-2 text-[10px] opacity-70"><li>FIGMA</li><li>BLENDER</li><li>VS CODE</li></ul>
+                <ul className="space-y-2 text-[10px] opacity-70"><li>ADOBE</li><li>NOTION</li><li>VISUAL CODE STUDIO</li></ul>
               </div>
             </div>
           </div>
