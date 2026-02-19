@@ -85,22 +85,26 @@ const WORKS_DATA = [
 
 const TIMELINE_DATA = [
   {
-    year: '2023 — PRESENT',
-    side: 'left' as const,
-    title: 'GRIFFITY STUDIOS',
-    description: 'Executive Director. Leading overall strategy, client relationships, and creative direction for high-impact branding.'
-  },
+  year: '2023 — PRESENT',
+  side: 'left' as const,
+  title: 'GRIFFITY STUDIOS',
+  description: 'Executive Director. Leading overall strategy, client relationships, and creative direction for high-impact branding.',
+  link: 'https://griffitystudios.com',
+  target: '_blank'
+},
   {
-    year: '2021 — 2023',
-    side: 'right' as const,
-    title: 'AITC INTERNATIONAL',
-    description: 'Business Executive. Focused on brand development, sales partnerships, and scaling operational growth.'
-  },
+  year: '2021 — 2023',
+  side: 'right' as const,
+  title: 'AITC INTERNATIONAL',
+  description: 'Business Executive. Focused on brand development, sales partnerships, and scaling operational growth.',
+  link: 'https://aitc.ai/',
+  target: '_blank'
+},
   {
     year: '2024 — 2025',
     side: 'left' as const,
-    title: 'HULT PRIZE @ ACEM',
-    description: 'Head of Operations. Secured 100% of event sponsorships and managed end-to-end operations for the entrepreneurship program, ensuring seamless execution and partner ROI.'
+    title: 'HULT PRIZE @ ACEM 2025',
+    description: 'Head of Operations. Secured event sponsorships and managed end-to-end operations for the entrepreneurship program, ensuring seamless execution and partner ROI.'
   }
 ];
 
