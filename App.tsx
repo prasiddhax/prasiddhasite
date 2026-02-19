@@ -87,18 +87,14 @@ const TIMELINE_DATA = [
   {
   year: '2023 — PRESENT',
   side: 'left' as const,
-  title: 'GRIFFITY STUDIOS',
-  description: 'Executive Director. Leading overall strategy, client relationships, and creative direction for high-impact branding.',
-  link: 'https://griffitystudios.com',
-  target: '_blank'
+  title: '<a href="https://griffitystudios.com" target="_blank" rel="noopener noreferrer">GRIFFITY STUDIOS</a>',
+  description: 'Executive Director. Leading overall strategy, client relationships, and creative direction for high-impact branding.'
 },
-  {
-  year: '2021 — 2023',
-  side: 'right' as const,
-  title: 'AITC INTERNATIONAL',
-  description: 'Business Executive. Focused on brand development, sales partnerships, and scaling operational growth.',
-  link: 'https://aitc.ai/',
-  target: '_blank'
+{
+    year: '2021 — 2023',
+    side: 'right' as const,
+    title: '<a href="https://aitc.ai/" target="_blank">AITC INTERNATIONAL</a>',
+    description: 'Business Executive. Focused on brand development, sales partnerships, and scaling operational growth.'
 },
   {
     year: '2024 — 2025',
