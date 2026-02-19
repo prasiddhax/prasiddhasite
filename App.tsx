@@ -682,7 +682,7 @@ const HomeView = ({ activeCategory, onCategoryReset }: { activeCategory: WorkCat
           <div className="lg:col-span-5 relative">
             <div className="aspect-[4/5] bg-white/5 border border-white/10 p-4 relative overflow-hidden group shadow-2xl">
               <img 
-                src="https://drive.google.com/drive/u/2/folders/1BTOCXXnz84mDmF6WOt-FVK9za3XCSuqBauto=format&fit=crop&q=80&w=1000" 
+                src="https://avatars.githubusercontent.com/u/125749747?v=4auto=format&fit=crop&q=80&w=1000" 
                 alt="Prasiddha Profile" 
                 className="w-full h-full object-cover grayscale brightness-110 contrast-125 transition-all duration-700 group-hover:scale-105"
               />
