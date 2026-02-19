@@ -89,7 +89,7 @@ const TIMELINE_DATA = [
   side: 'left' as const,
   title: 'GRIFFITY STUDIOS',
   link: 'https://griffitystudios.com',
-  description: 'Executive Director. Leading overall strategy, client relationships, and creative direction for high-impact branding.'
+  description: 'Executive Director. Leading overall strategy, client relationships, and creative direction.'
 },
 {
   year: '2021 — 2023',
