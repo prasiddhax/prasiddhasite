@@ -703,7 +703,7 @@ const HomeView = ({ activeCategory, onCategoryReset }: { activeCategory: WorkCat
     rel="noopener noreferrer"
     className="text-[10px] font-bold tracking-[0.3em] text-yellow-300 underline hover:text-white transition-colors"
   >
-    Download
+    Download CV
   </a>
 </div>
           </div>
