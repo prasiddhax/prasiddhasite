@@ -104,7 +104,7 @@ const Sidebar = () => {
   );
 };
 
-const ArticleCard = ({ category, date, title, description, image }: any) => {
+const ArticleCard = ({ category, date, title, description, image, slug }: any) => {
   return (
     <article className="grid grid-cols-1 md:grid-cols-12 gap-8 group cursor-pointer animate-fade-in border-b border-white/5 pb-16 last:border-0">
       <div className="md:col-span-4 overflow-hidden bg-white/5 aspect-square relative border border-white/10">
@@ -121,7 +121,7 @@ const ArticleCard = ({ category, date, title, description, image }: any) => {
           {title}
         </h2>
         <p className="text-sm md:text-base leading-relaxed opacity-60 mb-8 max-w-xl font-mono">{description}</p>
-        <button className="text-[10px] font-bold tracking-[0.3em] border-b border-yellow-300/50 w-fit pb-1 hover:text-yellow-300 hover:border-yellow-300 transition-all uppercase">Read Article —</button>
+        <Link to={`/archive/${slug}`} className="text-[10px] font-bold tracking-[0.3em] border-b border-yellow-300/50 w-fit pb-1 hover:text-yellow-300 hover:border-yellow-300 transition-all uppercase">Read Article —</Link>
       </div>
     </article>
   );
@@ -149,6 +149,7 @@ const ArchiveView = () => {
             title="The art of the 8-bit aesthetic in modern UI"
             description="Exploring how to balance high-fidelity typography with nostalgic pixel elements to create unique digital experiences that feel both heritage and futuristic."
             image={<SunflowerPixelArt />}
+            slug="crafting-digital-gardens"
           />
 
           <ArticleCard
@@ -157,6 +158,7 @@ const ArchiveView = () => {
             title="Color theory in limited palette constraints"
             description="Why working with only 16 colors can actually lead to more expressive and cohesive brand identities than an infinite spectrum."
             image={<ColorGridPixelArt />}
+            slug="color-theory-limited-palette"
           />
 
           <div className="flex items-center gap-8 pt-12">

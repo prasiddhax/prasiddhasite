@@ -3,6 +3,8 @@ import { HashRouter as Router, Routes, Route, Link, useNavigate, useParams, useL
 import PixelFlower from './components/PixelFlower';
 import GeminiAssistant from './components/GeminiAssistant';
 import ArchiveView from './components/ArchiveView';
+import BlogArticlePage from './components/BlogArticlePage';
+import PrivacyPolicy from './components/PrivacyPolicy';
 import { MousePosition, WorkCategory } from './types';
 
 /**
@@ -279,14 +281,12 @@ const Footer = () => {
     {/* Bottom Row */}
     <span className="text-[8px] uppercase flex items-center gap-3">
       All rights reserved •
-      <a 
-        href="https://prasiddha.design/privacypolicy" 
-        target="_blank" 
-        rel="noopener noreferrer"
-        className="underline underline-offset-4 decoration-white"
+      <Link 
+        to="/privacypolicy" 
+        className="underline underline-offset-4 decoration-white hover:text-yellow-300 transition-colors"
       >
         PRIVACY POLICY
-      </a>
+      </Link>
     </span>
 
   </div>
@@ -698,9 +698,8 @@ const HomeView = ({ activeCategory, onCategoryReset }: { activeCategory: WorkCat
   </div>
   
   <a 
-    href="https://prasiddha.design/prasiddha-sharma-cv.pdf" 
-    target="_blank" 
-    rel="noopener noreferrer"
+    href="/prasiddha-sharma-cv.pdf" 
+    download="prasiddha-sharma-cv.pdf"
     className="text-[10px] font-bold tracking-[0.3em] text-yellow-300 underline hover:text-white transition-colors"
   >
     Download CV
@@ -936,6 +935,8 @@ const App: React.FC = () => {
           <Route path="/" element={<HomeView activeCategory={activeWorkCategory} onCategoryReset={() => setActiveWorkCategory(WorkCategory.ALL)} />} />
           <Route path="/project/:id" element={<ProjectView />} />
           <Route path="/archive" element={<ArchiveView />} />
+          <Route path="/archive/:slug" element={<BlogArticlePage />} />
+          <Route path="/privacypolicy" element={<PrivacyPolicy />} />
         </Routes>
 
         {/* Minimalist Persistent UI elements */}

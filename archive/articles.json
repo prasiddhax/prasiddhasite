@@ -1,0 +1,94 @@
+[
+  {
+    "slug": "crafting-digital-gardens",
+    "title": "Crafting Digital Gardens",
+    "date": "JULY 12, 2024",
+    "category": "DIGITAL CRAFT",
+    "author": "STEPHANIE",
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "The web used to be a place of wild experimentation. Before the age of standardized grids and minimalist templates, there was a sense of ownership over digital spaces. We didn't just build sites; we planted seeds. This is the philosophy behind the \"Digital Garden.\""
+      },
+      {
+        "type": "video_hero",
+        "label": "PROCESS_REEL_01.MP4"
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "The Pixel as a Seed"
+      },
+      {
+        "type": "paragraph",
+        "text": "Working with pixel art in a high-resolution world is an act of intentional limitation. When every square counts, every decision becomes meaningful. In my recent work, I've been exploring how these rigid blocks can represent organic growth—flowers that bloom only when the user interacts, vines that climb the sidebar."
+      },
+      {
+        "type": "quote",
+        "text": "Design is not just what it looks like; it's the ecosystem it fosters."
+      },
+      {
+        "type": "paragraph",
+        "text": "Integrating these elements requires a delicate balance. The code must be clean, but the experience should feel hand-crafted. I often find myself spending hours tweaking CSS transitions just to make a pixelated petal fall with the right weight."
+      },
+      {
+        "type": "two_column_pixel_svgs"
+      },
+      {
+        "type": "paragraph",
+        "text": "As we move toward 2025, my goal is to continue blending these worlds—the sharp precision of modern development with the charming imperfections of early digital art. After all, a garden is most beautiful when it's a little overgrown."
+      }
+    ]
+  },
+  {
+  "slug": "color-theory-limited-palette",
+  "title": "Color theory in limited palette constraints",
+  "date": "JUNE 28, 2024",
+  "category": "PIXEL ART",
+  "author": "STEPHANIE",
+  "blocks": [
+    {
+      "type": "paragraph",
+      "text": "Why working with only 16 colors can actually lead to more expressive and cohesive brand identities than an infinite spectrum. Limited palettes force decisions and cultivate a unique voice."
+    },
+    {
+      "type": "color_grid",
+      "colors": ["#EF4444", "#FBBF24", "#22C55E"]
+    },
+    {
+      "type": "paragraph",
+      "text": "Designers often assume that more colors equal more freedom, but constraints can actually unlock creativity. Each hue must serve a purpose—whether it’s establishing hierarchy, guiding attention, or reinforcing brand identity."
+    },
+    {
+      "type": "quote",
+      "text": "Constraints don’t limit creativity; they sharpen it."
+    },
+    {
+      "type": "paragraph",
+      "text": "Pixel art demonstrates this principle beautifully. With only a handful of colors, artists achieve depth and emotion through contrast, saturation, and clever dithering techniques. Translating this into UI design can result in bold, distinctive aesthetics that stand apart from generic rainbow gradients."
+    },
+    {
+      "type": "paragraph",
+      "text": "In branding, a restricted palette communicates confidence and clarity. It signals that the identity doesn’t need endless variation to remain impactful—it thrives on discipline and focus."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Practical Applications"
+    },
+    {
+      "type": "paragraph",
+      "text": "Limited palettes are especially effective in digital interfaces where consistency matters. Buttons, alerts, and typography all benefit from a controlled color system that feels intentional rather than arbitrary."
+    },
+    {
+      "type": "paragraph",
+      "text": "By embracing limitations, designers can create systems that are easier to maintain, more accessible, and visually memorable."
+    },
+    {
+      "type": "paragraph",
+      "text": "Using constraints as a creative engine often leads to surprising outcomes and stronger design systems."
+    }
+  ]
+}
+
+]
