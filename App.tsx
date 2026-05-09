@@ -274,9 +274,16 @@ const Footer = () => {
   <div className="flex flex-col items-center gap-2 text-center">
     
     {/* Top Row */}
-    <span className="uppercase">
-      PRASIDDHA SHARMA — 2026
-    </span>
+  <span className="uppercase">
+  PRASIDDHA SHARMA — 2026 . MAINTAINED BY{" "}
+  <a 
+    href="https://www.griffitystudios.com" 
+    target="_blank" 
+    rel="noopener noreferrer"
+  >
+    GRIFFITYSTUDIOS
+  </a>
+</span>
 
     {/* Bottom Row */}
     <span className="text-[8px] uppercase flex items-center gap-3">
