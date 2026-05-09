@@ -280,6 +280,7 @@ const Footer = () => {
     href="https://www.griffitystudios.com" 
     target="_blank" 
     rel="noopener noreferrer"
+    className="underline"
   >
     GRIFFITYSTUDIOS
   </a>
