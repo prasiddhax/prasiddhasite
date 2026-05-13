@@ -329,19 +329,6 @@ const PersistentFooterText = () => {
     };
   }, []);
 
-  return (
-    <div className="fixed bottom-10 left-0 w-full px-6 md:px-12 pointer-events-none z-[60] flex justify-between items-end text-[10px] font-bold tracking-[0.2em] uppercase">
-      {/* LEFT: STATUS & TIME */}
-      <div className="pointer-events-auto flex flex-col gap-1.5 opacity-60 hover:opacity-100 transition-opacity cursor-default">
-        <div className="flex items-center gap-3">
-          <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse shadow-[0_0_8px_rgba(74,222,128,0.5)]"></div>
-          <span>Available for freelance</span>
-        </div>
-        <div className="pl-5 text-[8px] opacity-70">
-          KATHMANDU NP — {currentTime}
-        </div>
-      </div>
-
       {/* RIGHT: BACK TO TOP */}
       <button 
         onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
