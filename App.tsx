@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useCallback, useMemo } from 'react';
 import { HashRouter as Router, Routes, Route, Link, useNavigate, useParams, useLocation } from 'react-router-dom';
 import PixelFlower from './components/PixelFlower';
-import GeminiAssistant from './components/GeminiAssistant';
+
 import ArchiveView from './components/ArchiveView';
 import BlogArticlePage from './components/BlogArticlePage';
 import PrivacyPolicy from './components/PrivacyPolicy';
@@ -936,7 +936,7 @@ const App: React.FC = () => {
 
         {/* Minimalist Persistent UI elements */}
         <PersistentFooterText />
-        <GeminiAssistant />
+      
         
         <Footer />
       </div>
