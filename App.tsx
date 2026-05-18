@@ -260,7 +260,7 @@ const Header: React.FC<HeaderProps> = ({ activeSection, activeCategory, onCatego
 
 const Footer = () => {
   return (
-    <footer className="w-full p-12 md:p-24 flex justify-center items-center z-30 text-[10px] font-bold tracking-widest opacity-60 mt-20 border-t border-white/5">
+    <footer className="w-full px-6 py-10 md:px-12 md:py-12 flex justify-center items-center z-30 text-[10px] font-bold tracking-widest opacity-60 border-t border-white/5">
       <div className="flex flex-col items-center gap-2 text-center">
         {/* Top Row */}
         <span className="uppercase">
@@ -269,7 +269,7 @@ const Footer = () => {
             href="https://www.griffitystudios.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="underline"
+            className="underline text-yellow-300 hover:text-white transition-colors"
           >
             GRIFFITYSTUDIOS
           </a>
@@ -324,7 +324,6 @@ const PersistentFooterText = () => {
     };
   }, []);
 
-  // Hide on project / archive article pages for a cleaner reading view
   const hideOnRoute =
     location.pathname.startsWith('/project/') ||
     location.pathname.startsWith('/archive/');
@@ -333,12 +332,10 @@ const PersistentFooterText = () => {
 
   return (
     <div className="fixed bottom-6 left-0 right-0 z-40 px-6 md:px-12 flex justify-between items-center text-[10px] font-bold tracking-widest pointer-events-none">
-      {/* LEFT: LOCAL TIME */}
       <span className="opacity-60 font-mono">
         KTM · {currentTime}
       </span>
 
-      {/* RIGHT: BACK TO TOP */}
       <button
         onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
         className={`pointer-events-auto opacity-60 hover:opacity-100 transition-all duration-500 hover:text-yellow-300 ${
@@ -457,8 +454,25 @@ const ProjectView = () => {
   const nextProject = WORKS_DATA[(currentIndex + 1) % WORKS_DATA.length];
   const prevProject = WORKS_DATA[(currentIndex - 1 + WORKS_DATA.length) % WORKS_DATA.length];
 
+  const goHomeToWorks = () => {
+    navigate('/');
+    setTimeout(() => {
+      const el = document.getElementById('works');
+      if (el) el.scrollIntoView({ behavior: 'smooth' });
+    }, 100);
+  };
+
   return (
     <main className="relative z-10 px-6 md:px-12 py-32 max-w-7xl mx-auto">
+      {/* BACK TO WORKS */}
+      <button
+        onClick={goHomeToWorks}
+        className="group flex items-center gap-3 text-[10px] font-bold tracking-[0.3em] uppercase opacity-70 hover:opacity-100 hover:text-yellow-300 transition-all mb-12"
+      >
+        <span className="inline-block transition-transform group-hover:-translate-x-1">←</span>
+        Back to Works
+      </button>
+
       <header className="mb-20">
         <div className="flex items-center gap-4 mb-8">
           <div className="w-10 h-10 animate-float">
@@ -802,7 +816,7 @@ const HomeView = ({ activeCategory, onCategoryReset }: { activeCategory: WorkCat
       </div>
 
       {/* CONTACT */}
-      <section id="contact" className="pt-40 pb-40 px-6 md:px-24 max-w-[1440px] mx-auto border-t border-white/5 grid grid-cols-1 lg:grid-cols-12 gap-16 md:gap-24">
+      <section id="contact" className="pt-40 pb-20 px-6 md:px-24 max-w-[1440px] mx-auto border-t border-white/5 grid grid-cols-1 lg:grid-cols-12 gap-16 md:gap-24">
         <div className="lg:col-span-4 flex flex-col justify-center">
           <h2 className="text-[8vw] lg:text-[6vw] leading-none mb-8 font-serif-italic">
             Say hello<span className="text-yellow-300">.</span>
@@ -890,22 +904,63 @@ const App: React.FC = () => {
     return () => window.removeEventListener('mousemove', handleMouseMove);
   }, [handleMouseMove]);
 
-  // Scroll Spy Logic
+  // Scroll Spy: pick the section with the highest visibility ratio,
+  // and force 'home' when near the top of the page (fixes WORKS being
+  // highlighted at the hero).
   useEffect(() => {
-    const options = { root: null, rootMargin: '-30% 0px -30% 0px', threshold: 0 };
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) setActiveSection(entry.target.id);
-      });
-    }, options);
+    const sectionIds = ['home', 'about', 'works', 'contact'];
+    const ratios: Record<string, number> = { home: 0, about: 0, works: 0, contact: 0 };
 
-    const sections = ['home', 'about', 'works', 'contact'];
-    sections.forEach((id) => {
+    const recomputeActive = () => {
+      // If we're at/near the top, always show 'home'
+      if (window.scrollY < window.innerHeight * 0.5) {
+        setActiveSection('home');
+        return;
+      }
+      let topId = 'home';
+      let topRatio = 0;
+      for (const id of sectionIds) {
+        if (ratios[id] > topRatio) {
+          topRatio = ratios[id];
+          topId = id;
+        }
+      }
+      if (topRatio > 0) setActiveSection(topId);
+    };
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          ratios[entry.target.id] = entry.intersectionRatio;
+        });
+        recomputeActive();
+      },
+      {
+        root: null,
+        threshold: [0, 0.1, 0.25, 0.5, 0.75, 1],
+      }
+    );
+
+    sectionIds.forEach((id) => {
       const el = document.getElementById(id);
       if (el) observer.observe(el);
     });
 
-    return () => observer.disconnect();
+    // Initial check
+    recomputeActive();
+
+    // Keep 'home' sticky near the top of the page
+    const handleScroll = () => {
+      if (window.scrollY < window.innerHeight * 0.5) {
+        setActiveSection('home');
+      }
+    };
+    window.addEventListener('scroll', handleScroll, { passive: true });
+
+    return () => {
+      observer.disconnect();
+      window.removeEventListener('scroll', handleScroll);
+    };
   }, []);
 
   const backgroundDecorations = [
