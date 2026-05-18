@@ -253,6 +253,15 @@ const Header: React.FC<HeaderProps> = ({ activeSection, activeCategory, onCatego
         >
           WA
         </a>
+
+          <a
+          href="https://wa.me/9779861292675"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:text-yellow-300 transition-colors"
+        >
+          BH
+        </a>
       </div>
     </nav>
   );
@@ -824,13 +833,13 @@ const HomeView = ({ activeCategory, onCategoryReset }: { activeCategory: WorkCat
 
           <div className="space-y-8 max-w-md">
             <p className="text-sm md:text-lg opacity-80 leading-relaxed font-mono">
-              I'm currently looking for new opportunities and fresh collaborations. If you have a project in mind or just want to grab a coffee and chat, my inbox is always open. Looking forward to meeting some new faces!
+              If you have a project in mind or just want to grab a coffee and chat, my inbox is always open. Looking forward to meeting some new faces!
             </p>
 
             <div className="flex flex-col gap-4 border-t border-white/10 pt-8">
               <div className="flex items-center gap-3">
                 <div className="w-3 h-3 bg-green-400 rounded-full animate-pulse shadow-[0_0_8px_rgba(74,222,128,0.5)]"></div>
-                <span className="text-[10px] font-bold tracking-[0.2em] uppercase">Status: Available for work</span>
+                <span className="text-[10px] font-bold tracking-[0.2em] uppercase">Status: Available </span>
               </div>
               <div className="flex flex-col gap-1">
                 <span className="text-[10px] uppercase tracking-widest opacity-50 font-bold">Local Time</span>
@@ -872,6 +881,21 @@ const HomeView = ({ activeCategory, onCategoryReset }: { activeCategory: WorkCat
               >
                 WhatsApp
               </a>
+
+              <a
+                href="mailto:prasiddha@griffitystudios.com"
+                className="text-xs font-bold border-b border-white/20 hover:border-yellow-300 hover:text-yellow-300 transition-all pb-1 uppercase tracking-widest"
+              >
+                Griffity Studios
+              </a>
+
+              <a
+                href="mailto:prasiddha@griffitystudios.com"
+                className="text-xs font-bold border-b border-white/20 hover:border-yellow-300 hover:text-yellow-300 transition-all pb-1 uppercase tracking-widest"
+              >
+                Behance
+              </a>
+              
             </div>
           </div>
         </div>
