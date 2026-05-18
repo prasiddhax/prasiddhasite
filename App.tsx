@@ -269,7 +269,7 @@ const Footer = () => {
             href="https://www.griffitystudios.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="underline text-yellow-300 hover:text-white transition-colors"
+            className="text-yellow-300 hover:text-white transition-colors"
           >
             GRIFFITYSTUDIOS
           </a>
