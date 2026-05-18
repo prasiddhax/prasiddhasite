@@ -87,19 +87,19 @@ const WORKS_DATA = [
 
 const TIMELINE_DATA = [
   {
-  year: '2023 — PRESENT',
-  side: 'left' as const,
-  title: 'GRIFFITY STUDIOS',
-  link: 'https://griffitystudios.com',
-  description: 'Executive Director. Leading overall strategy, client relationships, and creative direction.'
-},
-{
-  year: '2021 — 2023',
-  side: 'right' as const,
-  title: 'AITC INTERNATIONAL',
-  link: 'https://aitc.ai/',
-  description: 'Business Executive. Focused on brand development, sales partnerships, and scaling operational growth.'
-},
+    year: '2023 — PRESENT',
+    side: 'left' as const,
+    title: 'GRIFFITY STUDIOS',
+    link: 'https://griffitystudios.com',
+    description: 'Executive Director. Leading overall strategy, client relationships, and creative direction.'
+  },
+  {
+    year: '2021 — 2023',
+    side: 'right' as const,
+    title: 'AITC INTERNATIONAL',
+    link: 'https://aitc.ai/',
+    description: 'Business Executive. Focused on brand development, sales partnerships, and scaling operational growth.'
+  },
   {
     year: '2024 — 2025',
     side: 'left' as const,
@@ -158,7 +158,7 @@ const Header: React.FC<HeaderProps> = ({ activeSection, activeCategory, onCatego
   return (
     <nav className="fixed top-0 left-0 z-50 w-full px-6 py-6 md:px-12 flex justify-between items-center bg-[#0044CC]/60 backdrop-blur-md border-b border-white/5 transition-all duration-300">
       <div className="hidden md:block">
-        <button 
+        <button
           onClick={() => scrollToSection('home')}
           className="text-[10px] uppercase tracking-[0.2em] opacity-60 hover:opacity-100 transition-opacity"
         >
@@ -167,20 +167,19 @@ const Header: React.FC<HeaderProps> = ({ activeSection, activeCategory, onCatego
       </div>
 
       <div className="flex-1 flex justify-center items-center gap-6 md:gap-12 text-xs md:text-sm font-bold tracking-widest">
-          <button 
+        <button
           onClick={() => scrollToSection('about')}
           className={`relative group py-1 transition-colors ${activeSection === 'about' && isHome ? 'text-yellow-300' : 'hover:text-yellow-300 uppercase'}`}
         >
           ABOUT
           <span className={`absolute bottom-0 left-0 h-0.5 bg-yellow-300 transition-all duration-300 ${activeSection === 'about' && isHome ? 'w-full' : 'w-0 group-hover:w-full'}`}></span>
         </button>
-        <div 
+        <div
           className="group relative py-1"
           onMouseEnter={() => setWorksDropdownOpen(true)}
           onMouseLeave={() => setWorksDropdownOpen(false)}
         >
-          
-          <button 
+          <button
             onClick={() => scrollToSection('works')}
             className={`flex items-center gap-1 transition-colors ${activeSection === 'works' && isHome ? 'text-yellow-300' : 'hover:text-yellow-300'}`}
           >
@@ -188,7 +187,7 @@ const Header: React.FC<HeaderProps> = ({ activeSection, activeCategory, onCatego
             <span className="text-[8px] transform group-hover:rotate-180 transition-transform">▼</span>
             {activeSection === 'works' && isHome && <span className="absolute bottom-0 left-0 w-full h-0.5 bg-yellow-300"></span>}
           </button>
-          <div 
+          <div
             className="absolute top-full left-1/2 -translate-x-1/2 mt-2 bg-[#003399] border border-white/10 rounded shadow-xl transition-all duration-300 min-w-[200px] overflow-hidden"
             style={{
               opacity: worksDropdownOpen ? 1 : 0,
@@ -196,7 +195,7 @@ const Header: React.FC<HeaderProps> = ({ activeSection, activeCategory, onCatego
             }}
           >
             {Object.values(WorkCategory).map((cat) => (
-              <button 
+              <button
                 key={cat}
                 onClick={() => handleCategoryClick(cat)}
                 className={`block w-full text-left px-5 py-3 hover:bg-yellow-300 hover:text-blue-900 transition-colors text-[10px] font-bold ${activeCategory === cat ? 'bg-yellow-300 text-blue-900' : ''}`}
@@ -206,18 +205,15 @@ const Header: React.FC<HeaderProps> = ({ activeSection, activeCategory, onCatego
             ))}
           </div>
         </div>
-        
-       
 
-      
-        <button 
+        <button
           onClick={() => scrollToSection('contact')}
           className={`relative group py-1 transition-colors ${activeSection === 'contact' && isHome ? 'text-yellow-300' : 'hover:text-yellow-300 uppercase'}`}
         >
           CONTACT
           <span className={`absolute bottom-0 left-0 h-0.5 bg-yellow-300 transition-all duration-300 ${activeSection === 'contact' && isHome ? 'w-full' : 'w-0 group-hover:w-full'}`}></span>
         </button>
-         <Link 
+        <Link
           to="/archive"
           className={`relative group py-1 transition-colors ${location.pathname === '/archive' ? 'text-yellow-300' : 'hover:text-yellow-300 uppercase'}`}
         >
@@ -227,42 +223,36 @@ const Header: React.FC<HeaderProps> = ({ activeSection, activeCategory, onCatego
       </div>
 
       <div className="hidden md:flex gap-4 opacity-70 text-[10px] font-bold">
-<a 
-  href="https://www.instagram.com/prasiddha.__/" 
-  target="_blank" 
-  rel="noopener noreferrer"
-  className="hover:text-yellow-300 transition-colors"
->
-  IG
-</a>
-
-<a 
-  href="https://www.linkedin.com/in/prasiddhasharma/" 
-  target="_blank" 
-  rel="noopener noreferrer"
-  className="hover:text-yellow-300 transition-colors"
->
-  LI
-</a>
-
-<a 
-  href="mailto:prasiddha.business@gmail.com" 
-  target="_blank" 
-  rel="noopener noreferrer"
-  className="hover:text-yellow-300 transition-colors"
->
-  EM
-</a>
-
-<a 
-  href="https://wa.me/9779861292675" 
-  target="_blank" 
-  rel="noopener noreferrer"
-  className="hover:text-yellow-300 transition-colors"
->
-  WA
-</a>
-
+        <a
+          href="https://www.instagram.com/prasiddha.__/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:text-yellow-300 transition-colors"
+        >
+          IG
+        </a>
+        <a
+          href="https://www.linkedin.com/in/prasiddhasharma/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:text-yellow-300 transition-colors"
+        >
+          LI
+        </a>
+        <a
+          href="mailto:prasiddha.business@gmail.com"
+          className="hover:text-yellow-300 transition-colors"
+        >
+          EM
+        </a>
+        <a
+          href="https://wa.me/9779861292675"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:text-yellow-300 transition-colors"
+        >
+          WA
+        </a>
       </div>
     </nav>
   );
@@ -270,35 +260,33 @@ const Header: React.FC<HeaderProps> = ({ activeSection, activeCategory, onCatego
 
 const Footer = () => {
   return (
-  <footer className="w-full p-12 md:p-24 flex justify-center items-center z-30 text-[10px] font-bold tracking-widest opacity-60 mt-20 border-t border-white/5">
-  <div className="flex flex-col items-center gap-2 text-center">
-    
-    {/* Top Row */}
-  <span className="uppercase">
-  PRASIDDHA SHARMA — 2026 . MAINTAINED BY{" "}
-  <a 
-    href="https://www.griffitystudios.com" 
-    target="_blank" 
-    rel="noopener noreferrer"
-    className="underline"
-  >
-    GRIFFITYSTUDIOS
-  </a>
-</span>
+    <footer className="w-full p-12 md:p-24 flex justify-center items-center z-30 text-[10px] font-bold tracking-widest opacity-60 mt-20 border-t border-white/5">
+      <div className="flex flex-col items-center gap-2 text-center">
+        {/* Top Row */}
+        <span className="uppercase">
+          PRASIDDHA SHARMA — 2026 . MAINTAINED BY{" "}
+          <a
+            href="https://www.griffitystudios.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline"
+          >
+            GRIFFITYSTUDIOS
+          </a>
+        </span>
 
-    {/* Bottom Row */}
-    <span className="text-[8px] uppercase flex items-center gap-3">
-      All rights reserved •
-      <Link 
-        to="/privacypolicy" 
-        className="underline underline-offset-4 decoration-white hover:text-yellow-300 transition-colors"
-      >
-        PRIVACY POLICY
-      </Link>
-    </span>
-
-  </div>
-</footer>
+        {/* Bottom Row */}
+        <span className="text-[8px] uppercase flex items-center gap-3">
+          All rights reserved •
+          <Link
+            to="/privacypolicy"
+            className="underline underline-offset-4 decoration-white hover:text-yellow-300 transition-colors"
+          >
+            PRIVACY POLICY
+          </Link>
+        </span>
+      </div>
+    </footer>
   );
 };
 
@@ -314,11 +302,18 @@ const PersistentFooterText = () => {
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 300);
     window.addEventListener('scroll', handleScroll);
-    
+
     const updateTime = () => {
       const now = new Date();
-      const options: Intl.DateTimeFormatOptions = { hour: '2-digit', minute: '2-digit', hour12: true, timeZone: 'Asia/Kathmandu' };
-      setCurrentTime(new Intl.DateTimeFormat('en-US', options).format(now).toUpperCase());
+      const options: Intl.DateTimeFormatOptions = {
+        hour: '2-digit',
+        minute: '2-digit',
+        hour12: true,
+        timeZone: 'Asia/Kathmandu',
+      };
+      setCurrentTime(
+        new Intl.DateTimeFormat('en-US', options).format(now).toUpperCase()
+      );
     };
     updateTime();
     const interval = setInterval(updateTime, 60000);
@@ -329,10 +324,26 @@ const PersistentFooterText = () => {
     };
   }, []);
 
+  // Hide on project / archive article pages for a cleaner reading view
+  const hideOnRoute =
+    location.pathname.startsWith('/project/') ||
+    location.pathname.startsWith('/archive/');
+
+  if (hideOnRoute) return null;
+
+  return (
+    <div className="fixed bottom-6 left-0 right-0 z-40 px-6 md:px-12 flex justify-between items-center text-[10px] font-bold tracking-widest pointer-events-none">
+      {/* LEFT: LOCAL TIME */}
+      <span className="opacity-60 font-mono">
+        KTM · {currentTime}
+      </span>
+
       {/* RIGHT: BACK TO TOP */}
-      <button 
+      <button
         onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-        className={`pointer-events-auto opacity-60 hover:opacity-100 transition-all duration-500 hover:text-yellow-300 ${scrolled ? 'translate-y-0' : 'translate-y-10 opacity-0'}`}
+        className={`pointer-events-auto opacity-60 hover:opacity-100 transition-all duration-500 hover:text-yellow-300 ${
+          scrolled ? 'translate-y-0' : 'translate-y-10 opacity-0'
+        }`}
       >
         Back to Top ↑
       </button>
@@ -344,21 +355,34 @@ const PersistentFooterText = () => {
  * UTILITY COMPONENTS
  */
 
-// Fix: Define TimelineItemProps and use React.FC to handle 'key' prop error
 interface TimelineItemProps {
   year: string;
   side: 'left' | 'right';
   title: string;
   description: string;
+  link?: string;
 }
 
-const TimelineItem: React.FC<TimelineItemProps> = ({ year, side, title, description }) => {
+const TimelineItem: React.FC<TimelineItemProps> = ({ year, side, title, description, link }) => {
   const isLeft = side === 'left';
   return (
     <div className={`relative md:flex items-center w-full ${!isLeft ? 'flex-row-reverse' : ''}`}>
       <div className={`md:w-1/2 ${isLeft ? 'md:pr-12 md:text-right' : 'md:pl-12'}`}>
         <span className="text-[10px] font-bold text-yellow-300 tracking-[0.2em]">{year}</span>
-        <h4 className="text-xl font-bold mt-2 tracking-tight">{title}</h4>
+        <h4 className="text-xl font-bold mt-2 tracking-tight">
+          {link ? (
+            <a
+              href={link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-yellow-300 transition-colors"
+            >
+              {title} ↗
+            </a>
+          ) : (
+            title
+          )}
+        </h4>
         <p className="text-xs opacity-60 mt-2 leading-relaxed font-mono">{description}</p>
       </div>
       <div className="absolute left-[-24px] md:left-1/2 w-3 h-3 bg-yellow-300 border-2 border-blue-600 rounded-none -translate-x-1/2 z-10"></div>
@@ -371,7 +395,6 @@ const TimelineItem: React.FC<TimelineItemProps> = ({ year, side, title, descript
  * PAGE COMPONENTS
  */
 
-// Fix: Define WorkCardProps and use React.FC to handle 'key' prop error
 interface WorkCardProps {
   project: any;
   offsetTop?: boolean;
@@ -392,7 +415,7 @@ const WorkCard: React.FC<WorkCardProps> = ({ project, offsetTop = false }) => {
   };
 
   return (
-    <div 
+    <div
       onClick={() => {
         window.scrollTo({ top: 0 });
         navigate(`/project/${project.id}`);
@@ -439,13 +462,13 @@ const ProjectView = () => {
       <header className="mb-20">
         <div className="flex items-center gap-4 mb-8">
           <div className="w-10 h-10 animate-float">
-             <PixelFlower colorPrimary={project.flowerType.includes('red') ? '#FF3333' : '#FFD700'} />
+            <PixelFlower colorPrimary={project.flowerType.includes('red') ? '#FF3333' : '#FFD700'} />
           </div>
           <span className="text-xs font-bold tracking-[0.3em] text-yellow-300 uppercase">
             {project.category} • {project.year}
           </span>
         </div>
-        
+
         <h1 className="text-7xl md:text-[10vw] leading-[0.9] tracking-tighter mb-12 font-serif-italic">
           {project.title.split(' ').map((word, i) => (
             <React.Fragment key={i}>
@@ -483,12 +506,12 @@ const ProjectView = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           <div className="border border-white/10 aspect-square bg-white/5 flex items-center justify-center transition-transform duration-300 hover:scale-[1.01]">
             <div className="w-1/3 h-1/3 opacity-80 rotate-12">
-               <PixelFlower colorPrimary="#FFD700" />
+              <PixelFlower colorPrimary="#FFD700" />
             </div>
           </div>
           <div className="border border-white/10 aspect-square bg-white/5 flex items-center justify-center transition-transform duration-300 hover:scale-[1.01]">
             <div className="w-1/3 h-1/3 opacity-80 -rotate-12">
-               <PixelFlower colorPrimary="#FF3333" />
+              <PixelFlower colorPrimary="#FF3333" />
             </div>
           </div>
         </div>
@@ -496,7 +519,7 @@ const ProjectView = () => {
 
       <section className="border-t border-white/10 pt-16 mb-24">
         <div className="flex flex-col md:flex-row justify-between items-center gap-12">
-          <button 
+          <button
             onClick={() => { window.scrollTo({ top: 0 }); navigate(`/project/${prevProject.id}`); }}
             className="group text-left flex-1"
           >
@@ -505,10 +528,10 @@ const ProjectView = () => {
               {prevProject.title}
             </h3>
           </button>
-          
+
           <div className="hidden md:block w-px h-24 bg-white/10"></div>
 
-          <button 
+          <button
             onClick={() => { window.scrollTo({ top: 0 }); navigate(`/project/${nextProject.id}`); }}
             className="group text-right flex-1"
           >
@@ -629,8 +652,8 @@ const ContactForm = () => {
 };
 
 const HomeView = ({ activeCategory, onCategoryReset }: { activeCategory: WorkCategory, onCategoryReset: () => void }) => {
-  const filteredWorks = activeCategory === WorkCategory.ALL 
-    ? WORKS_DATA 
+  const filteredWorks = activeCategory === WorkCategory.ALL
+    ? WORKS_DATA
     : WORKS_DATA.filter(work => work.category === activeCategory);
 
   const [currentTime, setCurrentTime] = useState('00:00 AM');
@@ -654,7 +677,7 @@ const HomeView = ({ activeCategory, onCategoryReset }: { activeCategory: WorkCat
           <h1 className="font-serif-italic text-[15vw] md:text-[16vw] leading-none text-white tracking-tighter flex items-end select-none drop-shadow-2xl">
             <span className="mr-5">pras</span>
             <div className="relative flex flex-col justify-end items-center mx-[0.5vw] w-[4vw] h-[15vw]">
-               <PixelFlower isSpecial className="w-full h-full" />
+              <PixelFlower isSpecial className="w-full h-full" />
             </div>
             <span>ddha</span>
           </h1>
@@ -676,36 +699,36 @@ const HomeView = ({ activeCategory, onCategoryReset }: { activeCategory: WorkCat
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           <div className="lg:col-span-5 relative">
             <div className="aspect-[4/5] bg-white/5 border border-white/10 p-4 relative overflow-hidden group shadow-2xl">
-              <img 
-                src="https://avatars.githubusercontent.com/u/125749747?v=4auto=format&fit=crop&q=80&w=1000" 
-                alt="Prasiddha Profile" 
+              <img
+                src="https://avatars.githubusercontent.com/u/125749747?v=4"
+                alt="Prasiddha Profile"
                 className="w-full h-full object-cover grayscale brightness-110 contrast-125 transition-all duration-700 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-blue-200/20 mix-blend-overlay"></div>
               <div className="absolute -bottom-4 -right-4 w-20 h-20 animate-float opacity-80">
-                 <PixelFlower colorPrimary="#FFD700" colorSecondary="#8B4513" stemHeight={12} />
+                <PixelFlower colorPrimary="#FFD700" colorSecondary="#8B4513" stemHeight={12} />
               </div>
             </div>
-           <div className="mt-6 flex justify-between items-center gap-4 text-[8px] tracking-[0.2em] font-bold opacity-50 uppercase">
-  <div className="flex gap-4">
-    <span>27.7172° N, 85.3240° E</span>
-    <span>— KATHMANDU NP</span>
-  </div>
-  
-  <a 
-    href="/prasiddha-sharma-cv.pdf" 
-    download="prasiddha-sharma-cv.pdf"
-    className="text-[10px] font-bold tracking-[0.3em] text-yellow-300 underline hover:text-white transition-colors"
-  >
-    Download CV
-  </a>
-</div>
+            <div className="mt-6 flex justify-between items-center gap-4 text-[8px] tracking-[0.2em] font-bold opacity-50 uppercase">
+              <div className="flex gap-4">
+                <span>27.7172° N, 85.3240° E</span>
+                <span>— KATHMANDU NP</span>
+              </div>
+
+              <a
+                href="/prasiddha-sharma-cv.pdf"
+                download="prasiddha-sharma-cv.pdf"
+                className="text-[10px] font-bold tracking-[0.3em] text-yellow-300 underline hover:text-white transition-colors"
+              >
+                Download CV
+              </a>
+            </div>
           </div>
           <div className="lg:col-span-7 flex flex-col gap-8">
             <h2 className="font-serif-italic text-6xl md:text-9xl leading-none">About me.</h2>
             <div className="space-y-6 text-sm md:text-lg leading-relaxed opacity-90 max-w-2xl font-mono">
               <p>I'm <span className="text-yellow-300 font-bold underline underline-offset-4 decoration-1">prasiddha</span>, a creative designer and Adobe&reg; Certified Professional blending digital craftsmanship with playful interactions.</p>
-              <p>Currently focused on building immersive experiences that feel alive, I believe technology should have a soul and the courage to be imperfect..</p>
+              <p>Currently focused on building immersive experiences that feel alive, I believe technology should have a soul and the courage to be imperfect.</p>
             </div>
             <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-8 border-t border-white/10 pt-12">
               <div>
@@ -737,6 +760,7 @@ const HomeView = ({ activeCategory, onCategoryReset }: { activeCategory: WorkCat
                   side={item.side}
                   title={item.title}
                   description={item.description}
+                  link={item.link}
                 />
               ))}
             </div>
@@ -763,7 +787,7 @@ const HomeView = ({ activeCategory, onCategoryReset }: { activeCategory: WorkCat
           )}
         </header>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12">
-          {filteredWorks.map((work, idx) => (
+          {filteredWorks.map((work) => (
             <WorkCard key={work.id} project={work} offsetTop={work.offsetTop} />
           ))}
         </div>
@@ -783,10 +807,10 @@ const HomeView = ({ activeCategory, onCategoryReset }: { activeCategory: WorkCat
           <h2 className="text-[8vw] lg:text-[6vw] leading-none mb-8 font-serif-italic">
             Say hello<span className="text-yellow-300">.</span>
           </h2>
-          
+
           <div className="space-y-8 max-w-md">
             <p className="text-sm md:text-lg opacity-80 leading-relaxed font-mono">
-              I’m currently looking for new opportunities and fresh collaborations. If you have a project in mind or just want to grab a coffee and chat, my inbox is always open. Looking forward to meeting some new faces!
+              I'm currently looking for new opportunities and fresh collaborations. If you have a project in mind or just want to grab a coffee and chat, my inbox is always open. Looking forward to meeting some new faces!
             </p>
 
             <div className="flex flex-col gap-4 border-t border-white/10 pt-8">
@@ -801,43 +825,40 @@ const HomeView = ({ activeCategory, onCategoryReset }: { activeCategory: WorkCat
             </div>
 
             <div className="flex gap-8 pt-4">
-  <a
-    href="https://www.instagram.com/prasiddha.__/"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="text-xs font-bold border-b border-white/20 hover:border-yellow-300 hover:text-yellow-300 transition-all pb-1 uppercase tracking-widest"
-  >
-    Instagram
-  </a>
+              <a
+                href="https://www.instagram.com/prasiddha.__/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-xs font-bold border-b border-white/20 hover:border-yellow-300 hover:text-yellow-300 transition-all pb-1 uppercase tracking-widest"
+              >
+                Instagram
+              </a>
 
-  <a
-    href="https://www.linkedin.com/in/prasiddhasharma/"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="text-xs font-bold border-b border-white/20 hover:border-yellow-300 hover:text-yellow-300 transition-all pb-1 uppercase tracking-widest"
-  >
-    LinkedIn
-  </a>
+              <a
+                href="https://www.linkedin.com/in/prasiddhasharma/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-xs font-bold border-b border-white/20 hover:border-yellow-300 hover:text-yellow-300 transition-all pb-1 uppercase tracking-widest"
+              >
+                LinkedIn
+              </a>
 
-  <a
-    href="mailto:prasiddha.business@gmail.com"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="text-xs font-bold border-b border-white/20 hover:border-yellow-300 hover:text-yellow-300 transition-all pb-1 uppercase tracking-widest"
-  >
-    Email
-  </a>
+              <a
+                href="mailto:prasiddha.business@gmail.com"
+                className="text-xs font-bold border-b border-white/20 hover:border-yellow-300 hover:text-yellow-300 transition-all pb-1 uppercase tracking-widest"
+              >
+                Email
+              </a>
 
-  <a
-    href="https://wa.me/9779861292675"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="text-xs font-bold border-b border-white/20 hover:border-yellow-300 hover:text-yellow-300 transition-all pb-1 uppercase tracking-widest"
-  >
-    WhatsApp
-  </a>
-</div>
-
+              <a
+                href="https://wa.me/9779861292675"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-xs font-bold border-b border-white/20 hover:border-yellow-300 hover:text-yellow-300 transition-all pb-1 uppercase tracking-widest"
+              >
+                WhatsApp
+              </a>
+            </div>
           </div>
         </div>
 
@@ -902,7 +923,7 @@ const App: React.FC = () => {
         <div className="fixed inset-0 z-0 bg-grid pointer-events-none" />
         <div className="fixed inset-0 z-0 overflow-hidden pointer-events-none">
           {backgroundDecorations.map((item, idx) => (
-            <div 
+            <div
               key={idx}
               className={`absolute ${item.size} animate-float opacity-20`}
               style={{
@@ -920,12 +941,12 @@ const App: React.FC = () => {
           ))}
         </div>
 
-        <Header 
-          activeSection={activeSection} 
-          activeCategory={activeWorkCategory} 
+        <Header
+          activeSection={activeSection}
+          activeCategory={activeWorkCategory}
           onCategorySelect={setActiveWorkCategory}
         />
-        
+
         <Routes>
           <Route path="/" element={<HomeView activeCategory={activeWorkCategory} onCategoryReset={() => setActiveWorkCategory(WorkCategory.ALL)} />} />
           <Route path="/project/:id" element={<ProjectView />} />
@@ -936,8 +957,7 @@ const App: React.FC = () => {
 
         {/* Minimalist Persistent UI elements */}
         <PersistentFooterText />
-      
-        
+
         <Footer />
       </div>
     </Router>
