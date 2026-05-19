@@ -818,8 +818,8 @@ const HomeView = ({ activeCategory, onCategoryReset }: { activeCategory: WorkCat
       {/* MARQUEE */}
       <div className="w-full overflow-hidden border-y border-white/10 py-6 my-20 relative">
         <div className="flex whitespace-nowrap gap-12 text-[10px] font-bold tracking-[0.5em] opacity-50 uppercase animate-marquee">
-          <span>Available for freelance</span><span>✦</span><span>Collaborate with me</span><span>✦</span><span>Available for freelance</span><span>✦</span>
-          <span>Available for freelance</span><span>✦</span><span>Collaborate with me</span><span>✦</span><span>Available for freelance</span><span>✦</span>
+          <span>Available for chaos</span><span>✦</span><span>LESS TALK MORE DESIGN</span><span>✦</span><span>Probably designing instead of sleeping</span><span>✦</span>
+          <span>Available for chaos</span><span>✦</span><span>LESS TALK MORE DESIGN</span><span>✦</span><span>Probably designing instead of sleeping</span><span>✦</span>
         </div>
       </div>
 
@@ -832,13 +832,13 @@ const HomeView = ({ activeCategory, onCategoryReset }: { activeCategory: WorkCat
 
           <div className="space-y-8 max-w-md">
             <p className="text-sm md:text-lg opacity-80 leading-relaxed font-mono">
-              I'm currently looking for new opportunities and fresh collaborations. If you have a project in mind or just want to grab a coffee and chat, my inbox is always open. Looking forward to meeting some new faces!
+              If you have a project in mind or just want to grab a coffee and chat, my inbox is always open. Looking forward to meeting some new faces!
             </p>
 
             <div className="flex flex-col gap-4 border-t border-white/10 pt-8">
               <div className="flex items-center gap-3">
                 <div className="w-3 h-3 bg-green-400 rounded-full animate-pulse shadow-[0_0_8px_rgba(74,222,128,0.5)]"></div>
-                <span className="text-[10px] font-bold tracking-[0.2em] uppercase">Status: Available for work</span>
+                <span className="text-[10px] font-bold tracking-[0.2em] uppercase">Status: Available</span>
               </div>
               <div className="flex flex-col gap-1">
                 <span className="text-[10px] uppercase tracking-widest opacity-50 font-bold">Local Time</span>
