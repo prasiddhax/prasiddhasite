@@ -847,58 +847,59 @@ const HomeView = ({ activeCategory, onCategoryReset }: { activeCategory: WorkCat
               </div>
             </div>
 
-            <div className="flex gap-8 pt-4">
-              <a
-                href="https://www.instagram.com/prasiddha.__/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-xs font-bold border-b border-white/20 hover:border-yellow-300 hover:text-yellow-300 transition-all pb-1 uppercase tracking-widest"
-              >
-                Instagram
-              </a>
+           <div className="flex flex-wrap gap-x-6 gap-y-4 pt-4">
+  
+    href="https://www.instagram.com/prasiddha.__/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-xs font-bold border-b border-white/20 hover:border-yellow-300 hover:text-yellow-300 transition-all pb-1 uppercase tracking-widest whitespace-nowrap"
+  >
+    Instagram
+  </a>
 
-              <a
-                href="https://www.linkedin.com/in/prasiddhasharma/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-xs font-bold border-b border-white/20 hover:border-yellow-300 hover:text-yellow-300 transition-all pb-1 uppercase tracking-widest"
-              >
-                LinkedIn
-              </a>
+  
+    href="https://www.linkedin.com/in/prasiddhasharma/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-xs font-bold border-b border-white/20 hover:border-yellow-300 hover:text-yellow-300 transition-all pb-1 uppercase tracking-widest whitespace-nowrap"
+  >
+    LinkedIn
+  </a>
 
-              <a
-                href="mailto:prasiddha.business@gmail.com"
-                className="text-xs font-bold border-b border-white/20 hover:border-yellow-300 hover:text-yellow-300 transition-all pb-1 uppercase tracking-widest"
-              >
-                Email
-              </a>
+  
+    href="mailto:prasiddha.business@gmail.com"
+    className="text-xs font-bold border-b border-white/20 hover:border-yellow-300 hover:text-yellow-300 transition-all pb-1 uppercase tracking-widest whitespace-nowrap"
+  >
+    Email
+  </a>
 
-              <a
-                href="https://wa.me/9779861292675"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-xs font-bold border-b border-white/20 hover:border-yellow-300 hover:text-yellow-300 transition-all pb-1 uppercase tracking-widest"
-              >
-                WhatsApp
-              </a>
+  
+    href="https://wa.me/9779861292675"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-xs font-bold border-b border-white/20 hover:border-yellow-300 hover:text-yellow-300 transition-all pb-1 uppercase tracking-widest whitespace-nowrap"
+  >
+    WhatsApp
+  </a>
 
-              <a
-                href="mailto:prasiddha@griffitystudios.com"
-                className="text-xs font-bold border-b border-white/20 hover:border-yellow-300 hover:text-yellow-300 transition-all pb-1 uppercase tracking-widest"
-              >
-                Griffity Studios
-              </a>
+  
+    href="https://www.griffitystudios.com"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-xs font-bold border-b border-white/20 hover:border-yellow-300 hover:text-yellow-300 transition-all pb-1 uppercase tracking-widest whitespace-nowrap"
+  >
+    Griffity
+  </a>
 
-              <a
-                href="mailto:prasiddha@griffitystudios.com"
-                className="text-xs font-bold border-b border-white/20 hover:border-yellow-300 hover:text-yellow-300 transition-all pb-1 uppercase tracking-widest"
-              >
-                Behance
-              </a>
-              
-            </div>
-          </div>
-        </div>
+  
+    href="https://www.behance.net/your-behance-username"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-xs font-bold border-b border-white/20 hover:border-yellow-300 hover:text-yellow-300 transition-all pb-1 uppercase tracking-widest whitespace-nowrap"
+  >
+    Behance
+  </a>
+</div>
 
         <div className="lg:col-span-8">
           <ContactForm />
