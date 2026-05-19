@@ -16,7 +16,7 @@ const PrivacyPolicy: React.FC = () => {
       <div className="max-w-3xl mx-auto">
         <header className="mb-16 text-center">
           <h1 className="font-serif-italic text-6xl md:text-8xl mb-4">Privacy Policy</h1>
-          <p className="text-xs font-bold tracking-widest opacity-60 uppercase">Last Updated: July 24, 2024</p>
+          <p className="text-xs font-bold tracking-widest opacity-60 uppercase">Last Updated: June 20, 2026</p>
         </header>
 
         <div className="space-y-12 text-sm md:text-base leading-relaxed opacity-90">
@@ -66,7 +66,7 @@ const PrivacyPolicy: React.FC = () => {
               <span className="text-yellow-300">05.</span> CONTACT ME
             </h2>
             <p>
-              For more information about my privacy practices, if you have questions, or if you would like to make a complaint, please contact me by e-mail at hello@stephanie.design.
+              For more information about my privacy practices, if you have questions, or if you would like to make a complaint, please contact Griffity Studios by e-mail at brand@griffitystudios.com
             </p>
           </section>
         </div>
