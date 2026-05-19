@@ -222,12 +222,12 @@ const Header: React.FC<HeaderProps> = ({ activeSection, activeCategory, onCatego
         </Link>
       </div>
 
-      <div className="hidden md:flex gap-4 opacity-70 text-[10px] font-bold">
+      <div className="hidden md:flex flex-wrap gap-4 opacity-70 text-[10px] font-bold">
         <a
           href="https://www.instagram.com/prasiddha.__/"
           target="_blank"
           rel="noopener noreferrer"
-          className="hover:text-yellow-300 transition-colors"
+          className="hover:text-yellow-300 transition-colors whitespace-nowrap"
         >
           IG
         </a>
@@ -235,13 +235,13 @@ const Header: React.FC<HeaderProps> = ({ activeSection, activeCategory, onCatego
           href="https://www.linkedin.com/in/prasiddhasharma/"
           target="_blank"
           rel="noopener noreferrer"
-          className="hover:text-yellow-300 transition-colors"
+          className="hover:text-yellow-300 transition-colors whitespace-nowrap"
         >
           LI
         </a>
         <a
           href="mailto:prasiddha.business@gmail.com"
-          className="hover:text-yellow-300 transition-colors"
+          className="hover:text-yellow-300 transition-colors whitespace-nowrap"
         >
           EM
         </a>
@@ -249,16 +249,15 @@ const Header: React.FC<HeaderProps> = ({ activeSection, activeCategory, onCatego
           href="https://wa.me/9779861292675"
           target="_blank"
           rel="noopener noreferrer"
-          className="hover:text-yellow-300 transition-colors"
+          className="hover:text-yellow-300 transition-colors whitespace-nowrap"
         >
           WA
         </a>
-
-          <a
-          href="https://wa.me/9779861292675"
+        <a
+          href="https://www.behance.net/your-behance-username"
           target="_blank"
           rel="noopener noreferrer"
-          className="hover:text-yellow-300 transition-colors"
+          className="hover:text-yellow-300 transition-colors whitespace-nowrap"
         >
           BH
         </a>
@@ -831,76 +830,78 @@ const HomeView = ({ activeCategory, onCategoryReset }: { activeCategory: WorkCat
             Say hello<span className="text-yellow-300">.</span>
           </h2>
 
-       <div className="space-y-8 max-w-md">
-  <p className="text-sm md:text-lg opacity-80 leading-relaxed font-mono">
-    I'm currently looking for new opportunities and fresh collaborations. If you have a project in mind or just want to grab a coffee and chat, my inbox is always open. Looking forward to meeting some new faces!
-  </p>
+          <div className="space-y-8 max-w-md">
+            <p className="text-sm md:text-lg opacity-80 leading-relaxed font-mono">
+              I'm currently looking for new opportunities and fresh collaborations. If you have a project in mind or just want to grab a coffee and chat, my inbox is always open. Looking forward to meeting some new faces!
+            </p>
 
-  <div className="flex flex-col gap-4 border-t border-white/10 pt-8">
-    <div className="flex items-center gap-3">
-      <div className="w-3 h-3 bg-green-400 rounded-full animate-pulse shadow-[0_0_8px_rgba(74,222,128,0.5)]"></div>
-      <span className="text-[10px] font-bold tracking-[0.2em] uppercase">Status: Available for work</span>
-    </div>
-    <div className="flex flex-col gap-1">
-      <span className="text-[10px] uppercase tracking-widest opacity-50 font-bold">Local Time</span>
-      <span className="text-xl font-bold font-mono">KATHMANDU {currentTime}</span>
-    </div>
-  </div>
+            <div className="flex flex-col gap-4 border-t border-white/10 pt-8">
+              <div className="flex items-center gap-3">
+                <div className="w-3 h-3 bg-green-400 rounded-full animate-pulse shadow-[0_0_8px_rgba(74,222,128,0.5)]"></div>
+                <span className="text-[10px] font-bold tracking-[0.2em] uppercase">Status: Available for work</span>
+              </div>
+              <div className="flex flex-col gap-1">
+                <span className="text-[10px] uppercase tracking-widest opacity-50 font-bold">Local Time</span>
+                <span className="text-xl font-bold font-mono">KATHMANDU {currentTime}</span>
+              </div>
+            </div>
 
-  <div className="flex flex-wrap gap-x-6 gap-y-4 pt-4">
-    
-      href="https://www.instagram.com/prasiddha.__/"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="text-xs font-bold border-b border-white/20 hover:border-yellow-300 hover:text-yellow-300 transition-all pb-1 uppercase tracking-widest whitespace-nowrap"
-    >
-      Instagram
-    </a>
+            <div className="flex flex-wrap gap-x-6 gap-y-4 pt-4">
+              <a
+                href="https://www.instagram.com/prasiddha.__/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-xs font-bold border-b border-white/20 hover:border-yellow-300 hover:text-yellow-300 transition-all pb-1 uppercase tracking-widest whitespace-nowrap"
+              >
+                Instagram
+              </a>
 
-    
-      href="https://www.linkedin.com/in/prasiddhasharma/"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="text-xs font-bold border-b border-white/20 hover:border-yellow-300 hover:text-yellow-300 transition-all pb-1 uppercase tracking-widest whitespace-nowrap"
-    >
-      LinkedIn
-    </a>
+              <a
+                href="https://www.linkedin.com/in/prasiddhasharma/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-xs font-bold border-b border-white/20 hover:border-yellow-300 hover:text-yellow-300 transition-all pb-1 uppercase tracking-widest whitespace-nowrap"
+              >
+                LinkedIn
+              </a>
 
-    
-      href="mailto:prasiddha.business@gmail.com"
-      className="text-xs font-bold border-b border-white/20 hover:border-yellow-300 hover:text-yellow-300 transition-all pb-1 uppercase tracking-widest whitespace-nowrap"
-    >
-      Email
-    </a>
+              <a
+                href="mailto:prasiddha.business@gmail.com"
+                className="text-xs font-bold border-b border-white/20 hover:border-yellow-300 hover:text-yellow-300 transition-all pb-1 uppercase tracking-widest whitespace-nowrap"
+              >
+                Email
+              </a>
 
-    
-      href="https://wa.me/9779861292675"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="text-xs font-bold border-b border-white/20 hover:border-yellow-300 hover:text-yellow-300 transition-all pb-1 uppercase tracking-widest whitespace-nowrap"
-    >
-      WhatsApp
-    </a>
+              <a
+                href="https://wa.me/9779861292675"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-xs font-bold border-b border-white/20 hover:border-yellow-300 hover:text-yellow-300 transition-all pb-1 uppercase tracking-widest whitespace-nowrap"
+              >
+                WhatsApp
+              </a>
 
-    
-      href="https://www.griffitystudios.com"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="text-xs font-bold border-b border-white/20 hover:border-yellow-300 hover:text-yellow-300 transition-all pb-1 uppercase tracking-widest whitespace-nowrap"
-    >
-      Griffity&nbsp;Studios
-    </a>
+              <a
+                href="https://www.griffitystudios.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-xs font-bold border-b border-white/20 hover:border-yellow-300 hover:text-yellow-300 transition-all pb-1 uppercase tracking-widest whitespace-nowrap"
+              >
+                Griffity
+              </a>
 
-    
-      href="https://www.behance.net/your-behance-username"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="text-xs font-bold border-b border-white/20 hover:border-yellow-300 hover:text-yellow-300 transition-all pb-1 uppercase tracking-widest whitespace-nowrap"
-    >
-      Behance
-    </a>
-  </div>
-</div>
+              <a
+                href="https://www.behance.net/your-behance-username"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-xs font-bold border-b border-white/20 hover:border-yellow-300 hover:text-yellow-300 transition-all pb-1 uppercase tracking-widest whitespace-nowrap"
+              >
+                Behance
+              </a>
+            </div>
+          </div>
+        </div>
+
         <div className="lg:col-span-8">
           <ContactForm />
         </div>
