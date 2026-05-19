@@ -847,7 +847,7 @@ const HomeView = ({ activeCategory, onCategoryReset }: { activeCategory: WorkCat
               </div>
             </div>
 
-           <div className="flex flex-wrap gap-x-6 gap-y-4 pt-4">
+    <div className="flex flex-wrap gap-x-6 gap-y-4 pt-4">
   
     href="https://www.instagram.com/prasiddha.__/"
     target="_blank"
@@ -888,7 +888,7 @@ const HomeView = ({ activeCategory, onCategoryReset }: { activeCategory: WorkCat
     rel="noopener noreferrer"
     className="text-xs font-bold border-b border-white/20 hover:border-yellow-300 hover:text-yellow-300 transition-all pb-1 uppercase tracking-widest whitespace-nowrap"
   >
-    Griffity
+    Griffity&nbsp;Studios
   </a>
 
   
@@ -900,7 +900,6 @@ const HomeView = ({ activeCategory, onCategoryReset }: { activeCategory: WorkCat
     Behance
   </a>
 </div>
-
         <div className="lg:col-span-8">
           <ContactForm />
         </div>
