@@ -75,5 +75,66 @@ export const POSTS_DATA: BlogPost[] = [
         text: "Using constraints as a creative engine often leads to surprising outcomes and stronger design systems.",
       },
     ],
-  },
+  },{
+  slug: "night-market-sixteen-colors",
+  category: "DIGITAL CRAFT",
+  date: "AUGUST 3, 2024",
+  title: "Building a night market in sixteen colors",
+  description:
+    "A look inside the reference-to-render process for a rain-soaked night market scene, built entirely within a sixteen-color palette.",
+  author: "STEPHANIE",
+  imageType: "sunflower",
+
+  // blocks[] is the article body — same ordered-array pattern as content[] on projects
+  blocks: [
+    // 0. Opening paragraph, no image
+    {
+      type: "paragraph",
+      text: "Every scene starts as a mood, not a mockup. For this piece I wanted the feeling of walking into a night market minutes after the rain stops — wet pavement, string lights, steam off a food cart.",
+    },
+
+    // 1. Full-width hero image right after the intro
+    {
+      type: "image",
+      src: "https://picsum.photos/seed/nightmarket-hero/1200/675",
+      alt: "Night market hero",
+      aspect: "16/9",
+    },
+
+    // 2. Section heading
+    { type: "heading", level: 2, text: "Reference before rendering" },
+
+    // 3. Paragraph
+    {
+      type: "paragraph",
+      text: "I shoot or source photo references first, then trace the light logic before touching a single pixel. Getting the reflections right on wet ground is 80% of what sells a night scene.",
+    },
+
+    // 4. Process video placeholder
+    { type: "video_hero", label: "PROCESS_REEL_02.MP4" },
+
+    // 5. Pull quote
+    { type: "quote", text: "A scene isn't finished when it looks right — it's finished when it looks lived-in." },
+
+    // 6. Square detail crop image
+    {
+      type: "image",
+      src: "https://picsum.photos/seed/nightmarket-detail/700/700",
+      alt: "Detail crop",
+      aspect: "1/1",
+    },
+
+    // 7. Palette swatches
+    { type: "color_grid", colors: ["#2B1E4A", "#6B4FA0", "#E8A33D", "#F2E3C4"] },
+
+    // 8. Side-by-side pixel SVGs
+    { type: "two_column_pixel_svgs" },
+
+    // 9. Closing paragraph
+    {
+      type: "paragraph",
+      text: "The finished piece went through eleven passes. Most of that time wasn't spent adding detail — it was spent removing it, until only the essential sixteen colors were left standing.",
+    },
+  ],
+}
 ];
