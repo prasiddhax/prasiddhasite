@@ -6,6 +6,7 @@ import ArchiveView from './components/ArchiveView';
 import BlogArticlePage from './components/BlogArticlePage';
 import PrivacyPolicy from './components/PrivacyPolicy';
 import { MousePosition, WorkCategory } from './types';
+import ProjectView from "./components/ProjectView";
 
 /**
  * DATA
@@ -421,131 +422,7 @@ const WorkCard: React.FC<WorkCardProps> = ({ project, offsetTop = false }) => {
   );
 };
 
-const ProjectView = () => {
-  const { id } = useParams();
-  const navigate = useNavigate();
-  const project = useMemo(() => WORKS_DATA.find(w => w.id === id), [id]);
 
-  if (!project) {
-    return (
-      <div className="min-h-screen flex items-center justify-center font-mono">
-        <div className="text-center">
-          <h2 className="text-4xl mb-4">Project Not Found</h2>
-          <Link to="/" className="text-yellow-300 underline">Return Home</Link>
-        </div>
-      </div>
-    );
-  }
-
-  const currentIndex = WORKS_DATA.findIndex(w => w.id === id);
-  const nextProject = WORKS_DATA[(currentIndex + 1) % WORKS_DATA.length];
-  const prevProject = WORKS_DATA[(currentIndex - 1 + WORKS_DATA.length) % WORKS_DATA.length];
-
-  const goHomeToWorks = () => {
-    navigate('/');
-    setTimeout(() => {
-      const el = document.getElementById('works');
-      if (el) el.scrollIntoView({ behavior: 'smooth' });
-    }, 100);
-  };
-
-  return (
-    <main className="relative z-10 px-6 md:px-12 py-32 max-w-7xl mx-auto">
-      {/* BACK TO WORKS */}
-      <button
-        onClick={goHomeToWorks}
-        className="group flex items-center gap-3 text-[10px] font-bold tracking-[0.3em] uppercase opacity-70 hover:opacity-100 hover:text-yellow-300 transition-all mb-12"
-      >
-        <span className="inline-block transition-transform group-hover:-translate-x-1">←</span>
-        Back to Works
-      </button>
-
-      <header className="mb-20">
-        <div className="flex items-center gap-4 mb-8">
-          <div className="w-10 h-10 animate-float">
-            <PixelFlower colorPrimary={project.flowerType.includes('red') ? '#FF3333' : '#FFD700'} />
-          </div>
-          <span className="text-xs font-bold tracking-[0.3em] text-yellow-300 uppercase">
-            {project.category} • {project.year}
-          </span>
-        </div>
-
-        <h1 className="text-7xl md:text-[10vw] leading-[0.9] tracking-tighter mb-12 font-serif-italic">
-          {project.title.split(' ').map((word, i) => (
-            <React.Fragment key={i}>
-              {word}<br className="md:hidden" /> {i === 0 && <span className="hidden md:inline">&nbsp;</span>}
-            </React.Fragment>
-          ))}
-        </h1>
-
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-12 items-start border-t border-white/10 pt-12">
-          <div className="md:col-span-5">
-            <p className="text-lg md:text-xl leading-relaxed opacity-90 font-mono">
-              {project.description}
-            </p>
-          </div>
-          <div className="md:col-span-7 grid grid-cols-2 gap-8 text-[10px] font-bold uppercase tracking-[0.3em]">
-            <div>
-              <div className="text-yellow-300 opacity-50 mb-3">Role</div>
-              <div>{project.role}</div>
-            </div>
-            <div>
-              <div className="text-yellow-300 opacity-50 mb-3">Tech</div>
-              <div>{project.tech}</div>
-            </div>
-          </div>
-        </div>
-      </header>
-
-      <section className="space-y-12 md:space-y-24 mb-32">
-        <div className={`border border-white/10 aspect-[16/9] w-full flex items-center justify-center overflow-hidden transition-transform duration-300 hover:scale-[1.01] ${project.bgClass}`}>
-          <div className="w-1/2 h-1/2 animate-float">
-            <PixelFlower isSpecial={project.flowerType.includes('tall')} className="w-full h-full" />
-          </div>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-          <div className="border border-white/10 aspect-square bg-white/5 flex items-center justify-center transition-transform duration-300 hover:scale-[1.01]">
-            <div className="w-1/3 h-1/3 opacity-80 rotate-12">
-              <PixelFlower colorPrimary="#FFD700" />
-            </div>
-          </div>
-          <div className="border border-white/10 aspect-square bg-white/5 flex items-center justify-center transition-transform duration-300 hover:scale-[1.01]">
-            <div className="w-1/3 h-1/3 opacity-80 -rotate-12">
-              <PixelFlower colorPrimary="#FF3333" />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="border-t border-white/10 pt-16 mb-24">
-        <div className="flex flex-col md:flex-row justify-between items-center gap-12">
-          <button
-            onClick={() => { window.scrollTo({ top: 0 }); navigate(`/project/${prevProject.id}`); }}
-            className="group text-left flex-1"
-          >
-            <span className="text-[10px] font-bold tracking-widest opacity-50 block mb-4 uppercase">Previous Project</span>
-            <h3 className="text-4xl md:text-5xl font-serif-italic group-hover:text-yellow-300 transition-colors">
-              {prevProject.title}
-            </h3>
-          </button>
-
-          <div className="hidden md:block w-px h-24 bg-white/10"></div>
-
-          <button
-            onClick={() => { window.scrollTo({ top: 0 }); navigate(`/project/${nextProject.id}`); }}
-            className="group text-right flex-1"
-          >
-            <span className="text-[10px] font-bold tracking-widest opacity-50 block mb-4 uppercase">Next Project</span>
-            <h3 className="text-4xl md:text-5xl font-serif-italic group-hover:text-yellow-300 transition-colors">
-              {nextProject.title}
-            </h3>
-          </button>
-        </div>
-      </section>
-    </main>
-  );
-};
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({ fullName: '', email: '', message: '' });
