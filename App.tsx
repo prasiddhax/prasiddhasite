@@ -9,7 +9,7 @@ import { MousePosition, WorkCategory } from './types';
 import ProjectView from "./components/ProjectView";
 import { WORKS_DATA } from "./projects.data";
 
-
+import BlogArticleView from "./components/BlogArticleView";
 
 const TIMELINE_DATA = [
   {
@@ -813,7 +813,7 @@ const App: React.FC = () => {
           <Route path="/" element={<HomeView activeCategory={activeWorkCategory} onCategoryReset={() => setActiveWorkCategory(WorkCategory.ALL)} />} />
           <Route path="/project/:id" element={<ProjectView />} />
           <Route path="/archive" element={<ArchiveView />} />
-          <Route path="/archive/:slug" element={<BlogArticlePage />} />
+      <Route path="/archive/:slug" element={<BlogArticleView />} />
           <Route path="/privacypolicy" element={<PrivacyPolicy />} />
         </Routes>
 
