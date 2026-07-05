@@ -1,100 +1,90 @@
 import { Project, WorkCategory } from "./types";
 
 export const WORKS_DATA: Project[] = [
-  {
-    id: "neon-meadows",
-    title: "Neon Meadows",
-    category: WorkCategory.DIGITAL,
+{
+    id: "branding",
+    title: "Branding",
+    category: WorkCategory.BRANDING,
     year: "2026",
-    flowerType: "red",
     offsetTop: false,
-      thumbnail: "https://picsum.photos/seed/neon-meadows/600/750",
-
+    thumbnail: "https://picsum.photos/seed/branding-dummy/600/750",
     intro:
-      "A pixel-based exploration of biological growth patterns within a rigid digital grid. This project examines the tension between organic forms and low-fidelity constraints.",
-    role: "Creative Direction, Pixel Illustration",
-    tech: "Photoshop, Aseprite",
+      "A showcase of branding and identity work — logo systems, visual language, and brand guidelines developed for various clients.",
+    role: "Brand Strategy, Visual Identity, Art Direction",
+    tech: "Illustrator, Photoshop, Figma",
     bgClass: "bg-[#0033AA]",
     content: [
-      { type: "flower-showcase", flowerType: "red", bgClass: "bg-[#0033AA]" },
       {
         type: "image-pair",
         images: [
-          { src: "/images/neon-meadows/detail-1.png", alt: "Pixel detail 1" },
-          { src: "/images/neon-meadows/detail-2.png", alt: "Pixel detail 2" },
+          { src: "/images/branding-dummy/detail-1.png", alt: "Branding detail 1" },
+          { src: "/images/branding-dummy/detail-2.png", alt: "Branding detail 2" },
         ],
       },
     ],
   },
-  {
-    id: "floating-garden",
-    title: "Floating Garden",
-    category: WorkCategory.GAME,
-    year: "2023",
-    flowerType: "yellow",
-    offsetTop: true,
-    intro:
-      "An immersive 3D environment featuring low-poly vegetation and floating islands. Designed for a peaceful, zen-like gaming experience.",
-    role: "Environment Design, 3D Modeling",
-    tech: "Blender, Unity",
-    bgClass: "bg-[#0055EE]/50",
-      thumbnail: "https://picsum.photos/seed/floating-garden/600/750",
-
-    content: [
-      { type: "flower-showcase", flowerType: "yellow", bgClass: "bg-[#0055EE]/50" },
-      {
-        type: "image-pair",
-        images: [
-          { src: "/images/floating-garden/detail-1.png" },
-          { src: "/images/floating-garden/detail-2.png" },
-        ],
-      },
-    ],
-  },
-  {
-    id: "pixel-flora",
-    title: "Pixel Flora",
-    category: WorkCategory.GAME,
-    year: "2023",
-    flowerType: "red-tall",
+ {
+    id: "poster-design-dummy",
+    title: "Poster Design",
+    category: WorkCategory.POSTER,
+    year: "2026",
     offsetTop: false,
+    thumbnail: "https://picsum.photos/seed/poster-design-dummy/600/750",
     intro:
-      "A collection of 2D game assets featuring over 50 unique plant species, each with custom growth animations.",
-    role: "Game Asset Design",
-    tech: "Aseprite",
-    bgClass: "bg-[#002288]/50",
-      thumbnail: "https://picsum.photos/seed/floating-garden/600/750",
-
+      "A showcase of poster design work — event posters, campaign visuals, and print collateral developed for various clients.",
+    role: "Art Direction, Graphic Design",
+    tech: "Illustrator, Photoshop",
+    bgClass: "bg-[#0033AA]",
     content: [
-      { type: "flower-showcase", flowerType: "red-tall", bgClass: "bg-[#002288]/50", isSpecial: true },
       {
         type: "image-pair",
         images: [
-          { src: "/images/pixel-flora/detail-1.png" },
-          { src: "/images/pixel-flora/detail-2.png" },
+          { src: "/images/poster-design-dummy/detail-1.png", alt: "Poster detail 1" },
+          { src: "/images/poster-design-dummy/detail-2.png", alt: "Poster detail 2" },
+        ],
+      },
+    ],
+  },
+ {
+    id: "ui-ux",
+    title: "UI/UX",
+    category: WorkCategory.UI_UX,
+    year: "2026",
+    offsetTop: false,
+    thumbnail: "https://picsum.photos/seed/ui-ux-dummy/600/750",
+    intro:
+      "A showcase of UI/UX work — product design, web and app interfaces, and user experience projects developed for various clients.",
+    role: "UI/UX Design, Product Design",
+    tech: "Figma, Adobe XD",
+    bgClass: "bg-[#0033AA]",
+    content: [
+      {
+        type: "image-pair",
+        images: [
+          { src: "/images/ui-ux-dummy/detail-1.png", alt: "UI/UX detail 1" },
+          { src: "/images/ui-ux-dummy/detail-2.png", alt: "UI/UX detail 2" },
         ],
       },
     ],
   },
   {
-    id: "azure-dream",
-    title: "Azure Dream",
-    category: WorkCategory.MOTION,
-    year: "2022",
-    flowerType: "yellow-faded",
+    id: "mockups-dummy",
+    title: "Mockups",
+    category: WorkCategory.MOCKUPS,
+    year: "2026",
     offsetTop: false,
+    thumbnail: "https://picsum.photos/seed/mockups-dummy/600/750",
     intro:
-      "A dreamy motion sequence exploring the fluidity of digital water. Every frame is hand-corrected for pixel perfection.",
-    role: "Motion Design",
-    tech: "After Effects",
-    bgClass: "bg-[#0044CC]/70",
+      "A showcase of mockup work — product presentations, packaging visuals, and real-world context renders developed for various clients.",
+    role: "Art Direction, Visual Design",
+    tech: "Photoshop, Figma",
+    bgClass: "bg-[#0033AA]",
     content: [
-      { type: "flower-showcase", flowerType: "yellow-faded", bgClass: "bg-[#0044CC]/70" },
       {
         type: "image-pair",
         images: [
-          { src: "/images/azure-dream/detail-1.png" },
-          { src: "/images/azure-dream/detail-2.png" },
+          { src: "/images/mockups-dummy/detail-1.png", alt: "Mockup detail 1" },
+          { src: "/images/mockups-dummy/detail-2.png", alt: "Mockup detail 2" },
         ],
       },
     ],
