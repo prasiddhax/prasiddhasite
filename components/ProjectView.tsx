@@ -1,6 +1,6 @@
 import { useParams, useNavigate, Link } from "react-router-dom";
 import { useMemo } from "react";
-import { WORKS_DATA } from "./projects.data";
+import { WORKS_DATA } from "../projects.data";
 import { BlockRenderer } from "./ContentBlocks";
 import { PixelFlower } from "./PixelFlower";
 
