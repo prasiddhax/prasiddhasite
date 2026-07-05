@@ -164,4 +164,59 @@ export const WORKS_DATA: Project[] = [
       },
     ],
   },
+  {
+  id: "solar-bloom",
+  title: "Solar Bloom",
+  category: WorkCategory.DIGITAL,
+  year: "2026",
+  flowerType: "yellow",
+  offsetTop: false,
+  intro: "A live weather-driven pixel garden where bloom color and speed responds to real sunlight data at your location.",
+  role: "Creative Direction, Frontend Development",
+  tech: "React, Three.js, Open-Meteo API",
+  bgClass: "bg-[#D4A017]",
+
+  content: [
+    { type: "flower-showcase", flowerType: "yellow", bgClass: "bg-[#D4A017]" },
+    { type: "heading", text: "The concept" },
+    {
+      type: "paragraph",
+      text: "Solar Bloom pairs a live weather feed with a field of generative pixel flowers — each bloom's color and speed responds to real sunlight data at your location.",
+    },
+    {
+      type: "image",
+      width: "full",
+      image: {
+        src: "https://picsum.photos/seed/solarbloom-hero/1200/675",
+        aspect: "16/9",
+        caption: "Full garden at solar noon",
+      },
+    },
+    {
+      type: "text-image",
+      imagePosition: "right",
+      text: "Each flower is a small state machine — bloom stage is driven by a sun-position calculation running client-side, updated every frame.",
+      image: { src: "https://picsum.photos/seed/solarbloom-statemachine/600/450", aspect: "4/3" },
+    },
+    {
+      type: "text-image",
+      imagePosition: "left",
+      text: "Color grading shifts warm at sunrise and sunset — the same JSON config file drives both the visuals and the accessibility contrast checks.",
+      image: { src: "https://picsum.photos/seed/solarbloom-colorgrade/600/450", aspect: "4/3" },
+    },
+    {
+      type: "quote",
+      text: "It's the first portfolio piece that felt different every single time I opened it.",
+      author: "Beta tester",
+    },
+    {
+      type: "gallery",
+      images: [
+        { src: "https://picsum.photos/seed/solarbloom-g1/400/400" },
+        { src: "https://picsum.photos/seed/solarbloom-g2/400/400" },
+        { src: "https://picsum.photos/seed/solarbloom-g3/400/400" },
+      ],
+    },
+  ],
+}
 ];
