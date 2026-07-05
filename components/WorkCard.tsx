@@ -42,7 +42,6 @@ const WorkCard: React.FC<WorkCardProps> = ({ project, offsetTop = false }) => {
   </div>
 )}
         </div>
-      </div>
 
       <div className="flex flex-col gap-2">
         <h3 className="text-3xl font-serif-italic">{project.title}</h3>
