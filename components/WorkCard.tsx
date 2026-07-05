@@ -38,8 +38,8 @@ const WorkCard: React.FC<WorkCardProps> = ({ project, offsetTop = false }) => {
           <div className={`w-24 h-24 transition-transform duration-300 ${isHovered ? "scale-110 rotate-6" : ""}`}>
             <PixelFlowerRenderer flowerType={project.flowerType} className="w-full h-full drop-shadow-lg" />
           </div>
-        </div>
-      </div> */}
+        </div> */}
+      </div>
 
       <div className="flex flex-col gap-2">
         <h3 className="text-3xl font-serif-italic">{project.title}</h3>
