@@ -7,84 +7,9 @@ import BlogArticlePage from './components/BlogArticlePage';
 import PrivacyPolicy from './components/PrivacyPolicy';
 import { MousePosition, WorkCategory } from './types';
 import ProjectView from "./components/ProjectView";
+import { WORKS_DATA } from "./projects.data";
 
-/**
- * DATA
- */
-const WORKS_DATA = [
-  {
-    id: "neon-meadows",
-    title: "Neon Meadows",
-    category: WorkCategory.DIGITAL,
-    year: "2026",
-    flowerType: "red",
-    offsetTop: false,
-    description: "A pixel-based exploration of biological growth patterns within a rigid digital grid. This project examines the tension between organic forms and low-fidelity constraints.",
-    role: "Creative Direction, Pixel Illustration",
-    tech: "Photoshop, Aseprite",
-    bgClass: "bg-[#0033AA]"
-  },
-  {
-    id: "floating-garden",
-    title: "Floating Garden",
-    category: WorkCategory.GAME,
-    year: "2023",
-    flowerType: "yellow",
-    offsetTop: true,
-    description: "An immersive 3D environment featuring low-poly vegetation and floating islands. Designed for a peaceful, zen-like gaming experience.",
-    role: "Environment Design, 3D Modeling",
-    tech: "Blender, Unity",
-    bgClass: "bg-[#0055EE]/50"
-  },
-  {
-    id: "pixel-flora",
-    title: "Pixel Flora",
-    category: WorkCategory.GAME,
-    year: "2023",
-    flowerType: "red-tall",
-    offsetTop: false,
-    description: "A collection of 2D game assets featuring over 50 unique plant species, each with custom growth animations.",
-    role: "Game Asset Design",
-    tech: "Aseprite",
-    bgClass: "bg-[#002288]/50"
-  },
-  {
-    id: "azure-dream",
-    title: "Azure Dream",
-    category: WorkCategory.MOTION,
-    year: "2022",
-    flowerType: "yellow-faded",
-    offsetTop: false,
-    description: "A dreamy motion sequence exploring the fluidity of digital water. Every frame is hand-corrected for pixel perfection.",
-    role: "Motion Design",
-    tech: "After Effects",
-    bgClass: "bg-[#0044CC]/70"
-  },
-  {
-    id: "cyber-garden",
-    title: "Cyber Garden",
-    category: WorkCategory.DIGITAL,
-    year: "2022",
-    flowerType: "red",
-    offsetTop: true,
-    description: "An interactive web experience where users can plant and grow digital flowers using real-time data.",
-    role: "Frontend Development",
-    tech: "React, Three.js",
-    bgClass: "bg-blue-900/40"
-  },
-  {
-    id: "static-bloom",
-    title: "Static Bloom",
-    category: WorkCategory.DIGITAL,
-    year: "2021",
-    flowerType: "yellow-tall",
-    offsetTop: false,
-    description: "A series of high-contrast pixel art pieces celebrating the beauty of static shapes and shadows.",
-    role: "Digital Artist",
-    tech: "Aseprite",
-    bgClass: "bg-blue-800/20"
-  }
-];
+
 
 const TIMELINE_DATA = [
   {
