@@ -129,7 +129,6 @@ interface HeaderProps {
 }
 
 const Header: React.FC<HeaderProps> = ({ activeSection, activeCategory, onCategorySelect }) => {
-  const [worksDropdownOpen, setWorksDropdownOpen] = useState(false);
   const navigate = useNavigate();
   const location = useLocation();
   const isHome = location.pathname === '/';
@@ -176,34 +175,14 @@ const Header: React.FC<HeaderProps> = ({ activeSection, activeCategory, onCatego
         </button>
         <div
           className="group relative py-1"
-          onMouseEnter={() => setWorksDropdownOpen(true)}
-          onMouseLeave={() => setWorksDropdownOpen(false)}
         >
           <button
             onClick={() => scrollToSection('works')}
             className={`flex items-center gap-1 transition-colors ${activeSection === 'works' && isHome ? 'text-yellow-300' : 'hover:text-yellow-300'}`}
           >
             <span className="relative z-10 uppercase">WORKS</span>
-            <span className="text-[8px] transform group-hover:rotate-180 transition-transform">▼</span>
             {activeSection === 'works' && isHome && <span className="absolute bottom-0 left-0 w-full h-0.5 bg-yellow-300"></span>}
           </button>
-          <div
-            className="absolute top-full left-1/2 -translate-x-1/2 mt-2 bg-[#003399] border border-white/10 rounded shadow-xl transition-all duration-300 min-w-[200px] overflow-hidden"
-            style={{
-              opacity: worksDropdownOpen ? 1 : 0,
-              visibility: worksDropdownOpen ? 'visible' : 'hidden'
-            }}
-          >
-            {Object.values(WorkCategory).map((cat) => (
-              <button
-                key={cat}
-                onClick={() => handleCategoryClick(cat)}
-                className={`block w-full text-left px-5 py-3 hover:bg-yellow-300 hover:text-blue-900 transition-colors text-[10px] font-bold ${activeCategory === cat ? 'bg-yellow-300 text-blue-900' : ''}`}
-              >
-                {cat}
-              </button>
-            ))}
-          </div>
         </div>
 
         <button
