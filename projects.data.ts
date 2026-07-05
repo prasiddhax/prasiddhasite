@@ -2,27 +2,58 @@ import { Project, WorkCategory } from "./types";
 
 export const WORKS_DATA: Project[] = [
 {
-    id: "branding",
-    title: "Branding",
-    category: WorkCategory.BRANDING,
-    year: "2026",
-    offsetTop: false,
-    thumbnail: "https://picsum.photos/seed/branding-dummy/600/750",
-    intro:
-      "A showcase of branding and identity work — logo systems, visual language, and brand guidelines developed for various clients.",
-    role: "Brand Strategy, Visual Identity, Art Direction",
-    tech: "Illustrator, Photoshop, Figma",
-    bgClass: "bg-[#0033AA]",
-    content: [
-      {
-        type: "image-pair",
-        images: [
-          { src: "/images/branding-dummy/detail-1.png", alt: "Branding detail 1" },
-          { src: "/images/branding-dummy/detail-2.png", alt: "Branding detail 2" },
-        ],
+  id: "branding-dummy",
+  title: "Branding",
+  category: WorkCategory.BRANDING,
+  year: "2026",
+  offsetTop: false,
+  intro: "A showcase of branding and identity work — logo systems, visual language, and brand guidelines developed for various clients.",
+  role: "Brand Strategy, Visual Identity, Art Direction",
+  tech: "Illustrator, Photoshop, Figma",
+  bgClass: "bg-[#D4A017]",
+  thumbnail: "https://picsum.photos/seed/branding-dummy/600/750",
+  content: [
+    { type: "heading", text: "The concept" },
+    {
+      type: "paragraph",
+      text: "Each branding project starts with the client's story and builds outward — logo, color, typography, and applications designed to work together as one system.",
+    },
+    {
+      type: "image",
+      width: "full",
+      image: {
+        src: "https://picsum.photos/seed/branding-hero/1200/675",
+        aspect: "16/9",
+        caption: "Brand system overview",
       },
-    ],
-  },
+    },
+    {
+      type: "text-image",
+      imagePosition: "right",
+      text: "The primary mark is refined until it reads clearly at any scale — from a favicon to a storefront sign.",
+      image: { src: "https://picsum.photos/seed/branding-logo/600/450", aspect: "4/3" },
+    },
+    {
+      type: "text-image",
+      imagePosition: "left",
+      text: "A defined color and type system keeps every touchpoint — packaging, signage, social — consistent and recognizable.",
+      image: { src: "https://picsum.photos/seed/branding-palette/600/450", aspect: "4/3" },
+    },
+    {
+      type: "quote",
+      text: "A brand system that felt like us from the very first draft.",
+      author: "Client",
+    },
+    {
+      type: "gallery",
+      images: [
+        { src: "https://picsum.photos/seed/branding-g1/400/400" },
+        { src: "https://picsum.photos/seed/branding-g2/400/400" },
+        { src: "https://picsum.photos/seed/branding-g3/400/400" },
+      ],
+    },
+  ],
+},
  {
     id: "poster-design-dummy",
     title: "Poster Design",
