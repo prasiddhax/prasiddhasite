@@ -1,4 +1,60 @@
-{
+import { Project, WorkCategory } from "./types";
+
+export const WORKS_DATA: Project[] = [
+  {
+    id: "bloomcraft-identity",
+    title: "Bloomcraft Identity",
+    category: WorkCategory.BRANDING,
+    year: "2026",
+    offsetTop: false,
+    intro: "A full brand identity system built for a boutique floral studio — logo, color language, and packaging designed to feel handmade at every scale.",
+    role: "Brand Strategy, Visual Identity, Art Direction",
+    tech: "Illustrator, Photoshop, Figma",
+    bgClass: "bg-[#D4A017]",
+    thumbnail: "https://picsum.photos/seed/bloomcraft-identity/600/750",
+    content: [
+      { type: "heading", text: "The concept" },
+      {
+        type: "paragraph",
+        text: "Bloomcraft needed an identity that felt organic without slipping into cliché — a system built around a single hand-drawn bloom mark that scales from a wax seal to a shopfront sign.",
+      },
+      {
+        type: "image",
+        width: "full",
+        image: {
+          src: "https://picsum.photos/seed/bloomcraft-hero/1200/675",
+          aspect: "16/9",
+          caption: "Full brand system overview",
+        },
+      },
+      {
+        type: "text-image",
+        imagePosition: "right",
+        text: "The primary mark is a single continuous line, redrawn by hand until it read clearly at 16px and still felt organic at billboard scale.",
+        image: { src: "https://picsum.photos/seed/bloomcraft-logo/600/450", aspect: "4/3" },
+      },
+      {
+        type: "text-image",
+        imagePosition: "left",
+        text: "A warm, earthy palette anchors the system — the same tokens drive packaging, signage, and the social templates handed off to the client's team.",
+        image: { src: "https://picsum.photos/seed/bloomcraft-palette/600/450", aspect: "4/3" },
+      },
+      {
+        type: "quote",
+        text: "The first brand system that felt like us from the very first draft.",
+        author: "Client, Bloomcraft Studio",
+      },
+      {
+        type: "gallery",
+        images: [
+          { src: "https://picsum.photos/seed/bloomcraft-g1/400/400" },
+          { src: "https://picsum.photos/seed/bloomcraft-g2/400/400" },
+          { src: "https://picsum.photos/seed/bloomcraft-g3/400/400" },
+        ],
+      },
+    ],
+  },
+  {
     id: "poster-design-dummy",
     title: "Poster Design",
     category: WorkCategory.POSTER,
@@ -135,3 +191,59 @@
       },
     ],
   },
+  {
+    id: "solar-bloom",
+    title: "Solar Bloom",
+    category: WorkCategory.DIGITAL,
+    year: "2026",
+    flowerType: "yellow",
+    offsetTop: false,
+    intro: "A live weather-driven pixel garden where bloom color and speed responds to real sunlight data at your location.",
+    role: "Creative Direction, Frontend Development",
+    tech: "React, Three.js, Open-Meteo API",
+    bgClass: "bg-[#D4A017]",
+    thumbnail: "https://picsum.photos/seed/solar-bloom/600/750",
+    content: [
+      { type: "flower-showcase", flowerType: "yellow", bgClass: "bg-[#D4A017]" },
+      { type: "heading", text: "The concept" },
+      {
+        type: "paragraph",
+        text: "Solar Bloom pairs a live weather feed with a field of generative pixel flowers — each bloom's color and speed responds to real sunlight data at your location.",
+      },
+      {
+        type: "image",
+        width: "full",
+        image: {
+          src: "https://picsum.photos/seed/solarbloom-hero/1200/675",
+          aspect: "16/9",
+          caption: "Full garden at solar noon",
+        },
+      },
+      {
+        type: "text-image",
+        imagePosition: "right",
+        text: "Each flower is a small state machine — bloom stage is driven by a sun-position calculation running client-side, updated every frame.",
+        image: { src: "https://picsum.photos/seed/solarbloom-statemachine/600/450", aspect: "4/3" },
+      },
+      {
+        type: "text-image",
+        imagePosition: "left",
+        text: "Color grading shifts warm at sunrise and sunset — the same JSON config file drives both the visuals and the accessibility contrast checks.",
+        image: { src: "https://picsum.photos/seed/solarbloom-colorgrade/600/450", aspect: "4/3" },
+      },
+      {
+        type: "quote",
+        text: "It's the first portfolio piece that felt different every single time I opened it.",
+        author: "Beta tester",
+      },
+      {
+        type: "gallery",
+        images: [
+          { src: "https://picsum.photos/seed/solarbloom-g1/400/400" },
+          { src: "https://picsum.photos/seed/solarbloom-g2/400/400" },
+          { src: "https://picsum.photos/seed/solarbloom-g3/400/400" },
+        ],
+      },
+    ],
+  },
+];
