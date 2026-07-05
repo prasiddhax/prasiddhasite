@@ -1,39 +1,9 @@
 import React, { useState, useMemo } from 'react';
 import { Link } from 'react-router-dom';
 
-/**
- * ARTICLES DATA — add new posts here.
- * `slug` becomes the URL: /archive/<slug>
- */
-const POSTS_DATA = [
-  {
-    slug: 'crafting-digital-gardens',
-    category: 'PROCESS',
-    date: 'JULY 14, 2024',
-    title: 'The art of the 8-bit aesthetic in modern UI',
-    description:
-      'Exploring how to balance high-fidelity typography with nostalgic pixel elements to create unique digital experiences that feel both heritage and futuristic.',
-    imageType: 'sunflower' as const,
-  },
-  {
-    slug: 'color-theory-limited-palette',
-    category: 'PIXEL ART',
-    date: 'JUNE 28, 2024',
-    title: 'Color theory in limited palette constraints',
-    description:
-      'Why working with only 16 colors can actually lead to more expressive and cohesive brand identities than an infinite spectrum.',
-    imageType: 'grid' as const,
-  },
-  // Add more posts here as you write them. Example:
-  // {
-  //   slug: 'webgl-shaders-2d-layouts',
-  //   category: 'TUTORIALS',
-  //   date: 'MAY 12, 2024',
-  //   title: 'WebGL shaders in 2D layouts',
-  //   description: 'A walkthrough of...',
-  //   imageType: 'sunflower' as const,
-  // },
-];
+import { POSTS_DATA } from "../posts.data";
+import { renderCardImage } from "./PixelArt";
+
 
 const POSTS_PER_PAGE = 3;
 
