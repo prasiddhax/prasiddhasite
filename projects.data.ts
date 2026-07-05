@@ -8,6 +8,8 @@ export const WORKS_DATA: Project[] = [
     year: "2026",
     flowerType: "red",
     offsetTop: false,
+      thumbnail: "https://picsum.photos/seed/neon-meadows/600/750",
+
     intro:
       "A pixel-based exploration of biological growth patterns within a rigid digital grid. This project examines the tension between organic forms and low-fidelity constraints.",
     role: "Creative Direction, Pixel Illustration",
@@ -36,6 +38,8 @@ export const WORKS_DATA: Project[] = [
     role: "Environment Design, 3D Modeling",
     tech: "Blender, Unity",
     bgClass: "bg-[#0055EE]/50",
+      thumbnail: "https://picsum.photos/seed/floating-garden/600/750",
+
     content: [
       { type: "flower-showcase", flowerType: "yellow", bgClass: "bg-[#0055EE]/50" },
       {
@@ -59,6 +63,8 @@ export const WORKS_DATA: Project[] = [
     role: "Game Asset Design",
     tech: "Aseprite",
     bgClass: "bg-[#002288]/50",
+      thumbnail: "https://picsum.photos/seed/floating-garden/600/750",
+
     content: [
       { type: "flower-showcase", flowerType: "red-tall", bgClass: "bg-[#002288]/50", isSpecial: true },
       {
@@ -133,6 +139,8 @@ export const WORKS_DATA: Project[] = [
       { type: "quote", text: "It feels less like a website and more like tending something alive.", author: "Beta tester" },
       {
         type: "gallery",
+          thumbnail: "https://picsum.photos/seed/neon-meadows/600/750",
+
         images: [
           { src: "/images/cyber-garden/g1.png" },
           { src: "/images/cyber-garden/g2.png" },
@@ -163,6 +171,8 @@ export const WORKS_DATA: Project[] = [
         ],
       },
     ],
+      thumbnail: "https://picsum.photos/seed/neon-meadows/600/750",
+
   },
   {
   id: "solar-bloom",
@@ -175,6 +185,7 @@ export const WORKS_DATA: Project[] = [
   role: "Creative Direction, Frontend Development",
   tech: "React, Three.js, Open-Meteo API",
   bgClass: "bg-[#D4A017]",
+  thumbnail: "https://picsum.photos/seed/neon-meadows/600/750",
 
   content: [
     { type: "flower-showcase", flowerType: "yellow", bgClass: "bg-[#D4A017]" },

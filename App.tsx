@@ -7,6 +7,7 @@ import BlogArticlePage from './components/BlogArticlePage';
 import PrivacyPolicy from './components/PrivacyPolicy';
 import { MousePosition, WorkCategory } from './types';
 import ProjectView from "./components/ProjectView";
+import WorkCard from './components/WorkCard';
 import { WORKS_DATA } from "./projects.data";
 
 import BlogArticleView from "./components/BlogArticleView";
@@ -304,48 +305,6 @@ const TimelineItem: React.FC<TimelineItemProps> = ({ year, side, title, descript
 /**
  * PAGE COMPONENTS
  */
-
-interface WorkCardProps {
-  project: any;
-  offsetTop?: boolean;
-}
-
-const WorkCard: React.FC<WorkCardProps> = ({ project, offsetTop = false }) => {
-  const [isHovered, setIsHovered] = useState(false);
-  const navigate = useNavigate();
-
-  const renderFlower = () => {
-    const ft = project.flowerType;
-    if (ft === 'red') return <PixelFlower colorPrimary="#FF3333" colorSecondary="#FFD700" className="w-full h-full drop-shadow-lg" />;
-    if (ft === 'yellow') return <PixelFlower colorPrimary="#FFD700" colorSecondary="#8B4513" className="w-full h-full drop-shadow-lg" />;
-    if (ft === 'red-tall') return <PixelFlower colorPrimary="#FF3333" colorSecondary="#FFD700" stemHeight={12} className="w-full h-full drop-shadow-lg" />;
-    if (ft === 'yellow-faded') return <PixelFlower colorPrimary="#FFD700" colorSecondary="#8B4513" className="w-full h-full opacity-60" />;
-    if (ft === 'yellow-tall') return <PixelFlower colorPrimary="#FFD700" colorSecondary="#8B4513" stemHeight={12} className="w-full h-full drop-shadow-lg" />;
-    return null;
-  };
-
-  return (
-    <div
-      onClick={() => {
-        window.scrollTo({ top: 0 });
-        navigate(`/project/${project.id}`);
-      }}
-      className={`p-6 flex flex-col gap-6 transition-all duration-500 border border-white/5 bg-white/5 animate-fade-in cursor-pointer ${offsetTop ? 'md:mt-12' : ''} ${isHovered ? 'translate-y-[-8px] bg-white/10 border-white/20' : ''}`}
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
-    >
-      <div className="aspect-[4/5] bg-blue-800/30 flex items-center justify-center relative overflow-hidden group">
-        <div className={`w-24 h-24 transition-transform duration-300 ${isHovered ? 'scale-110 rotate-6' : ''}`}>
-          {renderFlower()}
-        </div>
-      </div>
-      <div className="flex flex-col gap-2">
-        <h3 className="text-3xl font-serif-italic">{project.title}</h3>
-        <p className="text-[10px] opacity-60 tracking-[0.2em] font-bold font-mono uppercase">{project.category} / {project.year}</p>
-      </div>
-    </div>
-  );
-};
 
 
 

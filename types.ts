@@ -7,9 +7,18 @@ export interface MousePosition {
 export interface Project {
   id: string;
   title: string;
-  category: string;
+  category: WorkCategory;
   year: string;
+  flowerType: string;
+  offsetTop: boolean;
+  thumbnail: string; // NEW — card background image
+  intro: string;
+  role: string;
+  tech: string;
+  bgClass: string;
+  content: ContentBlock[];
 }
+
 
 export enum WorkCategory {
   ALL = 'ALL',
