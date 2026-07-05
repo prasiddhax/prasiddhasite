@@ -1,7 +1,12 @@
 export enum WorkCategory {
+  ALL = "All",
   DIGITAL = "Digital",
   GAME = "Game",
   MOTION = "Motion",
+  BRANDING = "Branding",   // add
+  POSTER = "Poster",       // add
+  UI_UX = "UI/UX",          // add
+  MOCKUPS = "Mockups",      // add
 }
 
 export interface ImageBlock {

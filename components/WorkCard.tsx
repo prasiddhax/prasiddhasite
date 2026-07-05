@@ -34,11 +34,14 @@ const WorkCard: React.FC<WorkCardProps> = ({ project, offsetTop = false }) => {
         <div className="absolute inset-0 bg-blue-950/50 transition-colors duration-500 group-hover:bg-blue-950/40" />
 
         {/* Flower accent, floating on top */}
-        {/* <div className="absolute inset-0 flex items-center justify-center">
-          <div className={`w-24 h-24 transition-transform duration-300 ${isHovered ? "scale-110 rotate-6" : ""}`}>
-            <PixelFlowerRenderer flowerType={project.flowerType} className="w-full h-full drop-shadow-lg" />
-          </div>
-        </div> */}
+        {project.flowerType && (
+  <div className="absolute inset-0 flex items-center justify-center">
+    <div className={`w-24 h-24 transition-transform duration-300 ${isHovered ? "scale-110 rotate-6" : ""}`}>
+      <PixelFlowerRenderer flowerType={project.flowerType} className="w-full h-full drop-shadow-lg" />
+    </div>
+  </div>
+)}
+        </div>
       </div>
 
       <div className="flex flex-col gap-2">

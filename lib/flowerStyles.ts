@@ -13,6 +13,7 @@ export const FLOWER_STYLES: Record<string, FlowerStyle> = {
   "yellow-tall":  { colorPrimary: "#FFD700", colorSecondary: "#8B4513", stemHeight: 12 },
 };
 
-export function getFlowerStyle(flowerType: string): FlowerStyle {
+export function getFlowerStyle(flowerType?: string): FlowerStyle {
+  if (!flowerType) return { colorPrimary: "#FFD700", colorSecondary: "#8B4513" };
   return FLOWER_STYLES[flowerType] ?? { colorPrimary: "#FFD700", colorSecondary: "#8B4513" };
 }

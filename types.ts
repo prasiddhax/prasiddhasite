@@ -9,7 +9,7 @@ export interface Project {
   title: string;
   category: WorkCategory;
   year: string;
-  flowerType: string;
+  flowerType?: string; // now optional
   offsetTop: boolean;
   thumbnail: string; // NEW — card background image
   intro: string;

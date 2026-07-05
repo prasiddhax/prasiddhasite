@@ -44,8 +44,9 @@ const ProjectView = () => {
       <header className="mb-20">
         <div className="flex items-center gap-4 mb-8">
           <div className="w-10 h-10 animate-float">
-            <PixelFlower colorPrimary={project.flowerType.includes("red") ? "#FF3333" : "#FFD700"} />
-          </div>
+{project.flowerType && (
+  <PixelFlowerRenderer flowerType={project.flowerType} className="w-10 h-10" />
+)}          </div>
           <span className="text-xs font-bold tracking-[0.3em] text-yellow-300 uppercase">
             {project.category} • {project.year}
           </span>
