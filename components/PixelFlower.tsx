@@ -9,7 +9,7 @@ interface PixelFlowerProps {
   isSpecial?: boolean;
 }
 
-const PixelFlower: React.FC<PixelFlowerProps> = ({ 
+export const PixelFlower: React.FC<PixelFlowerProps> = ({ 
   className = "", 
   colorPrimary = "#FF3333", 
   colorSecondary = "#FFD700",
