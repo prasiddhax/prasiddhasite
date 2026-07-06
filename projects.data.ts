@@ -1,7 +1,7 @@
 import { Project, WorkCategory } from "./types";
 
 export const WORKS_DATA: Project[] = [
- {
+{
     id: "branding-collection",
     title: "Brand Identity Collection",
     category: WorkCategory.BRANDING,
@@ -117,30 +117,30 @@ export const WORKS_DATA: Project[] = [
         author: "Client, Bagaicha Honey",
       },
 
-      { type: "heading", text: "Elyn Studios" },
+      { type: "heading", text: "Elyn Studio" },
       {
         type: "paragraph",
-        text: "Elyn Studios wanted a soft, editorial identity that could flex across photography, styling, and social content. A serif wordmark and a muted blush-and-cream palette give the brand a quiet, gallery-like feel.",
+        text: "Elyn Studio wanted a soft, editorial identity that could flex across photography, styling, and social content. A serif wordmark and a muted blush-and-cream palette give the brand a quiet, gallery-like feel.",
       },
       {
         type: "image",
         width: "full",
         image: {
-          src: "https://picsum.photos/seed/elyn-hero/1200/675",
+          src: "https://picsum.photos/seed/elynstudio-hero/1200/675",
           aspect: "16/9",
-          caption: "Elyn Studios — full brand system",
+          caption: "Elyn Studio — full brand system",
         },
       },
       {
         type: "text-image",
         imagePosition: "right",
         text: "The wordmark pairs a high-contrast serif with generous tracking, built to feel at home on a portfolio cover or a printed invitation.",
-        image: { src: "https://picsum.photos/seed/elyn-logo/600/450", aspect: "4/3" },
+        image: { src: "https://picsum.photos/seed/elynstudio-logo/600/450", aspect: "4/3" },
       },
       {
         type: "quote",
         text: "It feels like us — soft but not forgettable.",
-        author: "Client, Elyn Studios",
+        author: "Client, Elyn Studio",
       },
 
       { type: "heading", text: "Ruby Homes" },
@@ -195,6 +195,32 @@ export const WORKS_DATA: Project[] = [
         author: "Client, Minimaya",
       },
 
+      { type: "heading", text: "Griffity Studios" },
+      {
+        type: "paragraph",
+        text: "Griffity Studios' own identity needed to carry the same confidence it builds for clients — a bold black-and-gold system built to hold up across pitch decks, motion, and merch alike.",
+      },
+      {
+        type: "image",
+        width: "full",
+        image: {
+          src: "https://picsum.photos/seed/griffity-hero/1200/675",
+          aspect: "16/9",
+          caption: "Griffity Studios — full brand system",
+        },
+      },
+      {
+        type: "text-image",
+        imagePosition: "left",
+        text: "The mark pairs a sharp geometric monogram with a signature gold (#DCA138) against black — deliberately loud enough to survive being cropped into a favicon or blown up on a studio wall.",
+        image: { src: "https://picsum.photos/seed/griffity-logo/600/450", aspect: "4/3" },
+      },
+      {
+        type: "quote",
+        text: "The one brand system we never get tired of looking at — because it's ours.",
+        author: "Griffity Studios Team",
+      },
+
       {
         type: "gallery",
         images: [
@@ -204,6 +230,7 @@ export const WORKS_DATA: Project[] = [
           { src: "https://picsum.photos/seed/branding-g4/400/400" },
           { src: "https://picsum.photos/seed/branding-g5/400/400" },
           { src: "https://picsum.photos/seed/branding-g6/400/400" },
+          { src: "https://picsum.photos/seed/branding-g7/400/400" },
         ],
       },
     ],
