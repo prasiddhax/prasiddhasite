@@ -173,13 +173,24 @@ const Header: React.FC<HeaderProps> = ({ activeSection, activeCategory, onCatego
 };
 
 const Footer = () => {
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.src = 'https://unpkg.com/website-carbon-badges@1.1.3/b.min.js';
+    script.defer = true;
+    document.body.appendChild(script);
+
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
+
   return (
     <footer className="w-full px-6 py-10 md:px-12 md:py-12 flex justify-center items-center z-30 text-[10px] font-bold tracking-widest opacity-60 border-t border-white/5">
       <div className="flex flex-col items-center gap-2 text-center">
         {/* Top Row */}
         <span className="uppercase">
           PRASIDDHA SHARMA — 2026 . MAINTAINED BY{" "}
-          <a
+          
             href="https://www.griffitystudios.com"
             target="_blank"
             rel="noopener noreferrer"
@@ -188,7 +199,6 @@ const Footer = () => {
             GRIFFITYSTUDIOS
           </a>
         </span>
-
         {/* Bottom Row */}
         <span className="text-[8px] uppercase flex items-center gap-3">
           All rights reserved •
@@ -199,6 +209,8 @@ const Footer = () => {
             PRIVACY POLICY
           </Link>
         </span>
+        {/* Carbon badge */}
+        <div id="wcb" className="carbonbadge"></div>
       </div>
     </footer>
   );
