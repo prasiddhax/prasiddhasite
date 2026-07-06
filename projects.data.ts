@@ -1,55 +1,209 @@
 import { Project, WorkCategory } from "./types";
 
 export const WORKS_DATA: Project[] = [
-  {
-    id: "bloomcraft-identity",
-    title: "Bloomcraft Identity",
+ {
+    id: "branding-collection",
+    title: "Brand Identity Collection",
     category: WorkCategory.BRANDING,
     year: "2026",
     offsetTop: false,
-    intro: "A full brand identity system built for a boutique floral studio — logo, color language, and packaging designed to feel handmade at every scale.",
+    intro: "A collection of full brand identity systems — logo, color language, and visual direction — built across industries ranging from floristry to construction, each tailored to feel native to its own world.",
     role: "Brand Strategy, Visual Identity, Art Direction",
     tech: "Illustrator, Photoshop, Figma",
     bgClass: "bg-[#D4A017]",
-    thumbnail: "https://picsum.photos/seed/bloomcraft-identity/600/750",
+    thumbnail: "https://picsum.photos/seed/branding-collection/600/750",
     content: [
-      { type: "heading", text: "The concept" },
+      { type: "heading", text: "AITC International" },
       {
         type: "paragraph",
-        text: "Bloomcraft needed an identity that felt organic without slipping into cliché — a system built around a single hand-drawn bloom mark that scales from a wax seal to a shopfront sign.",
+        text: "AITC International needed a mark that could sit on a certificate, a stage backdrop, and a passport-sized business card with equal weight. The system leans on a geometric monogram and a restrained navy-and-gold palette to signal institutional trust.",
       },
       {
         type: "image",
         width: "full",
         image: {
-          src: "https://picsum.photos/seed/bloomcraft-hero/1200/675",
+          src: "https://picsum.photos/seed/aitc-hero/1200/675",
           aspect: "16/9",
-          caption: "Full brand system overview",
+          caption: "AITC International — full brand system",
         },
       },
       {
         type: "text-image",
         imagePosition: "right",
-        text: "The primary mark is a single continuous line, redrawn by hand until it read clearly at 16px and still felt organic at billboard scale.",
-        image: { src: "https://picsum.photos/seed/bloomcraft-logo/600/450", aspect: "4/3" },
+        text: "The monogram is built from overlapping strokes representing connection across regions — simplified until it reproduces cleanly in embossing, signage, and single-color print.",
+        image: { src: "https://picsum.photos/seed/aitc-logo/600/450", aspect: "4/3" },
+      },
+      {
+        type: "quote",
+        text: "Finally a brand that looks like the international standard we train people to.",
+        author: "Client, AITC International",
+      },
+
+      { type: "heading", text: "Veda Studios" },
+      {
+        type: "paragraph",
+        text: "Veda Studios didn't want a logo that competed with client work. The identity strips down to a single lowercase wordmark and a near-black palette, letting the studio's output — not its branding — do the talking.",
+      },
+      {
+        type: "image",
+        width: "full",
+        image: {
+          src: "https://picsum.photos/seed/veda-hero/1200/675",
+          aspect: "16/9",
+          caption: "Veda Studios — full brand system",
+        },
       },
       {
         type: "text-image",
         imagePosition: "left",
-        text: "A warm, earthy palette anchors the system — the same tokens drive packaging, signage, and the social templates handed off to the client's team.",
-        image: { src: "https://picsum.photos/seed/bloomcraft-palette/600/450", aspect: "4/3" },
+        text: "The wordmark uses a tightened, custom letterspacing that reads as quietly premium on a slide, a business card, or a studio wall.",
+        image: { src: "https://picsum.photos/seed/veda-logo/600/450", aspect: "4/3" },
       },
       {
         type: "quote",
-        text: "The first brand system that felt like us from the very first draft.",
-        author: "Client, Bloomcraft Studio",
+        text: "It gets out of the way and lets our reels do the talking.",
+        author: "Client, Veda Studios",
       },
+
+      { type: "heading", text: "Opera Construction" },
+      {
+        type: "paragraph",
+        text: "Opera Construction wanted an identity that read as established, not flashy. A structural monogram and a gold-on-charcoal palette give the brand weight on job-site signage while still holding up in a boardroom deck.",
+      },
+      {
+        type: "image",
+        width: "full",
+        image: {
+          src: "https://picsum.photos/seed/opera-hero/1200/675",
+          aspect: "16/9",
+          caption: "Opera Construction — full brand system",
+        },
+      },
+      {
+        type: "text-image",
+        imagePosition: "right",
+        text: "The mark is built from a single angled beam form, doubling as a subtle nod to the industry without tipping into a literal hard-hat cliché.",
+        image: { src: "https://picsum.photos/seed/opera-logo/600/450", aspect: "4/3" },
+      },
+      {
+        type: "quote",
+        text: "It finally looks like the scale of work we actually do.",
+        author: "Client, Opera Construction",
+      },
+
+      { type: "heading", text: "Bagaicha Honey" },
+      {
+        type: "paragraph",
+        text: "Bagaicha Honey needed packaging and brand language that felt raw and orchard-grown rather than mass-produced. Hand-drawn botanical linework and a warm amber palette carry the story from label to signage.",
+      },
+      {
+        type: "image",
+        width: "full",
+        image: {
+          src: "https://picsum.photos/seed/bagaicha-hero/1200/675",
+          aspect: "16/9",
+          caption: "Bagaicha Honey — full brand system",
+        },
+      },
+      {
+        type: "text-image",
+        imagePosition: "left",
+        text: "A single hive-and-leaf mark anchors the system, simplified enough to emboss onto a jar lid or stamp onto kraft paper packaging.",
+        image: { src: "https://picsum.photos/seed/bagaicha-logo/600/450", aspect: "4/3" },
+      },
+      {
+        type: "quote",
+        text: "Customers say the jar looks like what's inside tastes.",
+        author: "Client, Bagaicha Honey",
+      },
+
+      { type: "heading", text: "Elyn Studios" },
+      {
+        type: "paragraph",
+        text: "Elyn Studios wanted a soft, editorial identity that could flex across photography, styling, and social content. A serif wordmark and a muted blush-and-cream palette give the brand a quiet, gallery-like feel.",
+      },
+      {
+        type: "image",
+        width: "full",
+        image: {
+          src: "https://picsum.photos/seed/elyn-hero/1200/675",
+          aspect: "16/9",
+          caption: "Elyn Studios — full brand system",
+        },
+      },
+      {
+        type: "text-image",
+        imagePosition: "right",
+        text: "The wordmark pairs a high-contrast serif with generous tracking, built to feel at home on a portfolio cover or a printed invitation.",
+        image: { src: "https://picsum.photos/seed/elyn-logo/600/450", aspect: "4/3" },
+      },
+      {
+        type: "quote",
+        text: "It feels like us — soft but not forgettable.",
+        author: "Client, Elyn Studios",
+      },
+
+      { type: "heading", text: "Ruby Homes" },
+      {
+        type: "paragraph",
+        text: "Ruby Homes needed a real estate identity that felt premium without tipping into generic luxury. A deep ruby-and-gold palette and a refined monogram give the brand a distinct, ownable presence in a crowded category.",
+      },
+      {
+        type: "image",
+        width: "full",
+        image: {
+          src: "https://picsum.photos/seed/rubyhomes-hero/1200/675",
+          aspect: "16/9",
+          caption: "Ruby Homes — full brand system",
+        },
+      },
+      {
+        type: "text-image",
+        imagePosition: "left",
+        text: "The monogram interlocks an R and H into a single architectural form, reading equally well on a signboard, a keychain, or a listing brochure.",
+        image: { src: "https://picsum.photos/seed/rubyhomes-logo/600/450", aspect: "4/3" },
+      },
+      {
+        type: "quote",
+        text: "Every listing looks more expensive with this branding on it.",
+        author: "Client, Ruby Homes",
+      },
+
+      { type: "heading", text: "Minimaya" },
+      {
+        type: "paragraph",
+        text: "Minimaya's identity needed to live up to its name — a stripped-back, minimal system built on negative space, restraint, and a single considered accent color.",
+      },
+      {
+        type: "image",
+        width: "full",
+        image: {
+          src: "https://picsum.photos/seed/minimaya-hero/1200/675",
+          aspect: "16/9",
+          caption: "Minimaya — full brand system",
+        },
+      },
+      {
+        type: "text-image",
+        imagePosition: "right",
+        text: "The mark is reduced to a single geometric form, designed to hold its identity even at favicon size or embroidered at 10mm.",
+        image: { src: "https://picsum.photos/seed/minimaya-logo/600/450", aspect: "4/3" },
+      },
+      {
+        type: "quote",
+        text: "Less than we expected, and exactly what we needed.",
+        author: "Client, Minimaya",
+      },
+
       {
         type: "gallery",
         images: [
-          { src: "https://picsum.photos/seed/bloomcraft-g1/400/400" },
-          { src: "https://picsum.photos/seed/bloomcraft-g2/400/400" },
-          { src: "https://picsum.photos/seed/bloomcraft-g3/400/400" },
+          { src: "https://picsum.photos/seed/branding-g1/400/400" },
+          { src: "https://picsum.photos/seed/branding-g2/400/400" },
+          { src: "https://picsum.photos/seed/branding-g3/400/400" },
+          { src: "https://picsum.photos/seed/branding-g4/400/400" },
+          { src: "https://picsum.photos/seed/branding-g5/400/400" },
+          { src: "https://picsum.photos/seed/branding-g6/400/400" },
         ],
       },
     ],
