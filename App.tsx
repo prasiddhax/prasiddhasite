@@ -190,7 +190,7 @@ const Footer = () => {
         {/* Top Row */}
         <span className="uppercase">
           PRASIDDHA SHARMA — 2026 . MAINTAINED BY{" "}
-          
+          <a
             href="https://www.griffitystudios.com"
             target="_blank"
             rel="noopener noreferrer"
