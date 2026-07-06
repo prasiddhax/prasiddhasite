@@ -3,6 +3,8 @@ import { useMemo } from "react";
 import { WORKS_DATA } from "../projects.data";
 import { BlockRenderer } from "./ContentBlocks";
 import { PixelFlower } from "./PixelFlower";
+import { PixelFlowerRenderer } from "./PixelFlowerRenderer";
+
 
 const ProjectView = () => {
   const { id } = useParams();
