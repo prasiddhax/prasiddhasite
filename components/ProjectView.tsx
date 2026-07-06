@@ -6,6 +6,16 @@ import { PixelFlower } from "./PixelFlower";
 import { PixelFlowerRenderer } from "./PixelFlowerRenderer";
 
 
+
+const PixelTrafficLight: React.FC<{ className?: string }> = ({ className = '' }) => (
+  <svg viewBox="0 0 12 16" className={`w-full h-full ${className}`} style={{ imageRendering: 'pixelated', shapeRendering: 'crispEdges' }}>
+    <rect x="4" y="0" width="4" height="4" fill="#FF3333"></rect>
+    <rect x="4" y="4" width="4" height="4" fill="#FFD700"></rect>
+    <rect x="4" y="8" width="4" height="4" fill="#228B22"></rect>
+  </svg>
+);
+
+
 const ProjectView = () => {
   const { id } = useParams();
   const navigate = useNavigate();
@@ -80,6 +90,14 @@ const ProjectView = () => {
       {/* This is your CMS body — order/type of blocks comes entirely from projects.data.ts */}
       <section className="mb-32">
         <BlockRenderer blocks={project.content} />
+         <div className="mt-20 pt-12 border-t border-white/10 flex flex-col items-center">
+                  <div className="w-12 h-12 mb-6 pixel-art">
+                    <PixelTrafficLight />
+                  </div>
+                  <Link to="/" className="text-xs font-bold tracking-widest hover:text-yellow-300 transition-colors">
+                    BACK TO HOME
+                  </Link>
+                </div>
       </section>
 
       <section className="border-t border-white/10 pt-16 mb-24">
