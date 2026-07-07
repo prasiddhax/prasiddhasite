@@ -22,7 +22,7 @@ export const WORKS_DATA: Project[] = [
         type: "image",
         width: "full",
         image: {
-src: "https://drive.google.com/thumbnail?id=1kXsJWL8my0I8VGEJf9VbOEFkKofGg3m0&sz=w2000"
+src: "https://drive.google.com/thumbnail?id=1kXsJWL8my0I8VGEJf9VbOEFkKofGg3m0&sz=w2000" ,
     aspect: "16/9",
           caption: "AITC International — full brand system",
         },
