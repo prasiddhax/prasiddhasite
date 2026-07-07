@@ -22,7 +22,7 @@ export const WORKS_DATA: Project[] = [
         type: "image",
         width: "full",
         image: {
-          src: "https://picsum.photos/seed/aitc-hero/1200/675",
+          src: "https://drive.google.com/file/d/1kXsJWL8my0I8VGEJf9VbOEFkKofGg3m0/view?usp=sharing",
           aspect: "16/9",
           caption: "AITC International — full brand system",
         },
@@ -31,7 +31,7 @@ export const WORKS_DATA: Project[] = [
         type: "text-image",
         imagePosition: "right",
         text: "The monogram is built from overlapping strokes representing connection across regions — simplified until it reproduces cleanly in embossing, signage, and single-color print.",
-        image: { src: "https://picsum.photos/seed/aitc-logo/600/450", aspect: "4/3" },
+        image: { src: "https://drive.google.com/file/d/1TOx58SBa4GtHTxVFUb_jPcoRgjllIVH7/view?usp=sharing", aspect: "4/3" },
       },
       {
         type: "quote",
