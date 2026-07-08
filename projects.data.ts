@@ -44,12 +44,12 @@ src: "https://drive.google.com/thumbnail?id=1Ft57zlcpBpFY78SqFcuHxTIPZjDBgyyU&sz
         type: "paragraph",
         text: "Veda Studios didn't want a logo that competed with client work. The identity strips down to a single lowercase wordmark and a near-black palette, letting the studio's output — not its branding — do the talking.",
       },
-      {
+       {
         type: "image",
         width: "full",
         image: {
-          src: "https://drive.google.com/thumbnail?id=1Ft57zlcpBpFY78SqFcuHxTIPZjDBgyyU",
-          aspect: "16/9",
+src: "https://drive.google.com/thumbnail?id=1Ft57zlcpBpFY78SqFcuHxTIPZjDBgyyU&sz=w2000" ,
+    aspect: "16/9",
           caption: "Veda Studios — full brand system",
         },
       },
