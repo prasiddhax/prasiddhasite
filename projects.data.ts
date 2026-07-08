@@ -48,7 +48,7 @@ src: "https://drive.google.com/thumbnail?id=1kXsJWL8my0I8VGEJf9VbOEFkKofGg3m0&sz
         type: "image",
         width: "full",
         image: {
-          src: "https://picsum.photos/seed/veda-hero/1200/675",
+          src: "https://drive.google.com/thumbnail?id=1230QW8v_FP9JpJclNT_HOOmzYufb1ht0&sz=w2000",
           aspect: "16/9",
           caption: "Veda Studios — full brand system",
         },
