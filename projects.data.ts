@@ -161,7 +161,7 @@ src: "https://drive.google.com/thumbnail?id=1Ft57zlcpBpFY78SqFcuHxTIPZjDBgyyU&sz
         type: "text-image",
         imagePosition: "left",
         text: "The monogram interlocks an R and H into a single architectural form, reading equally well on a signboard, a keychain, or a listing brochure.",
-        image: { src: "https://picsum.photos/seed/rubyhomes-logo/600/450", aspect: "4/3" },
+        image: { src: "https://drive.google.com/thumbnail?id=1bALBuh-B_qHcpVAzgoXraWg5suuyTNH-&sz=w2000", aspect: "4/3" },
       },
       {
         type: "quote",
