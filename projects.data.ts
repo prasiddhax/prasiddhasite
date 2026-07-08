@@ -64,32 +64,32 @@ src: "https://drive.google.com/thumbnail?id=1Ft57zlcpBpFY78SqFcuHxTIPZjDBgyyU&sz
         text: "It gets out of the way and lets our reels do the talking.",
         author: "Client, Veda Studios",
       },
-
-      { type: "heading", text: "Opera Construction" },
+ { type: "heading", text: "Griffity Studios" },
       {
         type: "paragraph",
-        text: "Opera Construction wanted an identity that read as established, not flashy. A structural monogram and a gold-on-charcoal palette give the brand weight on job-site signage while still holding up in a boardroom deck.",
+        text: "Griffity Studios' own identity needed to carry the same confidence it builds for clients — a bold black-and-gold system built to hold up across pitch decks, motion, and merch alike.",
       },
       {
         type: "image",
         width: "full",
         image: {
-          src: "https://drive.google.com/thumbnail?id=1-etaupd0_RBiejsnp9dMNQv-_usv_c4-&sz=w2000",
+          src: "https://drive.google.com/thumbnail?id=1ky2fK-Ho_V4o02XFy58C0ru4tbCxaN4d&sz=w2000",
           aspect: "16/9",
-          caption: "Opera Construction — full brand system",
+          caption: "Griffity Studios — full brand system",
         },
       },
       {
         type: "text-image",
-        imagePosition: "right",
-        text: "The mark is built from a single angled beam form, doubling as a subtle nod to the industry without tipping into a literal hard-hat cliché.",
-        image: { src: "https://picsum.photos/seed/opera-logo/600/450", aspect: "4/3" },
+        imagePosition: "left",
+        text: "The mark pairs a sharp geometric monogram with a signature gold (#DCA138) against black — deliberately loud enough to survive being cropped into a favicon or blown up on a studio wall.",
+        image: { src: "https://drive.google.com/thumbnail?id=1-7a-WRjcpPF079073g3meCGx0uZ2lnwZ&sz=w2000", aspect: "4/3" },
       },
       {
         type: "quote",
-        text: "It finally looks like the scale of work we actually do.",
-        author: "Client, Opera Construction",
+        text: "The one brand system we never get tired of looking at — because it's ours.",
+        author: "Griffity Studios Team",
       },
+      
 
       { type: "heading", text: "Bagaicha Honey" },
       {
@@ -194,33 +194,31 @@ src: "https://drive.google.com/thumbnail?id=1Ft57zlcpBpFY78SqFcuHxTIPZjDBgyyU&sz
         text: "Less than we expected, and exactly what we needed.",
         author: "Client, Minimaya",
       },
-
-      { type: "heading", text: "Griffity Studios" },
+{ type: "heading", text: "Opera Construction" },
       {
         type: "paragraph",
-        text: "Griffity Studios' own identity needed to carry the same confidence it builds for clients — a bold black-and-gold system built to hold up across pitch decks, motion, and merch alike.",
+        text: "Opera Construction wanted an identity that read as established, not flashy. A structural monogram and a gold-on-charcoal palette give the brand weight on job-site signage while still holding up in a boardroom deck.",
       },
       {
         type: "image",
         width: "full",
         image: {
-          src: "https://drive.google.com/thumbnail?id=1ky2fK-Ho_V4o02XFy58C0ru4tbCxaN4d&sz=w2000",
+          src: "https://drive.google.com/thumbnail?id=1-etaupd0_RBiejsnp9dMNQv-_usv_c4-&sz=w2000",
           aspect: "16/9",
-          caption: "Griffity Studios — full brand system",
+          caption: "Opera Construction — full brand system",
         },
       },
       {
         type: "text-image",
-        imagePosition: "left",
-        text: "The mark pairs a sharp geometric monogram with a signature gold (#DCA138) against black — deliberately loud enough to survive being cropped into a favicon or blown up on a studio wall.",
-        image: { src: "https://drive.google.com/thumbnail?id=1-7a-WRjcpPF079073g3meCGx0uZ2lnwZ&sz=w2000", aspect: "4/3" },
+        imagePosition: "right",
+        text: "The mark is built from a single angled beam form, doubling as a subtle nod to the industry without tipping into a literal hard-hat cliché.",
+        image: { src: "https://picsum.photos/seed/opera-logo/600/450", aspect: "4/3" },
       },
       {
         type: "quote",
-        text: "The one brand system we never get tired of looking at — because it's ours.",
-        author: "Griffity Studios Team",
+        text: "It finally looks like the scale of work we actually do.",
+        author: "Client, Opera Construction",
       },
-
       {
         type: "gallery",
         images: [
