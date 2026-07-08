@@ -136,7 +136,7 @@ src: "https://drive.google.com/thumbnail?id=1Ft57zlcpBpFY78SqFcuHxTIPZjDBgyyU&sz
   imagePosition: "right",
   text: "The wordmark pairs a high-contrast serif with generous tracking, built to feel at home on a portfolio cover or a printed invitation.",
   image: {
-    src: "https://drive.google.com/thumbnail?id=1G71SOXbL_e9GOYXdlKTj-JMaKINkvsuO&sz=w2000",
+    src: "https://drive.google.com/thumbnail?id=1NWVeP_yNLtT1-GA9CPdp4ibafN00FFp7&sz=w2000",
     aspect: "4/3",
   },
 },
