@@ -126,7 +126,7 @@ src: "https://drive.google.com/thumbnail?id=1Ft57zlcpBpFY78SqFcuHxTIPZjDBgyyU&sz
         type: "image",
         width: "full",
         image: {
-          src: "https://picsum.photos/seed/elynstudio-hero/1200/675",
+          src: "https://drive.google.com/thumbnail?id=1sRPHV2m2z0BngpzlA090-b2WNFRI1akR&sz=w2000",
           aspect: "16/9",
           caption: "Elyn Studio — full brand system",
         },
