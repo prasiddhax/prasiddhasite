@@ -11,7 +11,7 @@ export const WORKS_DATA: Project[] = [
     role: "Brand Strategy, Visual Identity, Art Direction",
     tech: "Illustrator, Photoshop, Figma",
     bgClass: "bg-[#D4A017]",
-    thumbnail: "https://drive.google.com/thumbnail?id=1AwJ8seMS6Dl6mVe6TtahJEL-WklgJZ4z",
+    thumbnail: "https://drive.google.com/thumbnail?id=1AwJ8seMS6Dl6mVe6TtahJEL-WklgJZ4z&sz=w2000",
     content: [
       { type: "heading", text: "AITC International" },
       {
@@ -31,7 +31,7 @@ src: "https://drive.google.com/thumbnail?id=1e_tICpfKTDUYK9bkVW1HiPpkx-0lhqtE&sz
         type: "text-image",
         imagePosition: "right",
         text: "The monogram is built from overlapping strokes representing connection across regions — simplified until it reproduces cleanly in embossing, signage, and single-color print.",
-        image: { src: "https://drive.google.com/thumbnail?id=1TOx58SBa4GtHTxVFUb_jPcoRgjllIVH7&sz=w2000", aspect: "4/3" },
+        image: { src: "https://drive.google.com/thumbnail?id=1qfntWvjJyhSKVgj9G_BigX9objfL6EzI&sz=w2000", aspect: "4/3" },
       },
       {
         type: "quote",
