@@ -187,7 +187,7 @@ src: "https://drive.google.com/thumbnail?id=1Ft57zlcpBpFY78SqFcuHxTIPZjDBgyyU&sz
         type: "text-image",
         imagePosition: "right",
         text: "The mark is reduced to a single geometric form, designed to hold its identity even at favicon size or embroidered at 10mm.",
-        image: { src: "https://picsum.photos/seed/minimaya-logo/600/450", aspect: "4/3" },
+        image: { src: "https://drive.google.com/thumbnail?id=1YcZ8sP2fXv5YG0xgsVhRKihljt2y_k1b&sz=w2000", aspect: "4/3" },
       },
       {
         type: "quote",
