@@ -100,7 +100,7 @@ src: "https://drive.google.com/thumbnail?id=1Ft57zlcpBpFY78SqFcuHxTIPZjDBgyyU&sz
         type: "image",
         width: "full",
         image: {
-          src: "https://drive.google.com/thumbnail?id=10osJg_xbA6K853vDx4UNH9O8nGZHXAOS",
+          src: "https://drive.google.com/thumbnail?id=10osJg_xbA6K853vDx4UNH9O8nGZHXAOS&sz=w2000",
           aspect: "16/9",
           caption: "Bagaicha Honey — full brand system",
         },
@@ -109,7 +109,7 @@ src: "https://drive.google.com/thumbnail?id=1Ft57zlcpBpFY78SqFcuHxTIPZjDBgyyU&sz
         type: "text-image",
         imagePosition: "left",
         text: "A single hive-and-leaf mark anchors the system, simplified enough to emboss onto a jar lid or stamp onto kraft paper packaging.",
-        image: { src: "https://picsum.photos/seed/bagaicha-logo/600/450", aspect: "4/3" },
+        image: { src: "https://drive.google.com/thumbnail?id=10osJg_xbA6K853vDx4UNH9O8nGZHXAOS&sz=w2000", aspect: "4/3" },
       },
       {
         type: "quote",
