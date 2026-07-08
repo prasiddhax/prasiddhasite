@@ -11,7 +11,7 @@ export const WORKS_DATA: Project[] = [
     role: "Brand Strategy, Visual Identity, Art Direction",
     tech: "Illustrator, Photoshop, Figma",
     bgClass: "bg-[#D4A017]",
-    thumbnail: "https://picsum.photos/seed/branding-collection/600/750",
+    thumbnail: "https://drive.google.com/thumbnail?id=1AwJ8seMS6Dl6mVe6TtahJEL-WklgJZ4z",
     content: [
       { type: "heading", text: "AITC International" },
       {
