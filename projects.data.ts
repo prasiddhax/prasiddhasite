@@ -74,7 +74,7 @@ src: "https://drive.google.com/thumbnail?id=1Ft57zlcpBpFY78SqFcuHxTIPZjDBgyyU&sz
         type: "image",
         width: "full",
         image: {
-          src: "https://picsum.photos/seed/opera-hero/1200/675",
+          src: "https://drive.google.com/thumbnail?id=1-etaupd0_RBiejsnp9dMNQv-_usv_c4-&sz=w2000",
           aspect: "16/9",
           caption: "Opera Construction — full brand system",
         },
