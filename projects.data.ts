@@ -178,7 +178,7 @@ src: "https://drive.google.com/thumbnail?id=1Ft57zlcpBpFY78SqFcuHxTIPZjDBgyyU&sz
         type: "image",
         width: "full",
         image: {
-          src: "https://drive.google.com/thumbnail?id=WXDC7hHh85mMoN7urKwsEp_EdoHba5yB&sz=w2000",
+          src: "https://drive.google.com/thumbnail?id=1WXDC7hHh85mMoN7urKwsEp_EdoHba5yB&sz=w2000",
           aspect: "16/9",
           caption: "Minimaya — full brand system",
         },
