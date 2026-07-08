@@ -100,7 +100,7 @@ src: "https://drive.google.com/thumbnail?id=1Ft57zlcpBpFY78SqFcuHxTIPZjDBgyyU&sz
         type: "image",
         width: "full",
         image: {
-          src: "https://drive.google.com/thumbnail?id=10osJg_xbA6K853vDx4UNH9O8nGZHXAOS&sz=w2000",
+          src: "https://drive.google.com/thumbnail?id=15ScdSp_34UfDHxvEW5qF3XOfgKVqXjDp&sz=w2000",
           aspect: "16/9",
           caption: "Bagaicha Honey — full brand system",
         },
