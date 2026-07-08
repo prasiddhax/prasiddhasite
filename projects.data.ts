@@ -204,7 +204,7 @@ src: "https://drive.google.com/thumbnail?id=1Ft57zlcpBpFY78SqFcuHxTIPZjDBgyyU&sz
         type: "image",
         width: "full",
         image: {
-          src: "https://picsum.photos/seed/griffity-hero/1200/675",
+          src: "https://drive.google.com/thumbnail?id=1ky2fK-Ho_V4o02XFy58C0ru4tbCxaN4d&sz=w2000",
           aspect: "16/9",
           caption: "Griffity Studios — full brand system",
         },
