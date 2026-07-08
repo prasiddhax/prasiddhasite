@@ -117,31 +117,34 @@ src: "https://drive.google.com/thumbnail?id=1Ft57zlcpBpFY78SqFcuHxTIPZjDBgyyU&sz
         author: "Client, Bagaicha Honey",
       },
 
-      { type: "heading", text: "Elyn Studio" },
-      {
-        type: "paragraph",
-        text: "Elyn Studio wanted a soft, editorial identity that could flex across photography, styling, and social content. A serif wordmark and a muted blush-and-cream palette give the brand a quiet, gallery-like feel.",
-      },
-      {
-        type: "image",
-        width: "full",
-        image: {
-          src: "https://drive.google.com/thumbnail?id=1sRPHV2m2z0BngpzlA090-b2WNFRI1akR&sz=w2000",
-          aspect: "16/9",
-          caption: "Elyn Studio — full brand system",
-        },
-      },
-      {
-        type: "text-image",
-        imagePosition: "right",
-        text: "The wordmark pairs a high-contrast serif with generous tracking, built to feel at home on a portfolio cover or a printed invitation.",
-        image: { src: "https://picsum.photos/seed/elynstudio-logo/600/450", aspect: "4/3" },
-      },
-      {
-        type: "quote",
-        text: "It feels like us — soft but not forgettable.",
-        author: "Client, Elyn Studio",
-      },
+{ type: "heading", text: "Elyn Studio®" },
+{
+  type: "paragraph",
+  text: "Elyn Studio® wanted a soft, editorial identity that could flex across photography, styling, and social content. A serif wordmark and a muted blush-and-cream palette give the brand a quiet, gallery-like feel.",
+},
+{
+  type: "image",
+  width: "full",
+  image: {
+    src: "https://drive.google.com/thumbnail?id=1sRPHV2m2z0BngpzlA090-b2WNFRI1akR&sz=w2000",
+    aspect: "16/9",
+    caption: "Elyn Studio® — full brand system",
+  },
+},
+{
+  type: "text-image",
+  imagePosition: "right",
+  text: "The wordmark pairs a high-contrast serif with generous tracking, built to feel at home on a portfolio cover or a printed invitation.",
+  image: {
+    src: "https://drive.google.com/thumbnail?id=1G71SOXbL_e9GOYXdlKTj-JMaKINkvsuO&sz=w2000",
+    aspect: "4/3",
+  },
+},
+{
+  type: "quote",
+  text: "It feels like us — soft but not forgettable.",
+  author: "Client, Elyn Studio®",
+},
 
       { type: "heading", text: "Ruby Homes" },
       {
