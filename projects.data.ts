@@ -31,7 +31,7 @@ src: "https://drive.google.com/thumbnail?id=1e_tICpfKTDUYK9bkVW1HiPpkx-0lhqtE&sz
         type: "text-image",
         imagePosition: "right",
         text: "The monogram is built from overlapping strokes representing connection across regions — simplified until it reproduces cleanly in embossing, signage, and single-color print.",
-        image: { src: "https://drive.google.com/thumbnail?id=1qfntWvjJyhSKVgj9G_BigX9objfL6EzI&sz=w2000", aspect: "4/3" },
+        image: { src: "https://drive.google.com/thumbnail?id=17lyh9LAHMcJCg-qzOTJPb6VxfeKPR4NU&sz=w2000", aspect: "4/3" },
       },
       {
         type: "quote",
