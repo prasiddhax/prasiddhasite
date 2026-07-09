@@ -80,7 +80,7 @@ src: "https://drive.google.com/thumbnail?id=1Ft57zlcpBpFY78SqFcuHxTIPZjDBgyyU&sz
       },
       {
         type: "text-image",
-        imagePosition: "left",
+        imagePosition: "right",
         text: "The mark pairs a sharp geometric monogram with a signature gold (#DCA138) against black — deliberately loud enough to survive being cropped into a favicon or blown up on a studio wall.",
         image: { src: "https://drive.google.com/thumbnail?id=1-7a-WRjcpPF079073g3meCGx0uZ2lnwZ&sz=w2000", aspect: "4/3" },
       },
