@@ -87,12 +87,16 @@ const ProjectView = () => {
         </div>
       </header>
 
-      {/* This is your CMS body — order/type of blocks comes entirely from projects.data.ts */}
+{/* This is your CMS body — order/type of blocks comes entirely from projects.data.ts */}
+<section className="mb-32">
+  <BlockRenderer blocks={project.content} />
+</section>
+
 <section className="border-t border-white/10 pt-16 mb-24">
   <div className="flex flex-col md:flex-row justify-between items-center gap-12">
     <button
       onClick={() => {
-        window.scrollTo({ top: 0 });
+        window.scrollTo({ top: 0, behavior: "smooth" });
         navigate(`/project/${prevProject.id}`);
       }}
       className="group text-left flex-1"
@@ -100,6 +104,7 @@ const ProjectView = () => {
       <span className="text-[10px] font-bold tracking-widest opacity-50 block mb-4 uppercase">
         Previous Project
       </span>
+
       <h3 className="text-4xl md:text-5xl font-serif-italic group-hover:text-yellow-300 transition-colors">
         {prevProject.title}
       </h3>
@@ -109,7 +114,7 @@ const ProjectView = () => {
 
     <button
       onClick={() => {
-        window.scrollTo({ top: 0 });
+        window.scrollTo({ top: 0, behavior: "smooth" });
         navigate(`/project/${nextProject.id}`);
       }}
       className="group text-right flex-1"
@@ -117,6 +122,7 @@ const ProjectView = () => {
       <span className="text-[10px] font-bold tracking-widest opacity-50 block mb-4 uppercase">
         Next Project
       </span>
+
       <h3 className="text-4xl md:text-5xl font-serif-italic group-hover:text-yellow-300 transition-colors">
         {nextProject.title}
       </h3>
@@ -124,29 +130,21 @@ const ProjectView = () => {
   </div>
 
   {/* Back to Home */}
- return (
-  <main>
-    <section className="mb-32">
-      <BlockRenderer blocks={project.content} />
-    </section>
+  <div className="mt-20 pt-12 border-t border-white/10 flex flex-col items-center">
+    <div className="w-12 h-12 mb-6 pixel-art">
+      <PixelTrafficLight />
+    </div>
 
-    <section className="border-t border-white/10 pt-16 mb-24">
-      {/* Previous / Next */}
+    <Link
+      to="/"
+      className="text-xs font-bold tracking-widest hover:text-yellow-300 transition-colors"
+    >
+      BACK TO HOME
+    </Link>
+  </div>
+</section>
 
-      <div className="mt-20 pt-12 border-t border-white/10 flex flex-col items-center">
-        <div className="w-12 h-12 mb-6 pixel-art">
-          <PixelTrafficLight />
-        </div>
-
-        <Link
-          to="/"
-          className="text-xs font-bold tracking-widest hover:text-yellow-300 transition-colors"
-        >
-          BACK TO HOME
-        </Link>
-      </div>
-    </section>
-  </main>
+</main>
   );
 };
 
