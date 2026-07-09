@@ -88,6 +88,17 @@ const ProjectView = () => {
       </header>
 
       {/* This is your CMS body — order/type of blocks comes entirely from projects.data.ts */}
+                       <section className="mb-32">
+        <BlockRenderer blocks={project.content} />
+         <div className="mt-20 pt-12 border-t border-white/10 flex flex-col items-center">
+                  <div className="w-12 h-12 mb-6 pixel-art">
+                    <PixelTrafficLight />
+                  </div>
+                  <Link to="/" className="text-xs font-bold tracking-widest hover:text-yellow-300 transition-colors">
+                    BACK TO HOME
+                  </Link>
+                </div>
+      </section>
 
       <section className="border-t border-white/10 pt-16 mb-24">
         <div className="flex flex-col md:flex-row justify-between items-center gap-12">
@@ -109,18 +120,6 @@ const ProjectView = () => {
             <h3 className="text-4xl md:text-5xl font-serif-italic group-hover:text-yellow-300 transition-colors">
               {nextProject.title}
             </h3>
-
-                  <section className="mb-32">
-        <BlockRenderer blocks={project.content} />
-         <div className="mt-20 pt-12 border-t border-white/10 flex flex-col items-center">
-                  <div className="w-12 h-12 mb-6 pixel-art">
-                    <PixelTrafficLight />
-                  </div>
-                  <Link to="/" className="text-xs font-bold tracking-widest hover:text-yellow-300 transition-colors">
-                    BACK TO HOME
-                  </Link>
-                </div>
-      </section>
             
           </button>
         </div>
