@@ -88,43 +88,54 @@ const ProjectView = () => {
       </header>
 
       {/* This is your CMS body — order/type of blocks comes entirely from projects.data.ts */}
-                       <section className="mb-32">
-        <BlockRenderer blocks={project.content} />
-         <div className="mt-20 pt-12 border-t border-white/10 flex flex-col items-center">
-                  <div className="w-12 h-12 mb-6 pixel-art">
-                    <PixelTrafficLight />
-                  </div>
-                  <Link to="/" className="text-xs font-bold tracking-widest hover:text-yellow-300 transition-colors">
-                    BACK TO HOME
-                  </Link>
-                </div>
-      </section>
+<section className="border-t border-white/10 pt-16 mb-24">
+  <div className="flex flex-col md:flex-row justify-between items-center gap-12">
+    <button
+      onClick={() => {
+        window.scrollTo({ top: 0 });
+        navigate(`/project/${prevProject.id}`);
+      }}
+      className="group text-left flex-1"
+    >
+      <span className="text-[10px] font-bold tracking-widest opacity-50 block mb-4 uppercase">
+        Previous Project
+      </span>
+      <h3 className="text-4xl md:text-5xl font-serif-italic group-hover:text-yellow-300 transition-colors">
+        {prevProject.title}
+      </h3>
+    </button>
 
-      <section className="border-t border-white/10 pt-16 mb-24">
-        <div className="flex flex-col md:flex-row justify-between items-center gap-12">
-          <button
-            onClick={() => { window.scrollTo({ top: 0 }); navigate(`/project/${prevProject.id}`); }}
-            className="group text-left flex-1"
-          >
-            <span className="text-[10px] font-bold tracking-widest opacity-50 block mb-4 uppercase">Previous Project</span>
-            <h3 className="text-4xl md:text-5xl font-serif-italic group-hover:text-yellow-300 transition-colors">
-              {prevProject.title}
-            </h3>
-          </button>
-          <div className="hidden md:block w-px h-24 bg-white/10"></div>
-          <button
-            onClick={() => { window.scrollTo({ top: 0 }); navigate(`/project/${nextProject.id}`); }}
-            className="group text-right flex-1"
-          >
-            <span className="text-[10px] font-bold tracking-widest opacity-50 block mb-4 uppercase">Next Project</span>
-            <h3 className="text-4xl md:text-5xl font-serif-italic group-hover:text-yellow-300 transition-colors">
-              {nextProject.title}
-            </h3>
-            
-          </button>
-        </div>
-      </section>
-    </main>
+    <div className="hidden md:block w-px h-24 bg-white/10"></div>
+
+    <button
+      onClick={() => {
+        window.scrollTo({ top: 0 });
+        navigate(`/project/${nextProject.id}`);
+      }}
+      className="group text-right flex-1"
+    >
+      <span className="text-[10px] font-bold tracking-widest opacity-50 block mb-4 uppercase">
+        Next Project
+      </span>
+      <h3 className="text-4xl md:text-5xl font-serif-italic group-hover:text-yellow-300 transition-colors">
+        {nextProject.title}
+      </h3>
+    </button>
+  </div>
+
+  {/* Back to Home */}
+  <div className="mt-20 pt-12 border-t border-white/10 flex flex-col items-center">
+    <div className="w-12 h-12 mb-6 pixel-art">
+      <PixelTrafficLight />
+    </div>
+    <Link
+      to="/"
+      className="text-xs font-bold tracking-widest hover:text-yellow-300 transition-colors"
+    >
+      BACK TO HOME
+    </Link>
+  </div>
+</section>
   );
 };
 
