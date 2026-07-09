@@ -124,18 +124,29 @@ const ProjectView = () => {
   </div>
 
   {/* Back to Home */}
-  <div className="mt-20 pt-12 border-t border-white/10 flex flex-col items-center">
-    <div className="w-12 h-12 mb-6 pixel-art">
-      <PixelTrafficLight />
-    </div>
-    <Link
-      to="/"
-      className="text-xs font-bold tracking-widest hover:text-yellow-300 transition-colors"
-    >
-      BACK TO HOME
-    </Link>
-  </div>
-</section>
+ return (
+  <main>
+    <section className="mb-32">
+      <BlockRenderer blocks={project.content} />
+    </section>
+
+    <section className="border-t border-white/10 pt-16 mb-24">
+      {/* Previous / Next */}
+
+      <div className="mt-20 pt-12 border-t border-white/10 flex flex-col items-center">
+        <div className="w-12 h-12 mb-6 pixel-art">
+          <PixelTrafficLight />
+        </div>
+
+        <Link
+          to="/"
+          className="text-xs font-bold tracking-widest hover:text-yellow-300 transition-colors"
+        >
+          BACK TO HOME
+        </Link>
+      </div>
+    </section>
+  </main>
   );
 };
 
