@@ -257,16 +257,16 @@ const PersistentFooterText = () => {
   if (hideOnRoute) return null;
 
   return (
-    <div className="fixed bottom-6 left-0 right-0 z-40 px-6 md:px-12 flex justify-between items-center text-[10px] font-bold tracking-widest pointer-events-none">
-      <button
-        onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-        className={`pointer-events-auto opacity-60 hover:opacity-100 transition-all duration-500 hover:text-yellow-300 ${
-          scrolled ? 'translate-y-0' : 'translate-y-10 opacity-0'
-        }`}
-      >
-        Back to Top ↑
-      </button>
-    </div>
+  <div className="fixed bottom-6 left-0 right-0 z-40 px-6 md:px-12 flex justify-end items-center text-[10px] font-bold tracking-widest pointer-events-none">
+  <button
+    onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+    className={`pointer-events-auto opacity-60 hover:opacity-100 transition-all duration-500 hover:text-yellow-300 ${
+      scrolled ? 'translate-y-0' : 'translate-y-10 opacity-0'
+    }`}
+  >
+    Back to Top ↑
+  </button>
+</div>
   );
 };
 
