@@ -257,10 +257,7 @@ const PersistentFooterText = () => {
   if (hideOnRoute) return null;
 
   return (
-    <div className="fixed bottom-6 left-0 right-0 z-40 px-6 md:px-12 flex justify-between items-center text-[10px] font-bold tracking-widest pointer-events-none">
-      <span className="opacity-60 font-mono">
-        KTM · {currentTime}
-      </span>
+
 
       <button
         onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
