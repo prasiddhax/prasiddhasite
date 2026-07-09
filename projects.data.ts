@@ -22,7 +22,7 @@ export const WORKS_DATA: Project[] = [
         type: "image",
         width: "full",
         image: {
-src: "https://drive.google.com/thumbnail?id=1e_tICpfKTDUYK9bkVW1HiPpkx-0lhqtE&sz=w2000" ,
+src: "https://drive.google.com/thumbnail?id=15vpcY9JzOsfxRa9zxoasDlChQBeYK1XM&sz=w2000" ,
     aspect: "16/9",
           caption: "AITC International — full brand system",
         },
@@ -31,7 +31,7 @@ src: "https://drive.google.com/thumbnail?id=1e_tICpfKTDUYK9bkVW1HiPpkx-0lhqtE&sz
         type: "text-image",
         imagePosition: "right",
         text: "The monogram is built from overlapping strokes representing connection across regions — simplified until it reproduces cleanly in embossing, signage, and single-color print.",
-        image: { src: "https://drive.google.com/thumbnail?id=17lyh9LAHMcJCg-qzOTJPb6VxfeKPR4NU&sz=w2000", aspect: "4/3" },
+        image: { src: "https://drive.google.com/thumbnail?id=1_XQGe1l0U8X8uJx2Jv3R1VaoZFrTOLR4&sz=w2000", aspect: "4/3" },
       },
       {
         type: "quote",
@@ -57,7 +57,7 @@ src: "https://drive.google.com/thumbnail?id=1Ft57zlcpBpFY78SqFcuHxTIPZjDBgyyU&sz
         type: "text-image",
         imagePosition: "left",
         text: "The wordmark uses a tightened, custom letterspacing that reads as quietly premium on a slide, a business card, or a studio wall.",
-        image: { src: "https://picsum.photos/seed/veda-logo/600/450", aspect: "4/3" },
+        image: { src: "https://drive.google.com/thumbnail?id=1Vd8hUgAtY7Em7T7DkhZN2bFlVLjOkfhK&sz=w2000", aspect: "4/3" },
       },
       {
         type: "quote",
@@ -215,7 +215,7 @@ src: "https://drive.google.com/thumbnail?id=1Ft57zlcpBpFY78SqFcuHxTIPZjDBgyyU&sz
         type: "text-image",
         imagePosition: "right",
         text: "The mark is built from a single angled beam form, doubling as a subtle nod to the industry without tipping into a literal hard-hat cliché.",
-        image: { src: "https://picsum.photos/seed/opera-logo/600/450", aspect: "4/3" },
+        image: { src: "https://drive.google.com/thumbnail?id=11KF7uz4MEjkNB-7rtk3J3_0p6h4ECdjF&sz=w2000", aspect: "4/3" },
       },
       {
         type: "quote",
