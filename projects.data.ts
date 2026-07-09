@@ -213,7 +213,7 @@ src: "https://drive.google.com/thumbnail?id=1Ft57zlcpBpFY78SqFcuHxTIPZjDBgyyU&sz
       },
       {
         type: "text-image",
-        imagePosition: "right",
+        imagePosition: "left",
         text: "The mark is built from a single angled beam form, doubling as a subtle nod to the industry without tipping into a literal hard-hat cliché.",
         image: { src: "https://drive.google.com/thumbnail?id=11KF7uz4MEjkNB-7rtk3J3_0p6h4ECdjF&sz=w2000", aspect: "4/3" },
       },
