@@ -230,127 +230,103 @@ src: "https://drive.google.com/thumbnail?id=1Ft57zlcpBpFY78SqFcuHxTIPZjDBgyyU&sz
     category: WorkCategory.POSTER_DESIGN,
     year: "2026",
     offsetTop: false,
-    intro: "A collection of standalone poster designs — product launches, festive greetings, event invites, and awareness campaigns — each built for Instagram at native square size.",
+    intro: "A collection of standalone poster designs — product launches, festive greetings, event invites, and awareness campaigns — each built for Instagram at native post size.",
     role: "Poster Design, Art Direction",
     tech: "Illustrator, Photoshop",
     bgClass: "bg-[#DCA138]",
     thumbnail: "https://picsum.photos/seed/poster-collection/600/750",
     content: [
-      { type: "heading", text: "Bagaicha Honey" },
+      { type: "heading", text: "Bagaicha Honey & Geely EV Car" },
       {
         type: "paragraph",
-        text: "A product poster built around warmth — amber tones and orchard textures that let the honey feel hand-harvested rather than shelf-stocked.",
+        text: "Two very different product posters — Bagaicha Honey leans warm and orchard-toned, while the Geely EV goes dark and forward-looking, letting the electric identity lead.",
       },
       {
         type: "image",
-        width: "half",
+        width: "full",
         image: {
-          src: "https://picsum.photos/seed/bagaicha-poster-hero/1080/1080",
+          src: "https://picsum.photos/seed/bagaicha-poster-hero/1080/1350",
           aspect: "4/5",
           caption: "Bagaicha Honey — product poster",
         },
       },
-
-      { type: "heading", text: "Geely EV Car" },
-      {
-        type: "paragraph",
-        text: "A launch poster designed to feel forward-looking — dark gradients and a clean silhouette putting the car's electric identity front and center.",
-      },
       {
         type: "image",
-        width: "half",
+        width: "full",
         image: {
-          src: "https://picsum.photos/seed/geely-ev-poster-hero/1080/1080",
+          src: "https://picsum.photos/seed/geely-ev-poster-hero/1080/1350",
           aspect: "4/5",
           caption: "Geely EV — launch poster",
         },
       },
 
-      { type: "heading", text: "Griffity — Mental Health Awareness" },
+      { type: "heading", text: "Griffity — Mental Health Awareness & Buddha Purnima" },
       {
         type: "paragraph",
-        text: "A quieter piece for Griffity — soft, muted tones and open space designed to feel calming rather than alarming, built to start a conversation, not shout one.",
+        text: "One quiet and reflective, one festive and gold — both carrying Griffity's restrained visual signature across very different tones.",
       },
       {
         type: "image",
-        width: "half",
+        width: "full",
         image: {
-          src: "https://picsum.photos/seed/griffity-mentalhealth-poster-hero/1080/1080",
+          src: "https://picsum.photos/seed/griffity-mentalhealth-poster-hero/1080/1350",
           aspect: "4/5",
           caption: "Griffity Studios — mental health awareness poster",
         },
       },
-
-      { type: "heading", text: "Griffity — Buddha Purnima" },
-      {
-        type: "paragraph",
-        text: "A festive greeting rendered in Griffity's black-and-gold system, blending traditional motifs with the studio's own visual signature.",
-      },
       {
         type: "image",
-        width: "half",
+        width: "full",
         image: {
-          src: "https://picsum.photos/seed/griffity-buddhapurnima-poster-hero/1080/1080",
+          src: "https://picsum.photos/seed/griffity-buddhapurnima-poster-hero/1080/1350",
           aspect: "4/5",
           caption: "Griffity Studios — Buddha Purnima festive poster",
         },
       },
 
-      { type: "heading", text: "Griffity — Deepawali" },
+      { type: "heading", text: "Griffity — Deepawali & Nepakids Diaper" },
       {
         type: "paragraph",
-        text: "A Deepawali greeting built on warm light and layered gold, designed to feel festive without losing the studio's restrained visual identity.",
+        text: "A festive Deepawali greeting in warm gold light, paired with a soft, parent-friendly product poster for Nepakids.",
       },
       {
         type: "image",
-        width: "half",
+        width: "full",
         image: {
-          src: "https://picsum.photos/seed/griffity-deepawali-poster-hero/1080/1080",
+          src: "https://picsum.photos/seed/griffity-deepawali-poster-hero/1080/1350",
           aspect: "4/5",
           caption: "Griffity Studios — Deepawali festive poster",
         },
       },
-
-      { type: "heading", text: "Nepakids Diaper" },
-      {
-        type: "paragraph",
-        text: "A friendly, trust-building product poster — soft pastels and approachable typography aimed squarely at parents scanning a shelf.",
-      },
       {
         type: "image",
-        width: "half",
+        width: "full",
         image: {
-          src: "https://picsum.photos/seed/nepakids-diaper-poster-hero/1080/1080",
+          src: "https://picsum.photos/seed/nepakids-diaper-poster-hero/1080/1350",
           aspect: "4/5",
           caption: "Nepakids — product poster",
         },
       },
 
-      { type: "heading", text: "Cafe Boh — Opening Soon" },
+      { type: "heading", text: "Cafe Boh & Advanced College — Welcome & Farewell Invitation" },
       {
         type: "paragraph",
-        text: "A teaser poster built to generate curiosity ahead of launch — minimal copy, strong typography, and just enough visual identity to make people want to know more.",
+        text: "A minimal teaser poster for Cafe Boh's opening, alongside a formal event invitation designed for Advanced College's marquee campus event.",
       },
       {
         type: "image",
-        width: "half",
+        width: "full",
         image: {
-          src: "https://picsum.photos/seed/cafeboh-openingsoon-poster-hero/1080/1080",
+          src: "https://picsum.photos/seed/cafeboh-openingsoon-poster-hero/1080/1350",
           aspect: "4/5",
           caption: "Cafe Boh — opening soon poster",
         },
       },
-
-      { type: "heading", text: "Advanced College — Welcome & Farewell Invitation" },
-      {
-        type: "paragraph",
-        text: "A formal event invitation balancing a celebratory tone with the polish expected of an academic institution's marquee event.",
-      },
       {
         type: "image",
-        width: "half",
+        width: "full",
         image: {
-          src: "https://picsum.photos/seed/advancedcollege-invite-poster-hero/1080/1080",
+          src: "https://picsum.photos/seed/advancedcollege-invite-poster-hero/1080/1350",
           aspect: "4/5",
           caption: "Advanced College — welcome & farewell invitation poster",
         },
@@ -363,9 +339,9 @@ src: "https://drive.google.com/thumbnail?id=1Ft57zlcpBpFY78SqFcuHxTIPZjDBgyyU&sz
       },
       {
         type: "image",
-        width: "half",
+        width: "full",
         image: {
-          src: "https://picsum.photos/seed/advancedcollege-sabinrai-poster-hero/1080/1080",
+          src: "https://picsum.photos/seed/advancedcollege-sabinrai-poster-hero/1080/1350",
           aspect: "4/5",
           caption: "Advanced College — Sabin Rai and the Band, welcome & farewell",
         },
