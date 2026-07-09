@@ -222,18 +222,6 @@ src: "https://drive.google.com/thumbnail?id=1Ft57zlcpBpFY78SqFcuHxTIPZjDBgyyU&sz
         text: "It finally looks like the scale of work we actually do.",
         author: "Client, Opera Construction",
       },
-      {
-        type: "gallery",
-        images: [
-          { src: "https://picsum.photos/seed/branding-g1/400/400" },
-          { src: "https://picsum.photos/seed/branding-g2/400/400" },
-          { src: "https://picsum.photos/seed/branding-g3/400/400" },
-          { src: "https://picsum.photos/seed/branding-g4/400/400" },
-          { src: "https://picsum.photos/seed/branding-g5/400/400" },
-          { src: "https://picsum.photos/seed/branding-g6/400/400" },
-          { src: "https://picsum.photos/seed/branding-g7/400/400" },
-        ],
-      },
     ],
   },
  {
