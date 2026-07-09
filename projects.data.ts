@@ -224,13 +224,13 @@ src: "https://drive.google.com/thumbnail?id=1Ft57zlcpBpFY78SqFcuHxTIPZjDBgyyU&sz
       },
     ],
   },
- {
+{
     id: "poster-collection",
     title: "Poster Design Collection",
     category: WorkCategory.POSTER_DESIGN,
     year: "2026",
     offsetTop: false,
-    intro: "A collection of standalone poster designs — product launches, festive greetings, event invites, and awareness campaigns — each built to carry its message in a single frame, no explanation needed.",
+    intro: "A collection of standalone poster designs — product launches, festive greetings, event invites, and awareness campaigns — each built for Instagram at native square size.",
     role: "Poster Design, Art Direction",
     tech: "Illustrator, Photoshop",
     bgClass: "bg-[#DCA138]",
@@ -243,9 +243,9 @@ src: "https://drive.google.com/thumbnail?id=1Ft57zlcpBpFY78SqFcuHxTIPZjDBgyyU&sz
       },
       {
         type: "image",
-        width: "full",
+        width: "half",
         image: {
-          src: "https://picsum.photos/seed/bagaicha-poster-hero/1200/1500",
+          src: "https://picsum.photos/seed/bagaicha-poster-hero/1080/1080",
           aspect: "4/5",
           caption: "Bagaicha Honey — product poster",
         },
@@ -258,9 +258,9 @@ src: "https://drive.google.com/thumbnail?id=1Ft57zlcpBpFY78SqFcuHxTIPZjDBgyyU&sz
       },
       {
         type: "image",
-        width: "full",
+        width: "half",
         image: {
-          src: "https://picsum.photos/seed/geely-ev-poster-hero/1200/1500",
+          src: "https://picsum.photos/seed/geely-ev-poster-hero/1080/1080",
           aspect: "4/5",
           caption: "Geely EV — launch poster",
         },
@@ -273,9 +273,9 @@ src: "https://drive.google.com/thumbnail?id=1Ft57zlcpBpFY78SqFcuHxTIPZjDBgyyU&sz
       },
       {
         type: "image",
-        width: "full",
+        width: "half",
         image: {
-          src: "https://picsum.photos/seed/griffity-mentalhealth-poster-hero/1200/1500",
+          src: "https://picsum.photos/seed/griffity-mentalhealth-poster-hero/1080/1080",
           aspect: "4/5",
           caption: "Griffity Studios — mental health awareness poster",
         },
@@ -288,9 +288,9 @@ src: "https://drive.google.com/thumbnail?id=1Ft57zlcpBpFY78SqFcuHxTIPZjDBgyyU&sz
       },
       {
         type: "image",
-        width: "full",
+        width: "half",
         image: {
-          src: "https://picsum.photos/seed/griffity-buddhapurnima-poster-hero/1200/1500",
+          src: "https://picsum.photos/seed/griffity-buddhapurnima-poster-hero/1080/1080",
           aspect: "4/5",
           caption: "Griffity Studios — Buddha Purnima festive poster",
         },
@@ -303,9 +303,9 @@ src: "https://drive.google.com/thumbnail?id=1Ft57zlcpBpFY78SqFcuHxTIPZjDBgyyU&sz
       },
       {
         type: "image",
-        width: "full",
+        width: "half",
         image: {
-          src: "https://picsum.photos/seed/griffity-deepawali-poster-hero/1200/1500",
+          src: "https://picsum.photos/seed/griffity-deepawali-poster-hero/1080/1080",
           aspect: "4/5",
           caption: "Griffity Studios — Deepawali festive poster",
         },
@@ -318,9 +318,9 @@ src: "https://drive.google.com/thumbnail?id=1Ft57zlcpBpFY78SqFcuHxTIPZjDBgyyU&sz
       },
       {
         type: "image",
-        width: "full",
+        width: "half",
         image: {
-          src: "https://picsum.photos/seed/nepakids-diaper-poster-hero/1200/1500",
+          src: "https://picsum.photos/seed/nepakids-diaper-poster-hero/1080/1080",
           aspect: "4/5",
           caption: "Nepakids — product poster",
         },
@@ -333,9 +333,9 @@ src: "https://drive.google.com/thumbnail?id=1Ft57zlcpBpFY78SqFcuHxTIPZjDBgyyU&sz
       },
       {
         type: "image",
-        width: "full",
+        width: "half",
         image: {
-          src: "https://picsum.photos/seed/cafeboh-openingsoon-poster-hero/1200/1500",
+          src: "https://picsum.photos/seed/cafeboh-openingsoon-poster-hero/1080/1080",
           aspect: "4/5",
           caption: "Cafe Boh — opening soon poster",
         },
@@ -348,9 +348,9 @@ src: "https://drive.google.com/thumbnail?id=1Ft57zlcpBpFY78SqFcuHxTIPZjDBgyyU&sz
       },
       {
         type: "image",
-        width: "full",
+        width: "half",
         image: {
-          src: "https://picsum.photos/seed/advancedcollege-invite-poster-hero/1200/1500",
+          src: "https://picsum.photos/seed/advancedcollege-invite-poster-hero/1080/1080",
           aspect: "4/5",
           caption: "Advanced College — welcome & farewell invitation poster",
         },
@@ -363,21 +363,12 @@ src: "https://drive.google.com/thumbnail?id=1Ft57zlcpBpFY78SqFcuHxTIPZjDBgyyU&sz
       },
       {
         type: "image",
-        width: "full",
+        width: "half",
         image: {
-          src: "https://picsum.photos/seed/advancedcollege-sabinrai-poster-hero/1200/1500",
+          src: "https://picsum.photos/seed/advancedcollege-sabinrai-poster-hero/1080/1080",
           aspect: "4/5",
           caption: "Advanced College — Sabin Rai and the Band, welcome & farewell",
         },
-      },
-
-      {
-        type: "gallery",
-        images: [
-          { src: "https://picsum.photos/seed/poster-collection-g1/400/400" },
-          { src: "https://picsum.photos/seed/poster-collection-g2/400/400" },
-          { src: "https://picsum.photos/seed/poster-collection-g3/400/400" },
-        ],
       },
     ],
   },
