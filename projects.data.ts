@@ -227,102 +227,83 @@ src: "https://drive.google.com/thumbnail?id=1Ft57zlcpBpFY78SqFcuHxTIPZjDBgyyU&sz
 {
     id: "poster-collection",
     title: "Poster Design Collection",
-    category: WorkCategory.POSTER_DESIGN,
+    category: WorkCategory.POSTER,
     year: "2026",
+    flowerType: "placeholder", // TODO: replace with your real flowerType value, see note below
     offsetTop: false,
     intro: "A collection of standalone poster designs — product launches, festive greetings, event invites, and awareness campaigns — each built for Instagram at native post size.",
     role: "Poster Design, Art Direction",
     tech: "Illustrator, Photoshop",
     bgClass: "bg-[#DCA138]",
-    thumbnail: "https://picsum.photos/seed/poster-collection/600/750",
     content: [
       {
-        type: "poster-grid",
-        items: [
+        type: "image-pair",
+        images: [
           {
-            title: "Bagaicha Honey",
-            image: {
-              src: "https://picsum.photos/seed/bagaicha-poster-hero/1080/1350",
-              aspect: "4/5",
-            },
+            src: "https://picsum.photos/seed/bagaicha-poster-hero/1080/1350",
+            aspect: "3/4",
+            caption: "Bagaicha Honey",
           },
           {
-            title: "Geely EV Car",
-            image: {
-              src: "https://picsum.photos/seed/geely-ev-poster-hero/1080/1350",
-              aspect: "4/5",
-            },
+            src: "https://picsum.photos/seed/geely-ev-poster-hero/1080/1350",
+            aspect: "3/4",
+            caption: "Geely EV Car",
           },
         ],
       },
       {
-        type: "poster-grid",
-        items: [
+        type: "image-pair",
+        images: [
           {
-            title: "Griffity — Mental Health Awareness",
-            image: {
-              src: "https://picsum.photos/seed/griffity-mentalhealth-poster-hero/1080/1350",
-              aspect: "4/5",
-            },
+            src: "https://picsum.photos/seed/griffity-mentalhealth-poster-hero/1080/1350",
+            aspect: "3/4",
+            caption: "Griffity — Mental Health Awareness",
           },
           {
-            title: "Griffity — Buddha Purnima",
-            image: {
-              src: "https://picsum.photos/seed/griffity-buddhapurnima-poster-hero/1080/1350",
-              aspect: "4/5",
-            },
+            src: "https://picsum.photos/seed/griffity-buddhapurnima-poster-hero/1080/1350",
+            aspect: "3/4",
+            caption: "Griffity — Buddha Purnima",
           },
         ],
       },
       {
-        type: "poster-grid",
-        items: [
+        type: "image-pair",
+        images: [
           {
-            title: "Griffity — Deepawali",
-            image: {
-              src: "https://picsum.photos/seed/griffity-deepawali-poster-hero/1080/1350",
-              aspect: "4/5",
-            },
+            src: "https://picsum.photos/seed/griffity-deepawali-poster-hero/1080/1350",
+            aspect: "3/4",
+            caption: "Griffity — Deepawali",
           },
           {
-            title: "Nepakids Diaper",
-            image: {
-              src: "https://picsum.photos/seed/nepakids-diaper-poster-hero/1080/1350",
-              aspect: "4/5",
-            },
+            src: "https://picsum.photos/seed/nepakids-diaper-poster-hero/1080/1350",
+            aspect: "3/4",
+            caption: "Nepakids Diaper",
           },
         ],
       },
       {
-        type: "poster-grid",
-        items: [
+        type: "image-pair",
+        images: [
           {
-            title: "Cafe Boh — Opening Soon",
-            image: {
-              src: "https://picsum.photos/seed/cafeboh-openingsoon-poster-hero/1080/1350",
-              aspect: "4/5",
-            },
+            src: "https://picsum.photos/seed/cafeboh-openingsoon-poster-hero/1080/1350",
+            aspect: "3/4",
+            caption: "Cafe Boh — Opening Soon",
           },
           {
-            title: "Advanced College — Welcome & Farewell Invitation",
-            image: {
-              src: "https://picsum.photos/seed/advancedcollege-invite-poster-hero/1080/1350",
-              aspect: "4/5",
-            },
+            src: "https://picsum.photos/seed/advancedcollege-invite-poster-hero/1080/1350",
+            aspect: "3/4",
+            caption: "Advanced College — Welcome & Farewell Invitation",
           },
         ],
       },
       {
-        type: "poster-grid",
-        items: [
-          {
-            title: "Advanced College — Sabin Rai & The Band",
-            image: {
-              src: "https://picsum.photos/seed/advancedcollege-sabinrai-poster-hero/1080/1350",
-              aspect: "4/5",
-            },
-          },
-        ],
+        type: "image",
+        width: "half",
+        image: {
+          src: "https://picsum.photos/seed/advancedcollege-sabinrai-poster-hero/1080/1350",
+          aspect: "3/4",
+          caption: "Advanced College — Sabin Rai & The Band",
+        },
       },
     ],
   },
