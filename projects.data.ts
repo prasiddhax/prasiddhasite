@@ -236,115 +236,93 @@ src: "https://drive.google.com/thumbnail?id=1Ft57zlcpBpFY78SqFcuHxTIPZjDBgyyU&sz
     bgClass: "bg-[#DCA138]",
     thumbnail: "https://picsum.photos/seed/poster-collection/600/750",
     content: [
-      { type: "heading", text: "Bagaicha Honey & Geely EV Car" },
       {
-        type: "paragraph",
-        text: "Two very different product posters — Bagaicha Honey leans warm and orchard-toned, while the Geely EV goes dark and forward-looking, letting the electric identity lead.",
+        type: "poster-grid",
+        items: [
+          {
+            title: "Bagaicha Honey",
+            image: {
+              src: "https://picsum.photos/seed/bagaicha-poster-hero/1080/1350",
+              aspect: "4/5",
+            },
+          },
+          {
+            title: "Geely EV Car",
+            image: {
+              src: "https://picsum.photos/seed/geely-ev-poster-hero/1080/1350",
+              aspect: "4/5",
+            },
+          },
+        ],
       },
       {
-        type: "image",
-        width: "full",
-        image: {
-          src: "https://picsum.photos/seed/bagaicha-poster-hero/1080/1350",
-          aspect: "4/5",
-          caption: "Bagaicha Honey — product poster",
-        },
+        type: "poster-grid",
+        items: [
+          {
+            title: "Griffity — Mental Health Awareness",
+            image: {
+              src: "https://picsum.photos/seed/griffity-mentalhealth-poster-hero/1080/1350",
+              aspect: "4/5",
+            },
+          },
+          {
+            title: "Griffity — Buddha Purnima",
+            image: {
+              src: "https://picsum.photos/seed/griffity-buddhapurnima-poster-hero/1080/1350",
+              aspect: "4/5",
+            },
+          },
+        ],
       },
       {
-        type: "image",
-        width: "full",
-        image: {
-          src: "https://picsum.photos/seed/geely-ev-poster-hero/1080/1350",
-          aspect: "4/5",
-          caption: "Geely EV — launch poster",
-        },
-      },
-
-      { type: "heading", text: "Griffity — Mental Health Awareness & Buddha Purnima" },
-      {
-        type: "paragraph",
-        text: "One quiet and reflective, one festive and gold — both carrying Griffity's restrained visual signature across very different tones.",
-      },
-      {
-        type: "image",
-        width: "full",
-        image: {
-          src: "https://picsum.photos/seed/griffity-mentalhealth-poster-hero/1080/1350",
-          aspect: "4/5",
-          caption: "Griffity Studios — mental health awareness poster",
-        },
+        type: "poster-grid",
+        items: [
+          {
+            title: "Griffity — Deepawali",
+            image: {
+              src: "https://picsum.photos/seed/griffity-deepawali-poster-hero/1080/1350",
+              aspect: "4/5",
+            },
+          },
+          {
+            title: "Nepakids Diaper",
+            image: {
+              src: "https://picsum.photos/seed/nepakids-diaper-poster-hero/1080/1350",
+              aspect: "4/5",
+            },
+          },
+        ],
       },
       {
-        type: "image",
-        width: "full",
-        image: {
-          src: "https://picsum.photos/seed/griffity-buddhapurnima-poster-hero/1080/1350",
-          aspect: "4/5",
-          caption: "Griffity Studios — Buddha Purnima festive poster",
-        },
-      },
-
-      { type: "heading", text: "Griffity — Deepawali & Nepakids Diaper" },
-      {
-        type: "paragraph",
-        text: "A festive Deepawali greeting in warm gold light, paired with a soft, parent-friendly product poster for Nepakids.",
-      },
-      {
-        type: "image",
-        width: "full",
-        image: {
-          src: "https://picsum.photos/seed/griffity-deepawali-poster-hero/1080/1350",
-          aspect: "4/5",
-          caption: "Griffity Studios — Deepawali festive poster",
-        },
+        type: "poster-grid",
+        items: [
+          {
+            title: "Cafe Boh — Opening Soon",
+            image: {
+              src: "https://picsum.photos/seed/cafeboh-openingsoon-poster-hero/1080/1350",
+              aspect: "4/5",
+            },
+          },
+          {
+            title: "Advanced College — Welcome & Farewell Invitation",
+            image: {
+              src: "https://picsum.photos/seed/advancedcollege-invite-poster-hero/1080/1350",
+              aspect: "4/5",
+            },
+          },
+        ],
       },
       {
-        type: "image",
-        width: "full",
-        image: {
-          src: "https://picsum.photos/seed/nepakids-diaper-poster-hero/1080/1350",
-          aspect: "4/5",
-          caption: "Nepakids — product poster",
-        },
-      },
-
-      { type: "heading", text: "Cafe Boh & Advanced College — Welcome & Farewell Invitation" },
-      {
-        type: "paragraph",
-        text: "A minimal teaser poster for Cafe Boh's opening, alongside a formal event invitation designed for Advanced College's marquee campus event.",
-      },
-      {
-        type: "image",
-        width: "full",
-        image: {
-          src: "https://picsum.photos/seed/cafeboh-openingsoon-poster-hero/1080/1350",
-          aspect: "4/5",
-          caption: "Cafe Boh — opening soon poster",
-        },
-      },
-      {
-        type: "image",
-        width: "full",
-        image: {
-          src: "https://picsum.photos/seed/advancedcollege-invite-poster-hero/1080/1350",
-          aspect: "4/5",
-          caption: "Advanced College — welcome & farewell invitation poster",
-        },
-      },
-
-      { type: "heading", text: "Advanced College — Sabin Rai & The Band" },
-      {
-        type: "paragraph",
-        text: "An event poster built around the headline act — bold typography and high-energy visuals designed to read clearly across campus and social feeds alike.",
-      },
-      {
-        type: "image",
-        width: "full",
-        image: {
-          src: "https://picsum.photos/seed/advancedcollege-sabinrai-poster-hero/1080/1350",
-          aspect: "4/5",
-          caption: "Advanced College — Sabin Rai and the Band, welcome & farewell",
-        },
+        type: "poster-grid",
+        items: [
+          {
+            title: "Advanced College — Sabin Rai & The Band",
+            image: {
+              src: "https://picsum.photos/seed/advancedcollege-sabinrai-poster-hero/1080/1350",
+              aspect: "4/5",
+            },
+          },
+        ],
       },
     ],
   },
