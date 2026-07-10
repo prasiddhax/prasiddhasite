@@ -297,13 +297,19 @@ src: "https://drive.google.com/thumbnail?id=1Ft57zlcpBpFY78SqFcuHxTIPZjDBgyyU&sz
         ],
       },
       {
-        type: "image",
-        width: "half",
-        image: {
-          src: "https://picsum.photos/seed/advancedcollege-sabinrai-poster-hero/1080/1350",
-          aspect: "3/4",
-          caption: "Advanced College — Sabin Rai & The Band",
-        },
+        type: "image-pair",
+        images: [
+          {
+            src: "https://picsum.photos/seed/cafeboh-openingsoon-poster-hero/1080/1350",
+            aspect: "3/4",
+            caption: "Cafe Boh — Opening Soon",
+          },
+          {
+            src: "https://picsum.photos/seed/advancedcollege-invite-poster-hero/1080/1350",
+            aspect: "3/4",
+            caption: "Advanced College — Welcome & Farewell Invitation",
+          },
+        ],
       },
     ],
   },
