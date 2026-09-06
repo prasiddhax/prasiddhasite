@@ -16,7 +16,7 @@ export const WORKS_DATA: Project[] = [
       { type: "heading", text: "AITC International" },
       {
         type: "paragraph",
-        text: "AITC International needed a mark that could sit on a certificate, a stage backdrop, and a passport-sized business card with equal weight. The system leans on a geometric monogram and a restrained navy-and-gold palette to signal institutional trust.",
+        text: "AITC International needed a mark that could sit on a certificate, a stage backdrop, and a passport-sized business card with equal weight. The system leans on a geometric monogram and a bold orange-and-white palette to signal energy and clarity.",
       },
       {
         type: "image",
@@ -35,14 +35,14 @@ src: "https://drive.google.com/thumbnail?id=15vpcY9JzOsfxRa9zxoasDlChQBeYK1XM&sz
       },
       {
         type: "quote",
-        text: "Finally a brand that looks like the international standard we train people to.",
+        text: "The orange actually gets noticed at events now — before, nobody remembered our old logo.",
         author: "Client, AITC International",
       },
 
       { type: "heading", text: "Veda Studios" },
       {
         type: "paragraph",
-        text: "Veda Studios didn't want a logo that competed with client work. The identity strips down to a single lowercase wordmark and a near-black palette, letting the studio's output — not its branding — do the talking.",
+        text: "Veda Studios didn't want a logo that competed with client work. The identity strips down to a single lowercase wordmark and a deep purple palette, letting the studio's output — not its branding — do the talking.",
       },
        {
         type: "image",
@@ -61,7 +61,7 @@ src: "https://drive.google.com/thumbnail?id=1Ft57zlcpBpFY78SqFcuHxTIPZjDBgyyU&sz
       },
       {
         type: "quote",
-        text: "It gets out of the way and lets our reels do the talking.",
+        text: "It's simple enough that nobody asks about the logo, they just ask about the work. That's the point.",
         author: "Client, Veda Studios",
       },
  { type: "heading", text: "Griffity Studios" },
@@ -86,7 +86,7 @@ src: "https://drive.google.com/thumbnail?id=1Ft57zlcpBpFY78SqFcuHxTIPZjDBgyyU&sz
       },
       {
         type: "quote",
-        text: "The one brand system we never get tired of looking at — because it's ours.",
+        text: "We've redone client logos a hundred times but never touched our own gold-and-black until now. Kind of embarrassing it took this long.",
         author: "Griffity Studios Team",
       },
       
@@ -94,7 +94,7 @@ src: "https://drive.google.com/thumbnail?id=1Ft57zlcpBpFY78SqFcuHxTIPZjDBgyyU&sz
       { type: "heading", text: "Bagaicha Honey" },
       {
         type: "paragraph",
-        text: "Bagaicha Honey needed packaging and brand language that felt raw and orchard-grown rather than mass-produced. Hand-drawn botanical linework and a warm amber palette carry the story from label to signage.",
+        text: "Bagaicha Honey needed packaging and brand language that felt raw and orchard-grown rather than mass-produced. A simple wordmark and a warm amber palette carry the story from label to signage.",
       },
       {
         type: "image",
@@ -108,19 +108,19 @@ src: "https://drive.google.com/thumbnail?id=1Ft57zlcpBpFY78SqFcuHxTIPZjDBgyyU&sz
       {
         type: "text-image",
         imagePosition: "left",
-        text: "A single hive-and-leaf mark anchors the system, simplified enough to emboss onto a jar lid or stamp onto kraft paper packaging.",
+        text: "A single hive-mark anchors the system, simplified enough to emboss onto a jar lid or stamp onto kraft paper packaging.",
         image: { src: "https://drive.google.com/thumbnail?id=10osJg_xbA6K853vDx4UNH9O8nGZHXAOS&sz=w2000", aspect: "4/3" },
       },
       {
         type: "quote",
-        text: "Customers say the jar looks like what's inside tastes.",
+        text: "People pick it up off the shelf just because of the label. That never used to happen with the old jars.",
         author: "Client, Bagaicha Honey",
       },
 
 { type: "heading", text: "Elyn Studio®" },
 {
   type: "paragraph",
-  text: "Elyn Studio® wanted a soft, editorial identity that could flex across photography, styling, and social content. A serif wordmark and a muted blush-and-cream palette give the brand a quiet, gallery-like feel.",
+  text: "Elyn Studio® wanted a sharp, editorial identity that could flex across photography, styling, and social content. A high-contrast serif wordmark and a stark black-and-white palette give the brand a quiet, gallery-like feel.",
 },
 {
   type: "image",
@@ -142,14 +142,14 @@ src: "https://drive.google.com/thumbnail?id=1Ft57zlcpBpFY78SqFcuHxTIPZjDBgyyU&sz
 },
 {
   type: "quote",
-  text: "It feels like us — soft but not forgettable.",
+  text: "Black and white sounds boring on paper but it photographs so much better than the pastel version we almost went with.",
   author: "Client, Elyn Studio®",
 },
 
       { type: "heading", text: "Ruby Homes" },
       {
         type: "paragraph",
-        text: "Ruby Homes needed a real estate identity that felt premium without tipping into generic luxury. A deep ruby-and-gold palette and a refined monogram give the brand a distinct, ownable presence in a crowded category.",
+        text: "Ruby Homes needed a real estate identity that felt premium without tipping into generic luxury. A bold ruby-and-black palette and a refined monogram give the brand a distinct, ownable presence in a crowded category.",
       },
       {
         type: "image",
@@ -168,14 +168,14 @@ src: "https://drive.google.com/thumbnail?id=1Ft57zlcpBpFY78SqFcuHxTIPZjDBgyyU&sz
       },
       {
         type: "quote",
-        text: "Every listing looks more expensive with this branding on it.",
+        text: "The signboard alone gets us calls now. People assume we're a bigger agency than we are.",
         author: "Client, Ruby Homes",
       },
 
       { type: "heading", text: "Minimaya" },
       {
         type: "paragraph",
-        text: "Minimaya's identity needed to live up to its name — a stripped-back, minimal system built on negative space, restraint, and a single considered accent color.",
+        text: "Minimaya's identity needed to feel playful and approachable — a soft, character-led system built around a friendly mascot and a warm multicolor palette pulled from the brand name itself.",
       },
       {
         type: "image",
@@ -189,18 +189,18 @@ src: "https://drive.google.com/thumbnail?id=1Ft57zlcpBpFY78SqFcuHxTIPZjDBgyyU&sz
       {
         type: "text-image",
         imagePosition: "right",
-        text: "The mark is reduced to a single geometric form, designed to hold its identity even at favicon size or embroidered at 10mm.",
+        text: "The mark is built around a hand-drawn bunny character, designed to feel warm and legible even at the small scale of a woven clothing label.",
         image: { src: "https://drive.google.com/thumbnail?id=1YcZ8sP2fXv5YG0xgsVhRKihljt2y_k1b&sz=w2000", aspect: "4/3" },
       },
       {
         type: "quote",
-        text: "Less than we expected, and exactly what we needed.",
+        text: "The bunny was actually my daughter's idea and now it's on every single tag we print.",
         author: "Client, Minimaya",
       },
 { type: "heading", text: "Opera Construction" },
       {
         type: "paragraph",
-        text: "Opera Construction wanted an identity that read as established, not flashy. A structural monogram and a gold-on-charcoal palette give the brand weight on job-site signage while still holding up in a boardroom deck.",
+        text: "Opera Construction wanted an identity that read as established, not flashy. A structural wordmark and a bold yellow-and-charcoal palette give the brand weight on job-site signage while still holding up in a boardroom deck.",
       },
       {
         type: "image",
@@ -214,12 +214,12 @@ src: "https://drive.google.com/thumbnail?id=1Ft57zlcpBpFY78SqFcuHxTIPZjDBgyyU&sz
       {
         type: "text-image",
         imagePosition: "left",
-        text: "The mark is built from a single angled beam form, doubling as a subtle nod to the industry without tipping into a literal hard-hat cliché.",
+        text: "The mark is built from a crossed tools icon, doubling as a subtle nod to the industry without tipping into a literal hard-hat cliché.",
         image: { src: "https://drive.google.com/thumbnail?id=11KF7uz4MEjkNB-7rtk3J3_0p6h4ECdjF&sz=w2000", aspect: "4/3" },
       },
       {
         type: "quote",
-        text: "It finally looks like the scale of work we actually do.",
+        text: "The hoarding at the site gets photographed more than the building does at this point.",
         author: "Client, Opera Construction",
       },
     ],
